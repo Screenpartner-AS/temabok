@@ -1,0 +1,519 @@
+/******************************************************************
+
+Stylesheet: 481px and Up Stylesheet
+
+******************************************************************/
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.hide-on-desktop {
+	display: none;
+}
+
+.hide-on-mobile {
+	display: block;
+}
+
+
+/*********************
+HEADER STYLES
+*********************/
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#content {
+	.page-template-page-campaign & {
+		padding-top: $double-padding;
+	}
+}
+
+/* entry content */
+.entry-content {
+
+
+	/* at this larger size, we can start to align images */
+	.alignleft, img.alignleft {
+		margin-right: 1.5em;
+		display: inline;
+		float: left;
+	}
+	.alignright, img.alignright {
+		margin-left: 1.5em;
+		display: inline;
+		float: right;
+	}
+	.aligncenter, img.aligncenter {
+		margin-right: auto;
+		margin-left: auto;
+		clear: both;
+		text-align: center;
+	}
+
+} /* end .entry-content */
+
+
+/*********************
+PAGE BUILDER STYLES
+*********************/
+
+.news-article {
+	.news-title {
+		font-size: $heading3;
+		margin-bottom: $small-padding;
+	}
+
+	.news-desc {
+		margin-top: $half-padding;
+		font-size: $small-size;
+		line-height: 1.4em;
+	}
+
+	.news-content {
+		padding: 15px $double-padding;
+	}
+
+	.news-title {
+		font-size: $base-size;
+	}
+
+	.simplefavorite-button {
+		top: $base-padding;
+		padding: 7px;
+
+		i {
+			font-size: 23px;
+		}
+	}
+
+	.news-content-wrapper {
+		@include transition(all .45s ease-in-out);
+
+		img {
+			@include transition(all .45s ease-in-out);
+		}
+
+		> a {
+			&:hover,
+			&:focus {
+				.news-title {
+					// text-decoration: underline;
+				}
+			}
+		}
+
+		&:hover,
+		&:focus {
+			box-shadow: 0 2px 1px 0 rgba($black, .2);
+
+			.thumb {
+				> img {
+					filter: brightness(.7);
+					transform: translate3d(-50%, -50%, 0px) scale3d(1.05, 1.05, 1);
+				}
+			}
+		}
+	}
+
+	&.featured-article {
+		margin-bottom: $base-padding;
+
+		.news-title {
+			font-size: $heading2;
+		}
+
+		.thumb {
+			padding-bottom: 40%;
+		}
+	}
+
+	body.single-post & {
+		> a {
+			&:hover,
+			&:focus {
+				background: $light-gray;
+			}
+		}
+
+		&:nth-of-type(3) {
+			display: inline-block;
+		}
+	}
+}
+
+.article-categories {
+	display: block;
+	bottom: 0;
+	left: 0;
+	padding: 0;
+	font-size: 1.1rem;
+	color: $gray;
+	margin-top: 10px;
+
+	.cat {
+		padding: 0;
+		margin-right: $base-padding;
+		display: inline-block;
+		line-height: 1;
+		width: auto;
+		text-transform: uppercase;
+		color: $white;
+		padding: 2px 4px;
+    border-radius: 2px;
+
+		// &.velvaere {color: #E0165E;}
+		// &.trening {color: $blue;}
+		// &.reiseliv {color: #3a503f;}
+		// &.hobby {color: $light-gray;}
+		// &.spill {color: $orange;}
+		// &.historie {color: $light-gray;}
+		// &.krigshistorie {color: #a22f2f;}
+		// &.junior {color: $green;}
+		// &.sport {color: $yellow;}
+		// &.teknologi {color: $blue;}
+		// &.vitenskap {color: #E0165E;}
+
+		&.ukategorisert {display: none;}
+	}
+}
+
+// Banner
+.banner {
+	.banner-slide {
+		.banner-content {
+			padding: 120px $base-padding;
+			min-height: 430px;
+		}
+	}
+
+	&.banner-size-small {
+		.banner-slide {
+			.banner-content {
+				padding: 60px $base-padding;
+			}
+		}
+	}
+	&.banner-size-medium {
+		.banner-slide {
+			.banner-content {
+				padding: 90px $base-padding;
+			}
+		}
+	}
+	&.banner-size-large {
+		.banner-slide {
+			.banner-content {
+				padding: 120px $base-padding;
+			}
+		}
+	}
+}
+
+
+// Brand logos section
+.brand-logo {
+	@include transition(all .45s ease-in-out);
+
+	&:hover,
+	&:focus {
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+}
+
+
+// Products slider
+// News slider
+.products-slider,
+.news-slider {
+	// News slider
+	.slider-news-article {
+		width: 40%;
+
+		.news-content {
+			min-height: 103px;
+		}
+
+		.thumb {
+			position: relative;
+			padding-bottom: 66%;
+			overflow: hidden;
+
+			> img {
+				@include transition(all .45s ease-in-out);
+			}
+		}
+
+		&:hover,
+		&:focus {
+			box-shadow: 0 2px 1px 0 rgba($black, .2);
+
+			h2 {
+				// text-decoration: underline;
+			}
+
+			.thumb {
+				> img {
+					filter: brightness(.6);
+					transform: translate3d(-50%, -50%, 0px) scale3d(1.05, 1.05, 1);
+				}
+			}
+		}
+	}
+}
+
+
+
+// Email Collection Module - Campaign Monitor
+.sign-up-email {
+	nf-fields-wrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		nf-field {
+			display: inline-block;
+			margin: $base-padding 0;
+
+			input {
+				&[type="email"] {
+					border-radius: 30px 0 0 30px;
+			    border-right: 0;
+			    text-align: left;
+				}
+
+				&[type="submit"],
+				&[type="button"] {
+					border-radius: 0 30px 30px 0;
+					padding: 15px 24px 16px 20px;
+
+				}
+			}
+		}
+
+		.nf-after-field {
+			display: none;
+		}
+	}
+}
+
+
+// Spoken archives
+.spoken-listing {
+	a {
+		.spoken-listing-content {
+			padding: 15px $double-padding;
+
+			h3 {
+				font-size: $base-size;
+			}
+		}
+	}
+}
+
+/*********************
+CAMPAIGN PAGE STYLES
+*********************/
+
+.campaign-article {
+	.left-column {
+    border-radius: 4px;
+
+		h2 {
+			font-size: 4.6rem;
+		}
+	}
+
+	.campaign-wrapper {
+		padding-left: $double-padding;
+		padding-right: $double-padding;
+	}
+}
+
+/*********************
+SUPPORT ARCHIVE
+*********************/
+
+
+
+/*********************
+EDUCATION ARCHIVE
+*********************/
+
+// Education archives listing
+.education-listing {
+	.education-title {
+		font-size: $base-size;
+		margin-bottom: $small-padding;
+	}
+
+	.education-content {
+		padding: 15px $double-padding;
+	}
+
+	.education-content-wrapper {
+		@include transition(all .45s ease-in-out);
+
+		img {
+			@include transition(all .45s ease-in-out);
+		}
+
+		> a {
+			&:hover,
+			&:focus {
+				.news-title {
+					// text-decoration: underline;
+				}
+			}
+		}
+
+		&:hover {
+			box-shadow: 0 0 0px 0 rgba($black, .1);
+
+			.thumb {
+				> img {
+					filter: brightness(.7);
+					transform: translate3d(-50%, -50%, 0px) scale3d(1.05, 1.05, 1);
+				}
+			}
+		}
+	}
+}
+
+aside.education-listing-content {
+	.sp-terms-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		position: relative;
+		margin: 0 -10px;
+	}
+
+	.sp-term-section {
+		width: calc(50% - #{$double-padding});
+		margin-left: $base-padding;
+		margin-right: $base-padding;
+		display: inline-block;
+		float: left;
+	}
+}
+
+
+/*********************
+SINGLE POST STYLES
+*********************/
+body.single-post,
+body.single-spoken,
+body.single-quiz-form,
+body.single-quiz,
+body.page-template-page-quiz-results {
+	.entry-header,
+	.entry-content {
+		max-width: 680px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+body.single-education {
+	.education-module {
+		max-width: 100%;
+
+		.wrap {
+			width: 680px;
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+.read-related-product {
+	padding: 40px;
+	text-align: left;
+
+	&.extended {
+		h3 {
+			margin-bottom: $double-padding;
+		}
+
+		.btn-orange {
+			min-width: 140px;
+			padding: 10px 15px 9px;
+			font-size: 1.2rem;
+			margin-top: 0;
+		}
+
+		.related-product-extended {
+			float: left;
+	    width: 100%;
+	    max-width: 140px;
+			margin-bottom: 0;
+
+			.woocommerce-loop-product__title {
+				padding: $base-padding 0 5px!important;
+			}
+		}
+
+		.right-content-related {
+			text-align: left;
+	    float: right;
+	    width: calc(100% - 140px - #{$forty-padding});
+		}
+	}
+}
+
+// Related Bokasin
+.woocommerce_related_product {
+	width: 240px;
+	margin: 0 0 $double-padding $double-padding;
+	padding: $double-padding;
+	border: 3px solid $light-gray;
+
+	.single-publication & {
+		float: none;
+		margin: 0 auto $double-padding;
+	}
+}
+
+
+
+// Bokasin Categories Facet
+.facetwp-facet-bokasinkategorier {
+	.facetwp-radio {
+		width: 20%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/*********************
+POST OVERVIEW POST
+*********************/
+
+.post-overview-section {
+	.overview-header {
+		.title-block-glow {
+			h1 {
+				font-size: 4.5rem;
+			}
+
+			h2 {
+				font-size: 3.45rem;
+			}
+		}
+	}
+}
+
+// Netflix carousel
+.netflix-tile {
+	.netflix-tile-img {
+		height: 120px;
+	}
+
+	&:hover {
+    transform: scale(1.1) translate(-50%, calc(-50% + 15px));
+	}
+}

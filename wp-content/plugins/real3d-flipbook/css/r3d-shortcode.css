@@ -1,0 +1,139 @@
+#r3d-bar{
+    height: 80px;
+    font-weight: 300;
+}
+
+#r3d-books{
+    padding: 5px;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: Arial;
+    /* white-space: nowrap; */
+    min-width: 960px;
+}
+
+#r3d-books a{
+    text-decoration: none;
+    color: initial;
+    overflow: hidden;
+    background: #FFF;
+}
+
+#r3d-search{
+    float: right;
+    margin-right: 40px;
+    transition: none;
+}
+
+#r3d-search i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    color: #FFF;
+    font-size: 16px;
+}
+
+#r3d-search label{
+    font-size: 16px;
+    padding: 5px;
+} 
+
+#r3d-search div{
+    display: inline-block;
+}
+
+#r3d-search input{
+    width: 150px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    height: 40px;
+    align-content: normal;
+    margin: none;
+}
+
+#r3d-search button{
+    width: 40px;
+    height: 40px;
+    background-color: #229955;
+    display: inline-block;
+    position: absolute;
+    border: 1px solid #229955;
+}
+
+#r3d-cat{
+    float: left;
+    font-size: 16px;
+    /* margin-top: 16px; */
+    border: none;
+    width: 200px;
+    transition: none;
+}
+
+#r3d-cat:focus{
+    border: none;
+    outline:none;
+}
+
+.r3d-book{
+    display: inline-block;
+    width: 148px;
+    height: 260px;
+    margin: 5px;
+}
+
+.r3d-thumb-wrapper{
+    margin: 5px;
+    height: 180px;
+    position: relative;
+}
+
+.r3d-thumb-wrapper img{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 10px 10px 7px rgba(0,0,0,0.05);
+}
+
+.r3d-thumb{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.r3d-title{
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    max-height: 3em;
+    line-height: 1.5em;
+}
+
+.r3d-author{
+    font-size: 13px;
+    line-height: 1.5em;
+    max-height: 1.5em;
+    overflow: hidden;
+}
+
+#r3d-pagination input{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    transition: none;
+}
+
+.pagination-navspan{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.pagination-navspan.disabled{
+    opacity: .5;
+    pointer-events: none;
+}

@@ -1,0 +1,179 @@
+.header #inner-header.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 15px 12px 20px;
+    border-bottom: 1px solid #e4e9ed;
+    background: #fff;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+}
+
+.header #inner-header .my-account-window {
+    overflow: hidden;
+    box-sizing: content-box;
+    padding-left: 19px;
+    padding-right: 19px;
+    width: 218px;
+    background: #fff;
+    position: absolute;
+    top: calc(100% - 0px);
+    right: 62px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 2px 4px 0 hsla(0,0%,100%,.11);
+    -webkit-transition: height .2s ease-in-out;
+    transition: height .2s ease-in-out;
+    z-index: 1;
+    height: 0;
+    visibility: hidden;
+}
+a.faq-button:focus img {
+    outline: black;
+    outline-offset: 5px;
+    outline-style: auto;
+}
+.header #inner-header .my-account-window.active {
+    height: auto;
+    border: 1px solid #d3d9de;
+    border-top: 0;
+    transition: height .2s ease-in-out;
+    visibility: initial;
+}
+
+.my-account-window-container .first-block-list.active {
+    left: 0 !important;
+    transition: all ease .35s;
+}
+
+.my-account-window-container .first-block-list {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: -112%;
+    transition: all ease .35s;
+}
+
+.my-account-window-container .second-block-list {
+    position: absolute;
+    top: -10px;
+    left: 100%;
+    width: 85%;
+    transition: all ease .35s;
+        visibility: hidden;
+}
+
+.my-account-window-container .second-block-list.active {
+    left: 19px;
+    transition: all ease .35s;
+        visibility: initial;
+}
+
+.list-of-lang li {
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.header #inner-header .my-account-window .account-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #d3d9de;
+}
+
+.header #inner-header .my-account-window .account-item:last-of-type {
+    border-bottom: none;
+}
+
+.header #inner-header .my-account-window .account-item a {
+    padding: 0;
+}
+
+.header #inner-header .my-account-window .account-item span {
+    width: auto;
+}
+
+.header #inner-header .my-account-window .account-item.first {
+    justify-content: space-between;
+}
+
+.header #inner-header .my-account-window .account-item .back-btn {
+  line-height: 0;
+  display: inline-block;
+  width: 20px;
+  position: relative;
+}
+
+.header #inner-header .my-account-window .account-item .back-btn img {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.header #inner-header .my-account-window .current-user-name {
+    font-weight: 500;
+    cursor: default;
+    box-sizing: border-box;
+    font-family: IBM Plex Sans,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #0b2541;
+}
+
+.header #inner-header .my-account-window .account-item-text {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: IBM Plex Sans,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #0b2541;
+}
+
+.header #inner-header .my-account-window .account-item-title {
+    font-weight: 600;
+    cursor: default;
+    margin-right: 10px;
+}
+
+.header #inner-header .my-account-window .close-btn{
+    width: 15.19px;
+    height: 15.19px;
+    cursor: pointer;
+}
+
+#nav-main .lang-item, .mobile-nav .lang-item {
+    display: none;
+}
+
+#nav-main .account-item .lang-item, .mobile-nav .account-item .lang-item {
+    display: block;
+}
+
+.logut {
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 996px) {
+    .lang-item.lang-item-nb.current-lang.lang-item-first {
+        display: none;
+    }
+
+    .account-item.first img {
+        display: none;
+    } 
+    
+    .account-item:last-child {
+        display: flex;
+    }
+    
+    .second-block-list {
+        display: none;
+    }
+}

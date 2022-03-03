@@ -1,0 +1,356 @@
+/******************************************************************
+
+Stylesheet: Desktop Stylsheet
+
+******************************************************************/
+
+.wrap {
+  width: 990px;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.nav-toggle,
+.mobile-nav,
+.mobile-faq-button {
+  display: none;
+}
+
+.desktop-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 67px;
+
+  li {
+    a {
+      &.faq-button {
+        line-height: 0;
+
+        img {
+          width: 100%;
+          max-width: 25px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    overflow: hidden;
+
+    li {
+      flex: none;
+
+      &.flag {
+        display: inline-block!important;
+        margin: 0 10px 0;
+        display: flex!important;
+        align-items: center;
+
+        a,
+        span {
+          line-height: 0;
+          margin-top: 0px;
+          padding: 0;
+        }
+
+        img {
+          padding: 0;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+        }
+
+        span > img {
+          filter: grayscale(1);
+        }
+      }
+    }
+  }
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav {
+	border-bottom: 0;
+	margin: 0;
+
+	li {
+		display: inline-block;
+
+		a {
+			color: #0b2541;
+			display: block;
+			text-decoration: none;
+			padding: 20px 10px;
+			font-size: 1.7rem;
+			font-weight: 600;
+
+			&:hover,
+			&:focus {
+				color: $purple;
+			}
+		}
+	} /* end .menu li */
+
+	/* highlight current page */
+	li.current-menu-item {
+		a {
+			color: $purple;
+		}
+	}  /* end current highlighters */
+
+  > li {
+    &.menu-item-has-children {
+      > a {
+        &:after {
+          display: inline-block;
+          content: '';
+          width: 16px;
+          height: 16px;
+          margin-left: 10px;
+          background-image: url('../images/down-thin.svg');
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          body.lightenup &,
+          body.header-lightenup & {
+            filter: brightness(0);
+          }
+        }
+      }
+
+      ul.sub-menu {
+        position: absolute;
+        display: none;
+        margin: 0;
+        background: $dark-gray;
+        min-width: 220px;
+        border-radius: 0 0 4px 4px;
+
+        > li {
+          display: block;
+
+          > a {
+            padding: 10px 15px;
+
+            &:hover {
+              text-decoration: none;
+              background: $black;
+
+              body.lightenup &,
+              body.header-lightenup & {
+                background: $white;
+              }
+            }
+          }
+
+          &:last-of-type {
+            > a {
+              border-radius: 0 0 4px 4px;
+            }
+          }
+        }
+
+        body.lightenup &,
+        body.header-lightenup & {
+          background: $light-gray;
+        }
+      }
+
+      &:hover {
+        ul.sub-menu {
+          display: block;
+        }
+      }
+    }
+  }
+
+} /* end .nav */
+
+/*********************
+BUILDER
+*********************/
+
+.news-article {
+  &.featured-article {
+    .thumb {
+      padding-bottom: 40%;
+    }
+  }
+
+  // Changing the width of every first and second article
+  // to create visual interest
+  &.article-1,
+  &.article-2 {
+		width: 50%;
+	}
+
+  &.new-featured-article {
+		.thumb {
+			width: 66.666666%;
+		}
+
+    .news-content {
+      width: 33.333333%;
+    }
+	}
+}
+
+// Products slider
+.products-slider {
+	ul.products {
+		li.product {
+			width: 20%;
+		}
+	}
+}
+
+.entry-content,
+.wp-block-media-text__content {
+  .wp-block-media-text {
+    display: grid;
+
+    .wp-block-media-text__media {
+      margin-bottom: 0;
+    }
+
+    .wp-block-media-text__content {
+      max-width: initial;
+      padding: $forty-padding 8% $forty-padding 8%;
+    }
+  }
+}
+
+/*********************
+CAMPAIGN PAGE STYLES
+*********************/
+
+.campaign-article {
+	.campaign-wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: flex-start;
+		justify-content: space-between;
+    width: auto;
+    padding: 0 $double-padding;
+	}
+
+  .left-column,
+  .right-column {
+    max-width: 700px;
+    width: 100%;
+  }
+
+	.right-column {
+    margin: calc(70vh - 410px) $double-padding 0 0;
+    line-height: 0;
+
+    .campaign-text {
+      padding: $double-padding;
+      background: $white;
+      line-height: 1.5em;
+      border-radius: 4px;
+    }
+	}
+}
+
+
+/*********************
+SINGLE POST STYLES
+*********************/
+
+// Related Bokasin
+.woocommerce_related_product {
+	width: 300px;
+}
+
+/*********************
+POST OVERVIEW POST
+*********************/
+
+// TILE POPUP
+.tile-popup {
+	max-width: 990px;
+
+  .flex-columns {
+    .column-right {
+      padding: $forty-padding;
+    }
+  }
+}
+
+/*********************
+MY ACCOUNT STYLES
+*********************/
+
+// TABS
+.tabs,
+#account-tabs {
+	font-size: 2.2rem;
+}
+
+/*********************
+EDUCATION ARCHIVE
+*********************/
+
+// Education archives listing
+.education-listing {
+	aside.education-listing-content {
+		width: calc(400% - #{$double-padding});
+	}
+
+	&:nth-of-type(4n+1) {
+		aside.education-listing-content {
+			left: $base-padding;
+			transform: none;
+		}
+	}
+
+	&:nth-of-type(4n+2) {
+		aside.education-listing-content {
+			left: $base-padding;
+			transform: translateX(-25.5%);
+		}
+	}
+
+	&:nth-of-type(4n+3) {
+		aside.education-listing-content {
+			left: $base-padding;
+			transform: translateX(-51%);
+		}
+	}
+
+  &:nth-of-type(4n+4) {
+		aside.education-listing-content {
+			left: $base-padding;
+			transform: translateX(-76.5%);
+		}
+	}
+}
+
+aside.education-listing-content {
+	.sp-term-section {
+		width: 33.333333%;
+	}
+}
+
+/*********************
+EDUCATION SINGLE
+*********************/
+
+#education-lightbox-popup {
+	.wrap {
+		width: calc(990px - 80px);
+	}
+}

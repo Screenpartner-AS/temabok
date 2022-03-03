@@ -1,0 +1,85 @@
+{
+    "key": "group_5c77bad164eb0",
+    "title": "Log in Page",
+    "fields": [
+        {
+            "key": "field_5c77bb1a6a9f5",
+            "label": "Log in Page",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Use this page to build the layout on the login page. This will only display when user is <strong>not<\/strong> logged in",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5f96b6c88e4bc",
+            "label": "Feide Login",
+            "name": "feide_login",
+            "type": "button_group",
+            "instructions": "Which layout should be used for the My Account \/ Login Page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "feide": "Feide Layout",
+                "classic": "Classic layout"
+            },
+            "allow_null": 0,
+            "default_value": "feide",
+            "layout": "horizontal",
+            "return_format": "value",
+            "translations": "copy_once"
+        },
+        {
+            "key": "field_5c77bc39b2d03",
+            "label": "Log in builder",
+            "name": "log_in_builder",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5922a09c22ccd"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-log-in-page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1603713748
+}

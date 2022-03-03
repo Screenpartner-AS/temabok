@@ -1,0 +1,160 @@
+.woocommerce,
+.woocommerce-page {
+	// Cart
+	.cart-collaterals {
+		.cart_totals {
+			width: 100%;
+			float: none;
+		}
+	}
+
+	table {
+		&.shop_attributes {
+			border: 1px solid $light-gray;
+
+			th {
+				text-align: left;
+			}
+
+			td {
+				padding: 7px;
+			}
+		}
+	}
+
+	form {
+		&.checkout_coupon,
+		&.login,
+		&.register {
+			border: none;
+			padding: 0;
+			margin: $base-padding 0;
+		}
+
+		.form-row {
+			padding: $small-padding 0;
+
+			label {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+// Cart
+.woocommerce-cart,
+#add_payment_method,
+.woocommerce-checkout {
+	table {
+		&.cart {
+			.product-thumbnail {
+				min-width: 50px;
+
+				a {
+					display: block;
+					line-height: 0;
+
+					img {
+						margin: 0;
+						width: 50px;
+					}
+				}
+			}
+		}
+	}
+
+	table {
+		.order-total {
+			th {
+				border-color: darken($alert-green, 5%)!important;
+				background: $alert-green;
+			}
+
+			td {
+				border-color: darken($alert-green, 5%)!important;
+				background: $alert-green;
+			}
+		}
+
+		.cart-discount {
+			font-size: $small-size;
+
+			th {
+				border-color: darken($alert-green, 5%)!important;
+				background: $light-gray;
+				border-radius: 0 0 0 4px;
+			}
+
+			td {
+				border-color: darken($alert-green, 5%)!important;
+				background: $light-gray;
+				border-radius: 0 0 4px 0;
+			}
+		}
+	}
+
+	&.shop_table {
+		vertical-align: center;
+	}
+
+	.wc-proceed-to-checkout {
+		a.checkout-button {
+			background: $orange;
+			border-radius: 35px;
+			text-transform: uppercase;
+			font-size: $base-size;
+
+			&:hover,
+			&:focus {
+				background: darken($orange, 10%);
+			}
+		}
+	}
+
+	ul.payment_methods,
+	#payment ul.payment_methods {
+		li {
+			list-style: none;
+		}
+	}
+
+	#payment {
+		#place_order {
+			background: $green;
+			border-radius: 35px;
+			text-transform: uppercase;
+
+			&:hover,
+			&:focus {
+				background: darken($green, 10%);
+			}
+		}
+	}
+
+	.check-out-store {
+		margin-bottom: $base-padding;
+		font-style: italic;
+	}
+}
+
+#customer_details {
+	.col-1,
+	.col-2 {
+		width: 100%;
+	}
+
+	h3 {
+		margin-bottom: $half-padding;
+	}
+}
+
+.woocommerce-order {
+	> * {
+		margin-bottom: $base-padding;
+	}
+}
+
+#order_review_heading,
+#payment_options_heading {
+	margin-bottom: $base-padding;
+}

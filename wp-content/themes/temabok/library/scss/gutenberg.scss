@@ -1,0 +1,96 @@
+/******************************************************************
+
+Stylesheet: Gutenberg Editor
+
+This stylesheet is loaded automatically by Wordpress when compiled
+and placed in the root theme directory folder as gutenberg.css
+
+The file will be loaded when using the Gutenberg post editor
+
+For more info, check out the codex:
+http://codex.wordpress.org/Editor_Style
+
+******************************************************************/
+
+// Sass variables
+@import "partials/variables";
+
+// Sass variables
+@import "partials/mixins";
+
+// typography
+@import "partials/typography";
+
+// Sass variables
+@import "modules/buttons";
+
+/* Main column width */
+body.gutenberg-editor-page .editor-post-title__block,
+body.gutenberg-editor-page .editor-default-block-appender,
+body.gutenberg-editor-page .editor-block-list__block {
+    max-width: 720px;
+}
+
+/* Width of "wide" blocks */
+body.gutenberg-editor-page .editor-block-list__block[data-align="wide"] {
+    max-width: 1080px;
+}
+
+/* Width of "full-wide" blocks */
+body.gutenberg-editor-page .editor-block-list__block[data-align="full"] {
+    max-width: none;
+}
+
+pre,
+.wp-block-code,
+.wp-block-file {
+  border: 1px solid $gray;
+  box-shadow: inset 0 0 $half-padding 0 rgba($black, .1);
+  padding: $base-padding;
+}
+
+button {
+  font-size: 13px;
+}
+
+.wp-block-button .wp-block-button__link {
+  font-size: 16px;
+}
+
+.editor-block-list__block {
+  font-family: $sans-serif!important;
+}
+
+body.gutenberg-editor-page .edit-post-layout__content {
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  	text-rendering: optimizelegibility;
+  	font-weight: 600;
+  	line-height: 1.3em;
+
+  	a {
+  		text-decoration: none;
+  	}
+  }
+
+  h1, .h1 {
+  	font-size: $heading1;
+  }
+
+  h2, .h2 {
+  	font-size: $heading2;
+  }
+
+  h3, .h3 {
+  	font-size: $heading3;
+  }
+
+  .wrap,
+  .desktop-wrap {
+    margin: 0 auto;
+    max-width: 610px;
+  }
+
+  .gut-margin-bottom {
+    margin-bottom: $base-padding;
+  }
+}

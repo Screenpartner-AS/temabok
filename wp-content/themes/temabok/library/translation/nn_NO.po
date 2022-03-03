@@ -1,0 +1,1793 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Screenpartner\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-20 11:58+0000\n"
+"PO-Revision-Date: 2021-06-07 07:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: Norwegian (Nynorsk)\n"
+"Language: nn_NO\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7"
+
+#: functions.php:151
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:152
+msgid "The primary sidebar."
+msgstr ""
+
+#: functions.php:160
+msgid "Footer Widgets"
+msgstr ""
+
+#: functions.php:161
+msgid "The footer widgets go here."
+msgstr ""
+
+#: functions.php:191
+#, php-format
+msgid "<cite class=\"fn\">%1$s</cite> %2$s"
+msgstr ""
+
+#: functions.php:191
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:192
+msgid "F jS, Y"
+msgstr ""
+
+#: functions.php:197
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Name of the template
+msgid "Page Builder"
+msgstr ""
+
+#: page-builder.php:24 page-quiz-results.php:32 page-reset-password.php:34
+#: archive.php:46 single-overview-post.php:60
+#: page-education-article-iframe.php:72 page-education-article-iframe.php:88
+#: single-quiz.php:47 single-education.php:47 single-education_lightbox.php:42
+#: single-support.php:19 single-spoken.php:47 archive-support.php:35
+#: page-my-account.php:79 archive-spoken.php:55 single-publication.php:47
+#: archive-education.php:43 single.php:58 page-campaign.php:71
+#: page-article-iframe.php:48 page-article-iframe.php:64
+#: archive-publication.php:47 page-home.php:41 page-quiz-edit.php:50
+msgid "Oops, Post Not Found!"
+msgstr ""
+
+#: page-builder.php:27 page-quiz-results.php:35 page-reset-password.php:38
+#: archive.php:49 single-overview-post.php:63
+#: page-education-article-iframe.php:75 page-education-article-iframe.php:91
+#: single-quiz.php:50 single-education.php:50 single-education_lightbox.php:45
+#: single-support.php:22 single-spoken.php:50 archive-support.php:38
+#: page-my-account.php:83 archive-spoken.php:58 single-publication.php:50
+#: archive-education.php:46 single.php:61 page-campaign.php:74
+#: page-article-iframe.php:51 page-article-iframe.php:67
+#: archive-publication.php:50 page-home.php:44 page-quiz-edit.php:53
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr ""
+
+#: page-builder.php:30 page-campaign.php:77
+msgid "This is the error message in the page-custom.php template."
+msgstr ""
+
+#. Name of the template
+msgid "Quiz Results"
+msgstr ""
+
+#: page-quiz-results.php:19
+msgid "You must be a registered teacher to view quiz results."
+msgstr ""
+
+#: page-quiz-results.php:38 single-overview-post.php:66
+#: page-education-article-iframe.php:78 page-education-article-iframe.php:94
+#: single-quiz.php:53 single-education.php:53 single-education_lightbox.php:48
+#: single-support.php:25 single-spoken.php:53 single-publication.php:53
+#: single.php:64 page-article-iframe.php:54 page-article-iframe.php:70
+#: page-quiz-edit.php:56
+msgid "This is the error message in the single.php template."
+msgstr ""
+
+#: 404.php:13
+msgid "Article Not Found"
+msgstr ""
+
+#: 404.php:19
+msgid "We can't find the content you were looking for!"
+msgstr ""
+
+#: 404.php:21
+msgid "Go home"
+msgstr ""
+
+#. Name of the template
+msgid "Reset password"
+msgstr ""
+
+#: index.php:11
+msgid "Articles"
+msgstr ""
+
+#: index.php:23 archive-support.php:18 archive-spoken.php:23
+#: archive-publication.php:23
+#: library/modules/elements/news-articles-and-archive.php:27
+msgid "Filters"
+msgstr ""
+
+#: index.php:70 library/modules/elements/news-articles-and-archive.php:138
+msgid "No articles found!"
+msgstr ""
+
+#: index.php:73 library/modules/elements/news-articles-and-archive.php:141
+msgid ""
+"No content were found with these search terms. Try double checking things."
+msgstr ""
+
+#: archive.php:22 library/bones.php:612 template-parts/content-single.php:16
+#: template-parts/content-article-iframe.php:16
+#: template-parts/content-single-quiz.php:34
+#: template-parts/content-single-hidden.php:16
+msgid "Posted"
+msgstr ""
+
+#: archive.php:26
+msgid "by"
+msgstr ""
+
+#: archive.php:52
+msgid "This is the error message in the archive.php template."
+msgstr ""
+
+#. Name of the template
+msgid "Overview Post"
+msgstr ""
+
+#: single-overview-post.php:33 single-quiz.php:22 single-education.php:22
+#: single-education_lightbox.php:15 single-publication.php:22 single.php:30
+msgid ""
+"Your user is no longer able to read this content. Your 30 day trial has "
+"expired."
+msgstr ""
+
+#: single-overview-post.php:41 single-education.php:30
+#: single-education_lightbox.php:23 single.php:38
+msgid "Please log in to continue reading this article."
+msgstr ""
+
+#. Name of the template
+msgid "Page Education Article Iframe"
+msgstr ""
+
+#: single-quiz.php:30
+msgid "Please log in to take this quiz."
+msgstr ""
+
+#: comments.php:17
+msgid "<span>No</span> Comments"
+msgstr ""
+
+#: comments.php:17
+msgid "<span>One</span> Comment"
+msgstr ""
+
+#: comments.php:17
+msgid "<span>%</span> Comments"
+msgstr ""
+
+#: comments.php:27
+msgid "Reply"
+msgstr ""
+
+#: comments.php:38
+msgid "&larr; Previous Comments"
+msgstr ""
+
+#: comments.php:39
+msgid "More Comments &rarr;"
+msgstr ""
+
+#: comments.php:44
+msgid "Comments are closed."
+msgstr ""
+
+#. Name of the template
+msgid "TEST LOGIN"
+msgstr ""
+
+#: single-spoken.php:22
+msgid ""
+"Your user is no longer able to listen to this content. Your 30 day trial has "
+"expired."
+msgstr ""
+
+#: single-spoken.php:30
+msgid "Please log in to listen to this spoken article."
+msgstr ""
+
+#: search.php:8
+msgid "Search Results for:"
+msgstr ""
+
+#: search.php:19
+#, php-format
+msgid "Posted %1$s by %2$s"
+msgstr ""
+
+#: search.php:30 library/bones.php:384
+msgid "Read more &raquo;"
+msgstr ""
+
+#: search.php:37
+#, php-format
+msgid "Filed under: %1$s"
+msgstr ""
+
+#: search.php:40
+msgid "Tags:"
+msgstr ""
+
+#: search.php:54
+msgid "Sorry, No Results."
+msgstr ""
+
+#: search.php:57
+msgid "Try your search again."
+msgstr ""
+
+#: search.php:60
+msgid "This is the error message in the search.php template."
+msgstr ""
+
+#: archive-support.php:11 library/custom-post-type.php:705
+msgid "Support"
+msgstr ""
+
+#. Name of the template
+#: library/bones.php:649 library/bones.php:654
+msgid "My account"
+msgstr "Min konto"
+
+#: page-my-account.php:59 library/bones.php:663
+msgid "Logout"
+msgstr "Logg ut"
+
+#: archive-spoken.php:11 library/custom-post-type.php:267
+#: library/custom-post-type.php:268
+msgid "Spoken Articles"
+msgstr ""
+
+#: header.php:46 library/bones.php:329
+msgid "The Main Menu"
+msgstr ""
+
+#. Name of the template
+msgid "Small Width"
+msgstr ""
+
+#: footer.php:8 library/modules/elements/featured-news-article.php:44
+#: library/modules/elements/log-in-form.php:39
+msgid "Read"
+msgstr ""
+
+#: footer.php:13 library/modules/elements/featured-news-article.php:49
+#: library/modules/elements/log-in-form.php:44
+msgid "Listen"
+msgstr ""
+
+#: footer.php:18 library/modules/elements/log-in-form.php:49
+msgid "Learn"
+msgstr ""
+
+#: footer.php:26 library/modules/elements/log-in-form.php:53
+msgid "Knowledge that entertains – entertainment that educates"
+msgstr ""
+
+#: footer.php:35 sidebar.php:16
+msgid "This is a widget ready area. Add some and they will appear here."
+msgstr ""
+
+#: single-publication.php:30
+msgid "Please log in to read this theme book."
+msgstr ""
+
+#: archive-education.php:26 library/modules/elements/education-query.php:29
+msgid "Reset filters"
+msgstr "Tilbakestill filter"
+
+#. Name of the template
+msgid "Campaign"
+msgstr ""
+
+#. Name of the template
+msgid "Page Article Iframe"
+msgstr ""
+
+#: archive-publication.php:11
+msgid "Theme Books"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage"
+msgstr ""
+
+#. Name of the template
+#: template-parts/content-quiz-list-archive.php:30
+#: template-parts/content-quiz-archive.php:28
+#: template-parts/content-single-quiz.php:59
+msgid "Edit Quiz"
+msgstr ""
+
+#: page-quiz-edit.php:23
+msgid "You must be a registered teacher to edit this quiz."
+msgstr ""
+
+#: page-quiz-edit.php:40
+msgid "Save Changes"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:6
+msgid "Search"
+msgstr ""
+
+#: library/acf.php:56
+msgid "Spoken"
+msgstr ""
+
+#: library/acf.php:57
+msgid "Embed a spoken article widget."
+msgstr ""
+
+#: library/acf.php:67
+msgid "Cover"
+msgstr ""
+
+#: library/acf.php:68
+msgid "Create a cover section."
+msgstr ""
+
+#: library/user-reads.php:81
+msgid "There was an error when trying to delete your Recent Reads log."
+msgstr ""
+
+#: library/user-reads.php:128
+msgid "Reset user reads"
+msgstr "Nullstill lesehistorikk"
+
+#: library/user-reads.php:246 library/bones.php:1292
+msgid "Load more"
+msgstr "Last flere"
+
+#: library/bones.php:384
+msgid "Read "
+msgstr ""
+
+#: library/bones.php:506
+msgid "?fwp_artikkelkategorier="
+msgstr ""
+
+#: library/bones.php:517 library/bones.php:544
+msgid "View all articles in category"
+msgstr ""
+
+#: library/bones.php:537
+msgid "="
+msgstr ""
+
+#: library/bones.php:610 template-parts/content-single.php:15
+#: template-parts/content-article-iframe.php:15
+#: template-parts/content-single-quiz.php:33
+#: template-parts/content-single-hidden.php:15
+msgid "F j, Y"
+msgstr ""
+
+#: library/bones.php:634
+msgid "my-account"
+msgstr ""
+
+#: library/bones.php:682
+msgid "Log out"
+msgstr ""
+
+#: library/bones.php:685
+#: library/modules/layout-sections/simple-log-in-wrap.php:13
+#: library/modules/elements/log-in-form.php:22
+msgid "Log in"
+msgstr ""
+
+#: library/bones.php:701
+msgid "Teacher Room"
+msgstr "Lærerrom"
+
+#: library/bones.php:705
+msgid "Student Room"
+msgstr ""
+
+#: library/bones.php:724
+msgid "Toggle Theme"
+msgstr ""
+
+#: library/bones.php:735
+msgid "Need help?"
+msgstr ""
+
+#: library/bones.php:916
+msgid "Related articles"
+msgstr ""
+
+#: library/bones.php:952
+msgid "Article from:"
+msgstr ""
+
+#: library/bones.php:953
+msgid "Read the entire publication here"
+msgstr ""
+
+#: library/bones.php:977 library/bones.php:1242
+msgid "Welcome back"
+msgstr "Hei"
+
+#: library/bones.php:979
+msgid "What would you like to read?"
+msgstr ""
+
+#: library/bones.php:997
+msgid "Flow article"
+msgstr ""
+
+#: library/bones.php:1316
+msgid "Expired"
+msgstr ""
+
+#: library/custom-post-type.php:17
+msgctxt "Post Type General Name"
+msgid "Banners"
+msgstr ""
+
+#: library/custom-post-type.php:18
+msgctxt "Post Type Singular Name"
+msgid "Banner"
+msgstr ""
+
+#: library/custom-post-type.php:19
+msgid "Banners"
+msgstr ""
+
+#: library/custom-post-type.php:20 library/custom-post-type.php:46
+msgid "Banner"
+msgstr ""
+
+#: library/custom-post-type.php:21
+msgid "Banner Archive"
+msgstr ""
+
+#: library/custom-post-type.php:22
+msgid "Banner Attributtes"
+msgstr ""
+
+#: library/custom-post-type.php:23
+msgid "Parent Banner"
+msgstr ""
+
+#: library/custom-post-type.php:24
+msgid "All Banners"
+msgstr ""
+
+#: library/custom-post-type.php:25
+msgid "Add Banner"
+msgstr ""
+
+#: library/custom-post-type.php:26 library/custom-post-type.php:85
+#: library/custom-post-type.php:274 library/custom-post-type.php:382
+#: library/custom-post-type.php:448 library/custom-post-type.php:685
+msgid "Add New"
+msgstr ""
+
+#: library/custom-post-type.php:27
+msgid "New Banner"
+msgstr ""
+
+#: library/custom-post-type.php:28
+msgid "Edit banner"
+msgstr ""
+
+#: library/custom-post-type.php:29
+msgid "Update banner"
+msgstr ""
+
+#: library/custom-post-type.php:30
+msgid "View banner"
+msgstr ""
+
+#: library/custom-post-type.php:31
+msgid "View Banners"
+msgstr ""
+
+#: library/custom-post-type.php:32
+msgid "Search banner"
+msgstr ""
+
+#: library/custom-post-type.php:33 library/custom-post-type.php:92
+#: library/custom-post-type.php:455 library/custom-post-type.php:692
+msgid "Not found"
+msgstr ""
+
+#: library/custom-post-type.php:34
+msgid "Not found in trash"
+msgstr ""
+
+#: library/custom-post-type.php:35
+msgid "Banner Image"
+msgstr ""
+
+#: library/custom-post-type.php:36
+msgid "Choose Banner Image"
+msgstr ""
+
+#: library/custom-post-type.php:37
+msgid "Remove Banner Image"
+msgstr ""
+
+#: library/custom-post-type.php:38
+msgid "Use as Banner Image"
+msgstr ""
+
+#: library/custom-post-type.php:39
+msgid "Insert into banner"
+msgstr ""
+
+#: library/custom-post-type.php:40
+msgid "Uploaded to this banner"
+msgstr ""
+
+#: library/custom-post-type.php:41
+msgid "Banner list"
+msgstr ""
+
+#: library/custom-post-type.php:42
+msgid "Banner list navigation"
+msgstr ""
+
+#: library/custom-post-type.php:43
+msgid "Filter Banner list navigation"
+msgstr ""
+
+#: library/custom-post-type.php:47
+msgid "Banners are created and edited here."
+msgstr ""
+
+#: library/custom-post-type.php:78
+msgid "Publications"
+msgstr ""
+
+#: library/custom-post-type.php:79 library/custom-post-type.php:109
+msgid "Publication"
+msgstr ""
+
+#: library/custom-post-type.php:80
+msgid "Publication Archives"
+msgstr ""
+
+#: library/custom-post-type.php:81
+msgid "Publication Attributes"
+msgstr ""
+
+#: library/custom-post-type.php:82
+msgid "Parent Publication:"
+msgstr ""
+
+#: library/custom-post-type.php:83
+msgid "All Publications"
+msgstr ""
+
+#: library/custom-post-type.php:84
+msgid "Add New Publication"
+msgstr ""
+
+#: library/custom-post-type.php:86
+msgid "New Publication"
+msgstr ""
+
+#: library/custom-post-type.php:87
+msgid "Edit Publication"
+msgstr ""
+
+#: library/custom-post-type.php:88
+msgid "Update Publication"
+msgstr ""
+
+#: library/custom-post-type.php:89
+msgid "View Publication"
+msgstr ""
+
+#: library/custom-post-type.php:90
+msgid "View Publications"
+msgstr ""
+
+#: library/custom-post-type.php:91
+msgid "Search Publication"
+msgstr ""
+
+#: library/custom-post-type.php:93 library/custom-post-type.php:456
+#: library/custom-post-type.php:693
+msgid "Not found in Trash"
+msgstr ""
+
+#: library/custom-post-type.php:94 library/custom-post-type.php:283
+#: library/custom-post-type.php:391 library/custom-post-type.php:457
+#: library/custom-post-type.php:694
+msgid "Featured Image"
+msgstr ""
+
+#: library/custom-post-type.php:95 library/custom-post-type.php:458
+#: library/custom-post-type.php:695
+msgid "Set featured image"
+msgstr ""
+
+#: library/custom-post-type.php:96 library/custom-post-type.php:285
+#: library/custom-post-type.php:393 library/custom-post-type.php:459
+#: library/custom-post-type.php:696
+msgid "Remove featured image"
+msgstr ""
+
+#: library/custom-post-type.php:97 library/custom-post-type.php:286
+#: library/custom-post-type.php:394 library/custom-post-type.php:460
+#: library/custom-post-type.php:697
+msgid "Use as featured image"
+msgstr ""
+
+#: library/custom-post-type.php:98
+msgid "Insert into Publication"
+msgstr ""
+
+#: library/custom-post-type.php:99
+msgid "Uploaded to this Publication"
+msgstr ""
+
+#: library/custom-post-type.php:100
+msgid "Publications list"
+msgstr ""
+
+#: library/custom-post-type.php:101
+msgid "Publications list navigation"
+msgstr ""
+
+#: library/custom-post-type.php:102
+msgid "Filter Publications list"
+msgstr ""
+
+#: library/custom-post-type.php:110
+msgid "Issuu publications are added here."
+msgstr ""
+
+#: library/custom-post-type.php:141
+msgctxt "Taxonomy General Name"
+msgid "Publication Categories"
+msgstr ""
+
+#: library/custom-post-type.php:142
+msgctxt "Taxonomy Singular Name"
+msgid "Publication Category"
+msgstr ""
+
+#: library/custom-post-type.php:143
+msgid "Publication Categories"
+msgstr ""
+
+#: library/custom-post-type.php:144
+msgid "All Publication Categories"
+msgstr ""
+
+#: library/custom-post-type.php:145
+msgid "Parent Publication Category"
+msgstr ""
+
+#: library/custom-post-type.php:146
+msgid "Parent Publication Category:"
+msgstr ""
+
+#: library/custom-post-type.php:147
+msgid "New Publication Category Name"
+msgstr ""
+
+#: library/custom-post-type.php:148
+msgid "Add New Publication Category"
+msgstr ""
+
+#: library/custom-post-type.php:149
+msgid "Edit Publication Category"
+msgstr ""
+
+#: library/custom-post-type.php:150
+msgid "Update Publication Category"
+msgstr ""
+
+#: library/custom-post-type.php:151
+msgid "View Publication Category"
+msgstr ""
+
+#: library/custom-post-type.php:152
+msgid "Separate publication categories with commas"
+msgstr ""
+
+#: library/custom-post-type.php:153
+msgid "Add or remove publication categories"
+msgstr ""
+
+#: library/custom-post-type.php:154 library/custom-post-type.php:196
+#: library/custom-post-type.php:343 library/custom-post-type.php:510
+#: library/custom-post-type.php:555 library/custom-post-type.php:600
+#: library/custom-post-type.php:645
+msgid "Choose from the most used"
+msgstr ""
+
+#: library/custom-post-type.php:155
+msgid "Popular Publication Categories"
+msgstr ""
+
+#: library/custom-post-type.php:156
+msgid "Search Publication Category"
+msgstr ""
+
+#: library/custom-post-type.php:157 library/custom-post-type.php:199
+#: library/custom-post-type.php:346 library/custom-post-type.php:513
+#: library/custom-post-type.php:558 library/custom-post-type.php:603
+#: library/custom-post-type.php:648
+msgid "Not Found"
+msgstr ""
+
+#: library/custom-post-type.php:158 library/custom-post-type.php:200
+#: library/custom-post-type.php:347
+msgid "No publication categories"
+msgstr ""
+
+#: library/custom-post-type.php:159
+msgid "Publication Category list"
+msgstr ""
+
+#: library/custom-post-type.php:160
+msgid "Publication category list navigation"
+msgstr ""
+
+#: library/custom-post-type.php:183
+msgctxt "Taxonomy General Name"
+msgid "Publication Language"
+msgstr ""
+
+#: library/custom-post-type.php:184
+msgctxt "Taxonomy Singular Name"
+msgid "Publication Language"
+msgstr ""
+
+#: library/custom-post-type.php:185
+msgid "Publication Languages"
+msgstr ""
+
+#: library/custom-post-type.php:186
+msgid "All Publication Languages"
+msgstr ""
+
+#: library/custom-post-type.php:187
+msgid "Parent Publication Language"
+msgstr ""
+
+#: library/custom-post-type.php:188
+msgid "Parent Publication Language:"
+msgstr ""
+
+#: library/custom-post-type.php:189
+msgid "New Publication Language Name"
+msgstr ""
+
+#: library/custom-post-type.php:190
+msgid "Add New Publication Language"
+msgstr ""
+
+#: library/custom-post-type.php:191
+msgid "Edit Publication Language"
+msgstr ""
+
+#: library/custom-post-type.php:192
+msgid "Update Publication Language"
+msgstr ""
+
+#: library/custom-post-type.php:193
+msgid "View Publication Language"
+msgstr ""
+
+#: library/custom-post-type.php:194
+msgid "Separate publication languages with commas"
+msgstr ""
+
+#: library/custom-post-type.php:195
+msgid "Add or remove publication languages"
+msgstr ""
+
+#: library/custom-post-type.php:197
+msgid "Popular Publication Languages"
+msgstr ""
+
+#: library/custom-post-type.php:198
+msgid "Search Publication Language"
+msgstr ""
+
+#: library/custom-post-type.php:201
+msgid "Publication Language list"
+msgstr ""
+
+#: library/custom-post-type.php:202
+msgid "Publication language list navigation"
+msgstr ""
+
+#: library/custom-post-type.php:226
+msgctxt "taxonomy general name"
+msgid "Content Types"
+msgstr ""
+
+#: library/custom-post-type.php:227
+msgctxt "taxonomy singular name"
+msgid "Content Type"
+msgstr ""
+
+#: library/custom-post-type.php:228
+msgid "Search Content Types"
+msgstr ""
+
+#: library/custom-post-type.php:229
+msgid "All Content Types"
+msgstr ""
+
+#: library/custom-post-type.php:230
+msgid "Parent Content Type"
+msgstr ""
+
+#: library/custom-post-type.php:231
+msgid "Parent Content Type:"
+msgstr ""
+
+#: library/custom-post-type.php:232
+msgid "Edit Content Type"
+msgstr ""
+
+#: library/custom-post-type.php:233
+msgid "Update Content Type"
+msgstr ""
+
+#: library/custom-post-type.php:234
+msgid "Add New Content Type"
+msgstr ""
+
+#: library/custom-post-type.php:235
+msgid "New Content Type Name"
+msgstr ""
+
+#: library/custom-post-type.php:236
+msgid "Content Type"
+msgstr ""
+
+#: library/custom-post-type.php:240
+msgid "Post Content Types are specified here."
+msgstr ""
+
+#: library/custom-post-type.php:269
+msgid "Spoken Articles archive"
+msgstr ""
+
+#: library/custom-post-type.php:270
+msgid "Spoken Article attributes"
+msgstr ""
+
+#: library/custom-post-type.php:271
+msgid "Spoken Article parent:"
+msgstr ""
+
+#: library/custom-post-type.php:272
+msgid "All Spoken Articles"
+msgstr ""
+
+#: library/custom-post-type.php:273
+msgid "Add New Spoken Article"
+msgstr ""
+
+#: library/custom-post-type.php:275
+msgid "New Spoken Article"
+msgstr ""
+
+#: library/custom-post-type.php:276
+msgid "Edit Spoken Article"
+msgstr ""
+
+#: library/custom-post-type.php:277
+msgid "Update Spoken Article"
+msgstr ""
+
+#: library/custom-post-type.php:278
+msgid "View Spoken Article"
+msgstr ""
+
+#: library/custom-post-type.php:279
+msgid "View Spoken Articles"
+msgstr ""
+
+#: library/custom-post-type.php:280
+msgid "Search Spoken Articles"
+msgstr ""
+
+#: library/custom-post-type.php:281
+msgid "No Spoken Articles found"
+msgstr ""
+
+#: library/custom-post-type.php:282
+msgid "No Spoken Articles found in trash"
+msgstr ""
+
+#: library/custom-post-type.php:284 library/custom-post-type.php:392
+msgid "Choose Featured Image"
+msgstr ""
+
+#: library/custom-post-type.php:287
+msgid "Insert in Spoken Article"
+msgstr ""
+
+#: library/custom-post-type.php:288
+msgid "Uploaded to this spoken article"
+msgstr ""
+
+#: library/custom-post-type.php:289
+msgid "Spoken articles list"
+msgstr ""
+
+#: library/custom-post-type.php:290
+msgid "Navigate spoken articles as list"
+msgstr ""
+
+#: library/custom-post-type.php:291
+msgid "Filter Spoken Articles list"
+msgstr ""
+
+#: library/custom-post-type.php:298
+msgid "Spoken Article"
+msgstr ""
+
+#: library/custom-post-type.php:299
+msgid "Bokasins spoken articles"
+msgstr ""
+
+#: library/custom-post-type.php:330
+msgctxt "Taxonomy General Name"
+msgid "Spoken Article Categories"
+msgstr ""
+
+#: library/custom-post-type.php:331
+msgctxt "Taxonomy Singular Name"
+msgid "Spoken Article Category"
+msgstr ""
+
+#: library/custom-post-type.php:332
+msgid "Spoken Article Categories"
+msgstr ""
+
+#: library/custom-post-type.php:333
+msgid "All Spoken Article Categories"
+msgstr ""
+
+#: library/custom-post-type.php:334
+msgid "Parent Spoken Article Category"
+msgstr ""
+
+#: library/custom-post-type.php:335
+msgid "Parent Spoken Article Category:"
+msgstr ""
+
+#: library/custom-post-type.php:336
+msgid "New Spoken Article Category Name"
+msgstr ""
+
+#: library/custom-post-type.php:337
+msgid "Add New Spoken Article Category"
+msgstr ""
+
+#: library/custom-post-type.php:338
+msgid "Edit Spoken Article Category"
+msgstr ""
+
+#: library/custom-post-type.php:339
+msgid "Update Spoken Article Category"
+msgstr ""
+
+#: library/custom-post-type.php:340
+msgid "View Spoken Article Category"
+msgstr ""
+
+#: library/custom-post-type.php:341
+msgid "Separate Spoken Article categories with commas"
+msgstr ""
+
+#: library/custom-post-type.php:342
+msgid "Add or remove Spoken Article categories"
+msgstr ""
+
+#: library/custom-post-type.php:344
+msgid "Popular Spoken Article Categories"
+msgstr ""
+
+#: library/custom-post-type.php:345
+msgid "Search Spoken Article Category"
+msgstr ""
+
+#: library/custom-post-type.php:348
+msgid "Spoken Article Category list"
+msgstr ""
+
+#: library/custom-post-type.php:349
+msgid "Spoken Article category list navigation"
+msgstr ""
+
+#: library/custom-post-type.php:375 library/custom-post-type.php:376
+msgid "Education Articles"
+msgstr ""
+
+#: library/custom-post-type.php:377
+msgid "Education Articles archive"
+msgstr ""
+
+#: library/custom-post-type.php:378
+msgid "Education Article attributes"
+msgstr ""
+
+#: library/custom-post-type.php:379
+msgid "Education Article parent:"
+msgstr ""
+
+#: library/custom-post-type.php:380
+msgid "All Education Articles"
+msgstr ""
+
+#: library/custom-post-type.php:381
+msgid "Add New Education Article"
+msgstr ""
+
+#: library/custom-post-type.php:383
+msgid "New Education Article"
+msgstr ""
+
+#: library/custom-post-type.php:384
+msgid "Edit Education Article"
+msgstr ""
+
+#: library/custom-post-type.php:385
+msgid "Update Education Article"
+msgstr ""
+
+#: library/custom-post-type.php:386
+msgid "View Education Article"
+msgstr ""
+
+#: library/custom-post-type.php:387
+msgid "View Education Articles"
+msgstr ""
+
+#: library/custom-post-type.php:388
+msgid "Search Education Articles"
+msgstr ""
+
+#: library/custom-post-type.php:389
+msgid "No Education Articles found"
+msgstr ""
+
+#: library/custom-post-type.php:390
+msgid "No Education Articles found in trash"
+msgstr ""
+
+#: library/custom-post-type.php:395
+msgid "Insert in Education Article"
+msgstr ""
+
+#: library/custom-post-type.php:396
+msgid "Uploaded to this education article"
+msgstr ""
+
+#: library/custom-post-type.php:397
+msgid "Education articles list"
+msgstr ""
+
+#: library/custom-post-type.php:398
+msgid "Navigate education articles as list"
+msgstr ""
+
+#: library/custom-post-type.php:399
+msgid "Filter Education Articles list"
+msgstr ""
+
+#: library/custom-post-type.php:407
+msgid "Education Article"
+msgstr ""
+
+#: library/custom-post-type.php:408
+msgid "Temabok education articles"
+msgstr ""
+
+#: library/custom-post-type.php:439
+msgctxt "Post Type General Name"
+msgid "Lightbox"
+msgstr ""
+
+#: library/custom-post-type.php:440
+msgctxt "Post Type Singular Name"
+msgid "Lightbox"
+msgstr ""
+
+#: library/custom-post-type.php:441
+msgctxt "Admin Menu text"
+msgid "Lightbox"
+msgstr ""
+
+#: library/custom-post-type.php:442
+msgctxt "Add New on Toolbar"
+msgid "Lightbox"
+msgstr ""
+
+#: library/custom-post-type.php:443
+msgid "Lightbox Archives"
+msgstr ""
+
+#: library/custom-post-type.php:444
+msgid "Lightbox Attributes"
+msgstr ""
+
+#: library/custom-post-type.php:445
+msgid "Parent Lightbox:"
+msgstr ""
+
+#: library/custom-post-type.php:446
+msgid "All Lightboxes"
+msgstr ""
+
+#: library/custom-post-type.php:447
+msgid "Add New Lightbox"
+msgstr ""
+
+#: library/custom-post-type.php:449
+msgid "New Lightbox"
+msgstr ""
+
+#: library/custom-post-type.php:450
+msgid "Edit Lightbox"
+msgstr ""
+
+#: library/custom-post-type.php:451
+msgid "Update Lightbox"
+msgstr ""
+
+#: library/custom-post-type.php:452
+msgid "View Lightbox"
+msgstr ""
+
+#: library/custom-post-type.php:453
+msgid "View Lightboxes"
+msgstr ""
+
+#: library/custom-post-type.php:454
+msgid "Search Lightboxes"
+msgstr ""
+
+#: library/custom-post-type.php:461
+msgid "Insert into Lightbox"
+msgstr ""
+
+#: library/custom-post-type.php:462
+msgid "Uploaded to this Lightbox"
+msgstr ""
+
+#: library/custom-post-type.php:463
+msgid "Lightbox list"
+msgstr ""
+
+#: library/custom-post-type.php:464
+msgid "Lightbox list navigation"
+msgstr ""
+
+#: library/custom-post-type.php:465
+msgid "Filter Lightbox list"
+msgstr ""
+
+#: library/custom-post-type.php:468
+msgid "Lightbox"
+msgstr ""
+
+#: library/custom-post-type.php:469
+msgid "Create lightboxes for educational articles here."
+msgstr ""
+
+#: library/custom-post-type.php:497
+msgctxt "Taxonomy General Name"
+msgid "Student Levels"
+msgstr ""
+
+#: library/custom-post-type.php:498
+msgctxt "Taxonomy Singular Name"
+msgid "Student Level"
+msgstr ""
+
+#: library/custom-post-type.php:499
+msgid "Student Levels"
+msgstr ""
+
+#: library/custom-post-type.php:500
+msgid "All Student Levels"
+msgstr ""
+
+#: library/custom-post-type.php:501
+msgid "Parent Student Level"
+msgstr ""
+
+#: library/custom-post-type.php:502
+msgid "Parent Student Level:"
+msgstr ""
+
+#: library/custom-post-type.php:503
+msgid "New Student Level Name"
+msgstr ""
+
+#: library/custom-post-type.php:504
+msgid "Add New Student Level"
+msgstr ""
+
+#: library/custom-post-type.php:505
+msgid "Edit Student Level"
+msgstr ""
+
+#: library/custom-post-type.php:506
+msgid "Update Student Level"
+msgstr ""
+
+#: library/custom-post-type.php:507
+msgid "View Student Level"
+msgstr ""
+
+#: library/custom-post-type.php:508
+msgid "Separate student levels with commas"
+msgstr ""
+
+#: library/custom-post-type.php:509
+msgid "Add or remove student levels"
+msgstr ""
+
+#: library/custom-post-type.php:511
+msgid "Popular Student Levels"
+msgstr ""
+
+#: library/custom-post-type.php:512
+msgid "Search Student Level"
+msgstr ""
+
+#: library/custom-post-type.php:514
+msgid "No student levels"
+msgstr ""
+
+#: library/custom-post-type.php:515
+msgid "Student Level list"
+msgstr ""
+
+#: library/custom-post-type.php:516
+msgid "Student level list navigation"
+msgstr ""
+
+#: library/custom-post-type.php:542
+msgctxt "Taxonomy General Name"
+msgid "Grades"
+msgstr ""
+
+#: library/custom-post-type.php:543
+msgctxt "Taxonomy Singular Name"
+msgid "Grade"
+msgstr ""
+
+#: library/custom-post-type.php:544
+msgid "Grades"
+msgstr ""
+
+#: library/custom-post-type.php:545
+msgid "All Grades"
+msgstr ""
+
+#: library/custom-post-type.php:546
+msgid "Parent Grade"
+msgstr ""
+
+#: library/custom-post-type.php:547
+msgid "Parent Grade:"
+msgstr ""
+
+#: library/custom-post-type.php:548
+msgid "New Grade Name"
+msgstr ""
+
+#: library/custom-post-type.php:549
+msgid "Add New Grade"
+msgstr ""
+
+#: library/custom-post-type.php:550
+msgid "Edit Grade"
+msgstr ""
+
+#: library/custom-post-type.php:551
+msgid "Update Grade"
+msgstr ""
+
+#: library/custom-post-type.php:552
+msgid "View Grade"
+msgstr ""
+
+#: library/custom-post-type.php:553
+msgid "Separate grades with commas"
+msgstr ""
+
+#: library/custom-post-type.php:554
+msgid "Add or remove grades"
+msgstr ""
+
+#: library/custom-post-type.php:556
+msgid "Popular Grades"
+msgstr ""
+
+#: library/custom-post-type.php:557
+msgid "Search Grade"
+msgstr ""
+
+#: library/custom-post-type.php:559
+msgid "No grades"
+msgstr ""
+
+#: library/custom-post-type.php:560
+msgid "Grades list"
+msgstr ""
+
+#: library/custom-post-type.php:561
+msgid "Grade list navigation"
+msgstr ""
+
+#: library/custom-post-type.php:587
+msgctxt "Taxonomy General Name"
+msgid "Subjects"
+msgstr ""
+
+#: library/custom-post-type.php:588
+msgctxt "Taxonomy Singular Name"
+msgid "Subject"
+msgstr ""
+
+#: library/custom-post-type.php:589
+msgid "Subjects"
+msgstr ""
+
+#: library/custom-post-type.php:590
+msgid "All Subjects"
+msgstr ""
+
+#: library/custom-post-type.php:591
+msgid "Parent Subject"
+msgstr ""
+
+#: library/custom-post-type.php:592
+msgid "Parent Subject:"
+msgstr ""
+
+#: library/custom-post-type.php:593
+msgid "New Subject Name"
+msgstr ""
+
+#: library/custom-post-type.php:594
+msgid "Add New Subject"
+msgstr ""
+
+#: library/custom-post-type.php:595
+msgid "Edit Subject"
+msgstr ""
+
+#: library/custom-post-type.php:596
+msgid "Update Subject"
+msgstr ""
+
+#: library/custom-post-type.php:597
+msgid "View Subject"
+msgstr ""
+
+#: library/custom-post-type.php:598
+msgid "Separate subjects with commas"
+msgstr ""
+
+#: library/custom-post-type.php:599
+msgid "Add or remove subjects"
+msgstr ""
+
+#: library/custom-post-type.php:601
+msgid "Popular Subjects"
+msgstr ""
+
+#: library/custom-post-type.php:602
+msgid "Search Subject"
+msgstr ""
+
+#: library/custom-post-type.php:604
+msgid "No subjects"
+msgstr ""
+
+#: library/custom-post-type.php:605
+msgid "Subjects list"
+msgstr ""
+
+#: library/custom-post-type.php:606
+msgid "Subject list navigation"
+msgstr ""
+
+#: library/custom-post-type.php:632
+msgctxt "Taxonomy General Name"
+msgid "Interdisciplinary Subjects"
+msgstr ""
+
+#: library/custom-post-type.php:633
+msgctxt "Taxonomy Singular Name"
+msgid "Interdisciplinary Subject"
+msgstr ""
+
+#: library/custom-post-type.php:634
+#: template-parts/content-education-archive.php:44
+msgid "Interdisciplinary Subjects"
+msgstr "Tverrfaglig tema"
+
+#: library/custom-post-type.php:635
+msgid "All Interdisciplinary Subjects"
+msgstr ""
+
+#: library/custom-post-type.php:636
+msgid "Parent Interdisciplinary Subject"
+msgstr ""
+
+#: library/custom-post-type.php:637
+msgid "Parent Interdisciplinary Subject:"
+msgstr ""
+
+#: library/custom-post-type.php:638
+msgid "New Interdisciplinary Subject Name"
+msgstr ""
+
+#: library/custom-post-type.php:639
+msgid "Add New Interdisciplinary Subject"
+msgstr ""
+
+#: library/custom-post-type.php:640
+msgid "Edit Interdisciplinary Subject"
+msgstr ""
+
+#: library/custom-post-type.php:641
+msgid "Update Interdisciplinary Subject"
+msgstr ""
+
+#: library/custom-post-type.php:642
+msgid "View Interdisciplinary Subject"
+msgstr ""
+
+#: library/custom-post-type.php:643
+msgid "Separate interdisciplinary subjects with commas"
+msgstr ""
+
+#: library/custom-post-type.php:644
+msgid "Add or remove interdisciplinary subjects"
+msgstr ""
+
+#: library/custom-post-type.php:646
+msgid "Popular Interdisciplinary Subjects"
+msgstr ""
+
+#: library/custom-post-type.php:647
+msgid "Search Interdisciplinary Subject"
+msgstr ""
+
+#: library/custom-post-type.php:649
+msgid "No interdisciplinary subjects"
+msgstr ""
+
+#: library/custom-post-type.php:650
+msgid "Interdisciplinary Subjects list"
+msgstr ""
+
+#: library/custom-post-type.php:651
+msgid "Interdisciplinary Subject list navigation"
+msgstr ""
+
+#: library/custom-post-type.php:676
+msgctxt "Post Type General Name"
+msgid "Support"
+msgstr ""
+
+#: library/custom-post-type.php:677
+msgctxt "Post Type Singular Name"
+msgid "Support"
+msgstr ""
+
+#: library/custom-post-type.php:678
+msgctxt "Admin Menu text"
+msgid "Support"
+msgstr ""
+
+#: library/custom-post-type.php:679
+msgctxt "Add New on Toolbar"
+msgid "Support"
+msgstr ""
+
+#: library/custom-post-type.php:680
+msgid "Support Archives"
+msgstr ""
+
+#: library/custom-post-type.php:681
+msgid "Support Attributes"
+msgstr ""
+
+#: library/custom-post-type.php:682
+msgid "Parent Support:"
+msgstr ""
+
+#: library/custom-post-type.php:683
+msgid "All Support"
+msgstr ""
+
+#: library/custom-post-type.php:684
+msgid "Add New Support"
+msgstr ""
+
+#: library/custom-post-type.php:686
+msgid "New Support"
+msgstr ""
+
+#: library/custom-post-type.php:687
+msgid "Edit Support"
+msgstr ""
+
+#: library/custom-post-type.php:688
+msgid "Update Support"
+msgstr ""
+
+#: library/custom-post-type.php:689 library/custom-post-type.php:690
+msgid "View Support"
+msgstr ""
+
+#: library/custom-post-type.php:691
+msgid "Search Support"
+msgstr ""
+
+#: library/custom-post-type.php:698
+msgid "Insert into Support"
+msgstr ""
+
+#: library/custom-post-type.php:699
+msgid "Uploaded to this Support"
+msgstr ""
+
+#: library/custom-post-type.php:700
+msgid "Support list"
+msgstr ""
+
+#: library/custom-post-type.php:701
+msgid "Support list navigation"
+msgstr ""
+
+#: library/custom-post-type.php:702
+msgid "Filter Support list"
+msgstr ""
+
+#: library/custom-post-type.php:706
+msgid "Support articles are created and edited here."
+msgstr ""
+
+#: library/custom-post-type.php:735
+msgctxt "taxonomy general name"
+msgid "Categories"
+msgstr ""
+
+#: library/custom-post-type.php:736
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr ""
+
+#: library/custom-post-type.php:737
+msgid "Search Categories"
+msgstr ""
+
+#: library/custom-post-type.php:738
+msgid "All Categories"
+msgstr ""
+
+#: library/custom-post-type.php:739
+msgid "Parent Category"
+msgstr ""
+
+#: library/custom-post-type.php:740
+msgid "Parent Category:"
+msgstr ""
+
+#: library/custom-post-type.php:741
+msgid "Edit Category"
+msgstr ""
+
+#: library/custom-post-type.php:742
+msgid "Update Category"
+msgstr ""
+
+#: library/custom-post-type.php:743
+msgid "Add New Category"
+msgstr ""
+
+#: library/custom-post-type.php:744
+msgid "New Category Name"
+msgstr ""
+
+#: library/custom-post-type.php:745
+msgid "Category"
+msgstr ""
+
+#: library/custom-post-type.php:749
+msgid "Temaboks support categories"
+msgstr ""
+
+#: library/education.php:360
+msgid "Reading track"
+msgstr "Lesespor"
+
+#: library/admin.php:116
+msgid ""
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://screenpartner."
+"no/\" target=\"_blank\">Screenpartner AS</a></span>."
+msgstr ""
+
+#: template-parts/content-quiz-list-archive.php:31
+#: template-parts/content-quiz-archive.php:29
+msgid "View Results"
+msgstr ""
+
+#: template-parts/content-single.php:28
+#: template-parts/content-article-iframe.php:28
+msgid "Sponsored content"
+msgstr ""
+
+#: template-parts/content-quiz-results.php:33
+msgid "Following quiz results are from the quiz:"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:75
+msgid "Join Bokasin"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:77
+msgid "/register"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:79
+msgid ""
+"Join Bokasin now to access all of our content. All new memberships have a "
+"complementary 10 days free trial."
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:80
+msgid "Sign up"
+msgstr ""
+
+#: library/modules/layout-sections/log-in-forms.php:11
+msgid "Log in with Feide"
+msgstr ""
+
+#: library/modules/layout-sections/log-in-forms.php:13
+msgid "Sign in with"
+msgstr ""
+
+#: library/modules/layout-sections/log-in-forms.php:19
+msgid "Log in with"
+msgstr ""
+
+#: library/modules/layout-sections/log-in-forms.php:23
+#: library/modules/elements/log-in-form.php:24
+#, php-format
+msgid "<a href=\"%s\" title=\"Forgot password\">Forgot password</a>"
+msgstr ""
+
+#: library/modules/layout-sections/log-in-forms.php:24
+#: library/modules/layout-sections/simple-log-in-wrap.php:15
+#: library/modules/elements/log-in-form.php:25
+#, php-format
+msgid "Or <a href=\"%s\" title=\"Register\">register</a> your user"
+msgstr ""
+
+#: library/modules/layout-sections/simple-log-in-wrap.php:10
+msgid "Thousands of articles!"
+msgstr ""
+
+#: library/modules/layout-sections/simple-log-in-wrap.php:11
+msgid "Read and listen whenever you want."
+msgstr ""
+
+#: library/modules/page/education-sections.php:50
+msgid "Create assignments"
+msgstr "Lag oppgåve"
+
+#: library/modules/education/multi-page-content.php:62
+msgid "No content specified for this section"
+msgstr ""
+
+#: library/modules/elements/next-previous.php:16
+msgid "<i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i> Previous post"
+msgstr ""
+
+#: library/modules/elements/next-previous.php:23
+msgid "Next post <i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i>"
+msgstr ""
+
+#: library/modules/elements/recent-releases.php:57
+#: library/modules/elements/news-slider.php:65
+#: library/modules/elements/personalized-news-article-slider.php:108
+msgid "Sorry, no products matched your criteria."
+msgstr ""
+
+#: library/modules/elements/banner.php:59
+msgid "Read this article"
+msgstr ""
+
+#: library/modules/elements/registration-form.php:15
+msgid "Register user"
+msgstr ""
+
+#: library/modules/elements/registration-form.php:18
+msgid "You're already registered!"
+msgstr ""
+
+#: library/modules/elements/article-categories-section.php:6
+msgid "Read from category"
+msgstr ""
+
+#: library/modules/elements/nav-mobile.php:11
+msgid "Primary Menu (Left)"
+msgstr ""
+
+#: library/modules/elements/education-query.php:8
+msgid "Find school articles"
+msgstr ""
+
+#: library/modules/elements/education-query.php:68
+msgid "View all"
+msgstr "Vis alle"
+
+#: library/modules/elements/breadcrumbs-support.php:4
+msgid "Back to overview"
+msgstr ""
+
+#: library/modules/elements/personalized-news-article-slider.php:45
+#, php-format
+msgid "Because you've read: %1$s"
+msgstr ""
+
+#. Name of the theme
+msgid "Screenpartner"
+msgstr ""
+
+#. Description of the theme
+msgid "This site was built by Screenpartner using the Bones development theme."
+msgstr ""
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "http://screenpartner.no/"
+msgstr ""
+
+#. Author of the theme
+msgid "Michael Wilhelmsen"
+msgstr ""

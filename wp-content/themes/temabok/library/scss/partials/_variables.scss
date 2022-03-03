@@ -1,0 +1,90 @@
+/******************************************************************
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+
+/*********************
+COLORS
+*********************/
+
+$alert-yellow:     #ebe16f;
+$alert-red:        #fbe3e4;
+$alert-green:      #9cda82;
+$alert-blue:       #d5edf8;
+
+$black:            #000;
+$white:            #fff;
+
+$light-gray:       #E9ECEF;
+$gray:             #c0c3ca;
+$medium-gray:      #707275;
+$dark-gray:        #191919;
+$text-color:       $black;
+
+$green:            #77a464;
+$blue:             #2400e2;
+$dark-blue:        #0A003D;
+$light-blue:       #96D6E8;
+$red:              #E35540;
+$orange:           #E35540;
+$yellow:           #FFC400;
+$purple:           #E2007C;
+
+$blue-border:      #939fa7;
+
+$link-color:       $black;
+$link-hover:       darken($link-color, 9%);
+
+$border-color:     $gray;
+$disabled-gray:    #cfcfcf;
+
+// Color Theme
+$main-bg:          $white;
+$main-txt:         $black;
+
+// Social colors
+$color-facebook:   #3b5999;
+$color-twitter:    #55acee;
+$color-linkedin:   #0077B5;
+$color-gplus:      #dd4b39;
+
+
+/*********************
+FONT SIZES
+*********************/
+
+$base-size:       1.8rem;
+$small-size:      1.5rem;
+
+$heading1:        3.3rem;
+$heading2:        2.7rem;
+$heading3:        2.4rem;
+$heading4:        2.1rem;
+$heading5:        1.8rem;
+
+// Article Font Sizes
+$article-base-size: 2.2rem;
+
+$article-heading1:  2.1em;
+$article-heading2:  1.7em;
+$article-heading3:  1.4em;
+$article-heading4:  1.2em;
+$article-heading5:  .8em;
+
+/*********************
+PADDINGS
+*********************/
+
+$base-padding:    10px;
+$half-padding:    5px;
+$double-padding:  20px;
+$forty-padding:   40px;
+$triple-padding:  60px;
+$insane-padding:  120px;
+$small-padding:   5px;

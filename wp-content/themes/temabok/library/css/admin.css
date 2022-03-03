@@ -1,0 +1,21 @@
+/******************************************************************
+
+Stylesheet: Admin Stylesheet
+
+If you like living on the edge, you can add some styles here to
+customize the dashboard and WordPress admin area. This stylesheet
+is empty, but you can just start dropping your styles here to
+start customizing. All admin functions are located in lib/admin/
+
+******************************************************************/
+.icl-st-original img {
+  width: 15px;
+  position: relative;
+  top: 2px; }
+
+.wp-list-table th.column-language_nn img,
+.wp-list-table td.column-language_nn img {
+  box-shadow: 0 0 0 3px #ffeb00; }
+
+.pll-language-column img[alt="Nynorsk"] {
+  box-shadow: 0 0 0 3px #ffeb00; }

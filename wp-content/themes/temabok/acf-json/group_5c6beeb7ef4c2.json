@@ -1,0 +1,302 @@
+{
+    "key": "group_5c6beeb7ef4c2",
+    "title": "Site Settings",
+    "fields": [
+        {
+            "key": "field_5ca5b88dc9925",
+            "label": "Default Theme",
+            "name": "default_theme",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "dark": "Dark",
+                "light": "Light"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "dark",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5eccde8d7fd03",
+            "label": "Header Theme",
+            "name": "header_theme",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Inherit from current theme",
+                "dark": "Dark",
+                "light": "Light"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "inherit",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5c6beecafde2b",
+            "label": "Logged in filter",
+            "name": "logged_in_filter",
+            "type": "true_false",
+            "instructions": "If this is activated, new users will only be active for 30 days and all content can only be viewed if the user is logged in.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Check this to activate this functionality",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5cf90aba8c81f",
+            "label": "Map Ninja Forms",
+            "name": "map_ninja_forms",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5cf90ace8c820",
+                    "label": "Log In",
+                    "name": "log_in",
+                    "type": "forms",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "translations": "copy_once"
+                },
+                {
+                    "key": "field_5cf90b748c821",
+                    "label": "Edit Profile",
+                    "name": "edit_profile",
+                    "type": "forms",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "translations": "copy_once"
+                },
+                {
+                    "key": "field_5f61f0913970f",
+                    "label": "Edit Profile - Feide",
+                    "name": "edit_profile_feide",
+                    "type": "forms",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "translations": "copy_once"
+                },
+                {
+                    "key": "field_5cf90b8e8c822",
+                    "label": "Register User",
+                    "name": "register_user",
+                    "type": "forms",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "translations": "copy_once"
+                }
+            ]
+        },
+        {
+            "key": "field_5f2d1b8895ca3",
+            "label": "Support Link",
+            "name": "support_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https:\/\/skolerom.no\/support",
+            "translations": "copy_once"
+        },
+        {
+            "key": "field_60b523aacbc99",
+            "label": "maintenance Mode",
+            "name": "maintenance_mode",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "translations": "copy_once",
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60b52419cbc9a",
+            "label": "maintenance Mensaje",
+            "name": "maintenance_msg",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60b523aacbc99",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_60b5242dcbc9b",
+            "label": "Start Time maintenance",
+            "name": "start_time",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60b523aacbc99",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
+            "key": "field_60b5243bcbc9c",
+            "label": "End Time maintenance",
+            "name": "end_time",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60b523aacbc99",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "sp-theme-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1622484081
+}

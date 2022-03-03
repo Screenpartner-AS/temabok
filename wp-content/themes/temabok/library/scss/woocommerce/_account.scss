@@ -1,0 +1,103 @@
+// My account - Customer log in
+#customer_login {
+	.col-1 {
+		margin-bottom: $triple-padding;
+	}
+}
+
+.woocommerce-account {
+	#inner-content {
+		max-width: 790px;
+	}
+
+	.woocommerce-MyAccount-content {
+		width: 100%;
+
+		> * {
+			margin-bottom: $base-padding;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		a.button,
+		.button {
+			font-size: 1.3rem;
+			padding: 8px 17px;
+			margin-left: $small-padding;
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+
+			&[name="save_account_details"] {
+				margin-top: $base-padding;
+			}
+		}
+	}
+
+	.woocommerce-MyAccount-navigation {
+		display: inline-block;
+		padding: 15px $double-padding;
+		background: $light-gray;
+		margin-bottom: $double-padding;
+
+		@media (min-width: 786px) {
+			width: 100%;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+
+			@media (min-width: 768px) {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			li {
+				display: inline-block;
+				float: left;
+				list-style: none;
+				margin: 0 $base-padding 0 0;
+
+				a {
+					text-decoration: none;
+					text-transform: uppercase;
+					font-size: $small-size;
+
+					&:hover,
+					&:focus {
+						text-decoration: underline;
+					}
+				}
+
+				&.is-active {
+					a {
+						font-weight: bold;
+					}
+				}
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+
+				&.woocommerce-MyAccount-navigation-link--orders {
+					html[lang="sv-SE"] & {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	.col-2 {
+		p {
+			margin-top: $double-padding;
+		}
+	}
+}

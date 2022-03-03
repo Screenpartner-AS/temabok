@@ -1,0 +1,347 @@
+.header #inner-header.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border-top: 11px solid #e2017b; */
+  padding: 13px 15px 12px 20px;
+  border-bottom: 1px solid #e4e9ed;
+  background: #fff;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.header #inner-header .my-account-window {
+  overflow: hidden;
+  box-sizing: content-box;
+  padding-left: 19px;
+  padding-right: 19px;
+  width: 218px;
+  background: #fff;
+  position: absolute;
+  top: calc(100% - 0px);
+  right: 62px;
+  border: 1px solid #d3d9de;
+  border-top: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 2px 4px 0 hsla(0,0%,100%,.11);
+  -webkit-transition: height .2s ease-in-out;
+  transition: height .2s ease-in-out;
+  z-index: 1;
+  height: 0;
+}
+
+.header #inner-header .my-account-window.active {
+  height: auto;
+  transition: height .2s ease-in-out;
+}
+
+.my-account-window-container .first-block-list.active {
+  left: 0 !important;
+  transition: all ease .3s;
+}
+
+.my-account-window-container .first-block-list {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: -112%;
+  transition: all ease .3s;
+}
+
+.my-account-window-container .second-block-list {
+  position: absolute;
+  top: -10px;
+  left: 100%;
+  width: 85%;
+  transition: all ease .3s;
+}
+
+.my-account-window-container .second-block-list.active {   
+  left: 19px;
+  transition: all ease .3s;
+}
+
+.list-of-lang li {
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.header #inner-header .my-account-window .account-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #d3d9de;
+}
+.header #inner-header .my-account-window .account-item a {
+  padding: 0;
+}
+
+.header #inner-header .my-account-window .account-item span {
+  width: auto;
+}
+
+.header #inner-header .my-account-window .account-item.first {
+  justify-content: space-between;
+}
+
+.header #inner-header .my-account-window .current-user-name {
+  font-weight: 500;
+  cursor: default;
+  box-sizing: border-box;
+  font-family: IBM Plex Sans,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #0b2541;
+}
+
+.header #inner-header .my-account-window .account-item-text {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  box-sizing: border-box;
+  font-family: IBM Plex Sans,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #0b2541;
+}
+
+.header #inner-header .my-account-window .account-item-title {
+  font-weight: 600;
+  cursor: default;
+}
+
+.header #inner-header .my-account-window .close-btn{
+  width: 15.19px;
+  height: 15.19px;
+  cursor: pointer;
+}
+
+#nav-main .lang-item {
+  display: none;
+}
+
+#nav-main .account-item .lang-item {
+  display: block;
+}
+
+.logut {
+  margin-right: 15px;
+}
+
+.login-columns,
+#password-lost-form-wrap {
+  padding: 0px 0 !important;
+  background: #191919;
+}
+.login-columns .login-column,
+.login-columns #lostpasswordform,
+.login-columns #resetpasswordform,
+#password-lost-form-wrap .login-column,
+#password-lost-form-wrap #lostpasswordform,
+#password-lost-form-wrap #resetpasswordform {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  text-align: center;
+  max-width: 530px !important;
+}
+.login-columns .login-column:last-of-type,
+.login-columns #lostpasswordform:last-of-type,
+.login-columns #resetpasswordform:last-of-type,
+#password-lost-form-wrap .login-column:last-of-type,
+#password-lost-form-wrap #lostpasswordform:last-of-type,
+#password-lost-form-wrap #resetpasswordform:last-of-type {
+  margin-bottom: 0;
+}
+.login-columns .login-column .text-small,
+.login-columns #lostpasswordform .text-small,
+.login-columns #resetpasswordform .text-small,
+#password-lost-form-wrap .login-column .text-small,
+#password-lost-form-wrap #lostpasswordform .text-small,
+#password-lost-form-wrap #resetpasswordform .text-small {
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.sp-login-form nf-fields-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.sp-login-form .nf-field-container {
+  width: 245px;
+}
+
+.sp-login-form .nf-field-container.submit-container {
+  width: 100%;
+}
+
+nf-field:last-child {
+  margin: 0 auto;
+}
+
+.picture-column {
+  background: url("../images/login-right-side-image.d421dfeb.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: calc(100vh - 90px);
+}
+
+body.lightenup .sp-login-form input[type="text"],
+body.lightenup .sp-login-form input[type="password"],
+body.lightenup .sp-login-form input[type="datetime"],
+body.lightenup .sp-login-form input[type="datetime-local"],
+body.lightenup .sp-login-form input[type="date"],
+body.lightenup .sp-login-form input[type="month"],
+body.lightenup .sp-login-form input[type="time"],
+body.lightenup .sp-login-form input[type="week"],
+body.lightenup .sp-login-form input[type="number"],
+body.lightenup .sp-login-form input[type="email"],
+body.lightenup .sp-login-form input[type="url"],
+body.lightenup .sp-login-form input[type="search"],
+body.lightenup .sp-login-form input[type="tel"],
+body.lightenup .sp-login-form input[type="color"],
+body.lightenup .sp-login-form select,
+body.lightenup .sp-login-form textarea,
+body.lightenup .sp-login-form .field {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #0b2541;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.nf-field-element .btn-purple,
+input[type="submit"],
+.nf-field-element input[type="button"].nf-element {
+  background: #0b2541;
+  width: 240px;
+}
+
+.sp-login-form nf-rows-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.sp-login-form.nf-form-content .nf-row {
+  max-width: 245px;
+}
+
+.sp-login-form.nf-form-content .nf-row:last-child {
+  margin: 0 auto;
+}
+
+.nf-field-element .ninja-forms-field.nf-element {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .login-columns .login-column {
+    width: 100%;
+  }
+  .picture-column {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sp-login-form nf-fields-wrap,
+  .sp-login-form nf-rows-wrap {
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+.login-column h4,
+.login-column h3,
+.login-column h5 {
+  text-transform: uppercase;
+  color: #0b2541;
+}
+
+.sp-login-form > * {
+  margin-bottom: 20px;
+}
+.sp-login-form > *:last-child {
+  margin-bottom: 0;
+}
+
+.sp-login-form label {
+  display: none;
+  margin-bottom: 10px;
+}
+
+#password-lost-form-wrap > div {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  text-align: center;
+  max-width: 400px;
+}
+
+#password-lost-form-wrap legend {
+  font-size: 2.6rem;
+}
+
+#password-lost-form-wrap fieldset > * {
+  margin-bottom: 20px;
+}
+#password-lost-form-wrap fieldset > *:last-child {
+  margin-bottom: 0;
+}
+
+#password-lost-form-wrap fieldset label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#password-lost-form-wrap fieldset #som_new_user_pass {
+  margin-bottom: 20px;
+}
+
+#password-lost-form-wrap .som-password-sent-message {
+  max-width: 740px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.login-wrapper .entry-content h3 {
+  font-family: IBM Plex Sans, sans-serif;
+  font-weight: 500;
+  color: #0b2541;
+  font-size: 36px;
+  margin-bottom: 64px;
+  text-transform: none;
+}
+
+.login-wrapper .entry-content h4 {
+  font-family: IBM Plex Sans, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #0b2541;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.login-wrapper .entry-content h5 {
+  font-family: IBM Plex Sans, sans-serif;
+  margin: 80px auto;
+}
+
+#content {
+  min-height: 480px;
+}

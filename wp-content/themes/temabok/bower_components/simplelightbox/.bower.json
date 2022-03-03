@@ -1,0 +1,47 @@
+{
+  "name": "simplelightbox",
+  "version": "1.15.1",
+  "homepage": "http://andreknieriem.de/simple-lightbox",
+  "authors": [
+    "André Rinas <info@andrerinas.de> (http://andrerinas.de)"
+  ],
+  "description": "Touch-friendly image lightbox for mobile and desktop with jQuery",
+  "main": [
+    "dist/simplelightbox.css",
+    "dist/simplelightbox.min.css",
+    "dist/simple-lightbox.js",
+    "dist/simple-lightbox.min.js"
+  ],
+  "keywords": [
+    "image",
+    "gallery",
+    "lightbox",
+    "swipe",
+    "touch",
+    "jquery",
+    "popup"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andreknieriem/simplelightbox.git"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "demo"
+  ],
+  "_release": "1.15.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.15.1",
+    "commit": "695f270ee212efe0e867cc6a377b7884e1ec60a8"
+  },
+  "_source": "https://github.com/andreknieriem/simplelightbox.git",
+  "_target": "^1.15.1",
+  "_originalSource": "simplelightbox",
+  "_direct": true
+}

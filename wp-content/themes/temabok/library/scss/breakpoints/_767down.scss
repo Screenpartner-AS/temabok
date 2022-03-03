@@ -1,0 +1,41 @@
+/******************************************************************
+
+Stylesheet: Tablet & Mobile Stylesheet
+
+******************************************************************/
+
+table.sp-offers {
+  tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: $double-padding;
+
+    td {
+      &.sp-product {
+        display: block;
+        width: 100%;
+        margin-bottom: $base-padding;
+      }
+
+      &.sp-price {
+        display: inline-block;
+        margin-right: $double-padding;
+      }
+    }
+  }
+}
+
+// Education Section
+.education-section {
+	&.background_type-image {
+		&.mumo-mobile-hide {
+      padding-top: calc(#{$double-padding} + #{$base-padding});
+
+      > img {
+        display: none;
+      }
+    }
+	}
+}

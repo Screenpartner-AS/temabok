@@ -1,0 +1,59 @@
+/******************************************************************
+
+Stylesheet: Super Large Monitor Stylesheet
+
+******************************************************************/
+
+.wrap {
+  width: 1020px;
+}
+
+.banner {
+  .banner-slide {
+    .banner-content {
+      padding: 180px $base-padding;
+    }
+  }
+
+  &.banner-size-small {
+		.banner-slide {
+      .banner-content {
+			  padding: 60px $base-padding;
+      }
+		}
+	}
+	&.banner-size-medium {
+		.banner-slide {
+      .banner-content {
+			  padding: 120px $base-padding;
+      }
+		}
+	}
+	&.banner-size-large {
+		.banner-slide {
+      .banner-content {
+			  padding: 180px $base-padding;
+      }
+		}
+	}
+}
+
+/*********************
+POST OVERVIEW POST
+*********************/
+
+// TILE POPUP
+.tile-popup {
+	max-width: 1140px;
+}
+
+
+/*********************
+EDUCATION SINGLE
+*********************/
+
+#education-lightbox-popup {
+	.wrap {
+		width: calc(1140px - 80px);
+	}
+}

@@ -1,0 +1,692 @@
+// VARIABLES
+
+/*********************
+COLORS
+*********************/
+
+body.lightenup {
+	background: #E9ECEF;
+	color: $black;
+
+	/*********************
+	INPUTS
+	*********************/
+
+	// setting up defaults
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	select,
+	textarea,
+	.field {
+		background-color: $white;
+		color: $black;
+		border-color: $blue-border;
+
+		&:focus,
+		&:active {
+			background-color: lighten($white, 4%);
+		}
+
+		&::placeholder {
+			color: $black;
+		}
+	}
+
+	select {
+		background-image: url('../../library/images/point-down.svg');
+	}
+
+	.facetwp-input-wrap {
+		.facetwp-icon {
+			&:before {
+				filter: brightness(0);
+			}
+		}
+	}
+
+	.article-categories {
+		.cat {
+			background: $light-gray!important;
+			color: $dark-gray;
+		}
+	}
+
+	/*********************
+	GENERAL
+	*********************/
+
+	a {
+		color: $black;
+	}
+
+	.filters-toggle a,
+	.btn-purple,
+	input[type="submit"],
+	.simplefavorites-clear {
+		color: $white;
+	}
+
+	/*********************
+	HEADER & NAV
+	*********************/
+
+	.header {
+		background-color: $white;
+
+		#header-progress {
+			background: $white;
+		}
+	}
+
+	.nav {
+		li {
+			a {
+				color: $black;
+			}
+		}
+	}
+
+	.mobile-nav {
+		background: $white;
+		color: $black;
+
+		.nav {
+			li {
+				a {
+					color: $black;
+				}
+			}
+		}
+	}
+
+	/*********************
+	ELEMENTS
+	*********************/
+
+	.byline {
+		color: $dark-gray;
+	}
+
+	.news-article {
+		.simplefavorite-button {
+			color: $black!important;
+
+			i {
+				color: rgba($black, .7)!important;
+			}
+
+			&.active {
+				i {
+					color: $purple!important;
+				}
+			}
+		}
+
+		.news-content-wrapper {
+			background: $white;
+
+			> a {
+				color: $black;
+			}
+
+			.single-product &,
+			.related-news-articles & {
+				background: $white;
+			}
+
+			.extra-news & {
+				background: $white;
+			}
+
+			&:hover,
+			&:focus {
+				box-shadow: 0 0 2px 0 rgba($black, .2);
+			}
+		}
+
+		&.new-featured-article {
+			.news-content-wrapper {
+				background: $white;
+			}
+
+			.news-icon {
+				img {
+					filter: brightness(0);
+				}
+			}
+		}
+
+		&.loading {
+			.news-content-wrapper {
+				&:after {
+					background: $black;
+				}
+			}
+		}
+	}
+
+	.spoken-listing {
+		a {
+			color: $black;
+		}
+	}
+
+	.spoken-article {
+		.spoken-ikon {
+			filter: brightness(0);
+		}
+	}
+
+	// Spoken archives
+	.spoken-listing {
+		a {
+			.spoken-listing-content {
+				background: $white;
+				color: $black;
+			}
+		}
+	}
+
+	/*********************
+	SUPPORT ARCHIVE
+	*********************/
+
+	&.post-type-archive-support {
+		.facetwp-type-hierarchy {
+			.facetwp-link {
+				color: $black;
+				border-color: $light-gray;
+				background: $light-gray;
+
+				&:hover,
+				&:focus,
+				&.checked {
+					color: $white;
+					background: $purple;
+					border-color: $purple;
+				}
+			}
+		}
+	}
+
+	.support-article {
+		> a {
+			background: $white;
+
+			&:after {
+				background-image: url(../images/arrow-right-black.svg);
+			}
+
+			&:hover,
+			&:focus {
+				background: $purple;
+
+				&:after {
+					background-image: url(../images/arrow-right-white.svg);
+				}
+			}
+		}
+	}
+
+	.sp-support-term {
+		background: $medium-gray;
+	}
+
+	// News slider
+	.recent-releases,
+	.news-slider {
+
+		// News slider
+		.slider-news-article {
+			a {
+				color: $black;
+			}
+
+			.news-content {
+				background: $white;
+			}
+		}
+	}
+
+	.recent-releases {
+		background: $white;
+		color: $black;
+	}
+
+	.article-progress {
+		background: $white;
+	}
+
+	.archive-header {
+		background: $white;
+	}
+
+	.facetwp-overlay {
+	// 	background: $white!important;
+	//
+	// 	.post-type-archive-product &,
+	// 	.post-type-archive-publication &,
+	// 	.post-type-archive-spoken &,
+	// 	.blog & {
+	// 		background: $white!important;
+	// 	}
+
+		.facetwp-type-search & {
+			position: relative!important;
+			min-height: 40px;
+
+			&:after {
+				background-color: $light-gray;
+			}
+		}
+	}
+
+	.facetwp-type-checkboxes,
+	.facetwp-type-radio,
+	.category-buttons {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+
+		&.facetwp-facet {
+			margin-bottom: $double-padding;
+		}
+
+		.flickity-viewport {
+			width: 100%;
+		}
+
+		.facetwp-checkbox,
+		.facetwp-radio,
+		.cat {
+			background: $white;
+			color: $black;
+
+			&:hover,
+			&:focus {
+				background: $purple;
+				color: $white;
+			}
+
+			&.checked {
+				background: $purple;
+				color: $white;
+
+				&:before {
+					color: $white;
+				}
+			}
+		}
+	}
+
+	&.post-type-archive-product,
+	&.post-type-archive-publication,
+	&.post-type-archive-spoken,
+	&.post-type-archive-education,
+	&.blog {
+		.facetwp-type-checkboxes,
+		.facetwp-type-radio,
+		.category-buttons {
+			.facetwp-checkbox,
+			.facetwp-radio,
+			.cat {
+				background: $light-gray;
+
+				&:hover,
+				&:focus {
+					background: $purple;
+					color: $white;
+				}
+
+				&.checked {
+					background: $purple;
+				}
+			}
+		}
+	}
+
+	.news-articles-and-archive {
+		.facetwp-type-checkboxes,
+		.facetwp-type-radio,
+		.category-buttons {
+			.facetwp-checkbox,
+			.facetwp-radio,
+			.cat {
+				background: $light-gray;
+
+				&:hover,
+				&:focus {
+					background: $purple;
+					color: $white;
+				}
+
+				&.checked {
+					background: $purple;
+				}
+			}
+		}
+	}
+
+	.image-section,
+	.banner {
+		a {
+			color: $white;
+		}
+	}
+
+	#breadcrumbs {
+		color: $dark-gray;
+
+		a {
+			color: $black;
+		}
+	}
+
+	.sp-education-breadcrumb-title {
+		color: $white;
+	}
+
+	.read-related-publication {
+		background: $white;
+
+		a {
+			&:after {
+				background-color: rgba($white, .4);
+			}
+		}
+	}
+
+	// Sosiale delelenker
+	.delelenker {
+		border-top: 1px solid #dad8d9;
+
+		a {
+			color: $white;
+		}
+
+		.simplefavorite-button {
+			color: $black!important;
+
+			i {
+				&:before {
+					color: rgba($black, .7);
+				}
+			}
+
+			&.active {
+				i {
+					&:before {
+						color: $purple!important;
+					}
+				}
+			}
+		}
+	}
+
+	.login-columns {
+		background: $white;
+	}
+
+	.log-in-wrap {
+		background: url(../images/logg-inn-bakgrunn@2x.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		color: $white;
+
+		.login-column {
+			background: $white;
+			color: $black;
+		}
+
+		.footer-icons {
+			.footer-icon {
+				img {
+					filter: brightness(1);
+				}
+			}
+		}
+	}
+
+	#profile {
+		form {
+			background: $white;
+		}
+	}
+
+	&.single {
+		.log-in-wrap {
+			padding: $triple-padding 0;
+		}
+	}
+
+	.selling-points {
+		background: $white;
+		color: $black;
+	}
+
+	/*********************
+	PAGE BUILDER STYLES
+	*********************/
+
+	.regular-content,
+	.box-grid,
+	.offer-box-section,
+	.sp-grid {
+		background: $white;
+		color: $black;
+	}
+
+	.box-grid {
+
+	}
+
+	/*********************
+	ENTRY CONTENT
+	*********************/
+
+	.entry-content {
+		.wp-block-image {
+			figcaption {
+				color: $dark-gray;
+			}
+		}
+	}
+
+	/*********************
+	PAGE SPECIFIC STYLES
+	*********************/
+
+	&.page-template-page-small-width,
+	&.page-template-page-default {
+		background: #f7f7f7;
+	}
+
+	// Om skolerom.no
+	&.page-id-7947 {
+		.builder {
+			.regular-content,
+			.box-grid,
+			.offer-box-section,
+			.selling-points,
+			.sp-grid {
+				color: $dark-blue!important;
+			}
+		}
+	}
+
+	/*********************
+	SINGLE QUIZ FORM
+	*********************/
+
+	#single-quiz-form {
+		background: $white;
+	}
+
+	.footer {
+		color: $black;
+
+		.copyright {
+			background: $gray;
+		}
+	}
+
+	.footer-icons {
+		.footer-icon {
+			img {
+				filter: brightness(0);
+			}
+		}
+	}
+
+	/*********************
+	QUIZ RESULTS
+	*********************/
+
+	.quiz-results {}
+
+	.quiz-taker {
+		background: $white;
+		color: $black;
+	}
+
+	.quiz-result-content {
+		background: #f3f4f5;
+		color: $black;
+	}
+
+	.answers {
+		.answer {
+			background: $light-gray;
+			color: $black;
+		}
+	}
+
+	.answer-text {
+		background: $light-gray;
+	}
+
+	.quiz-taker-toggle {
+		img {
+			filter: brightness(0);
+		}
+	}
+
+	/*********************
+	MESSAGE STYLES
+	*********************/
+
+	.message {
+		color: $black;
+		background: $white;
+
+		&.error {
+			background: $purple;
+			color: $white;
+
+			a {
+				color: $white;
+			}
+		}
+	}
+
+	.check-group {
+		background-color: $light-gray;
+
+		label {
+			color: $black;
+
+			&:after {
+				border: 2px solid $dark-gray;
+				background-color: $black;
+			}
+		}
+
+		input:checked ~ label {
+			color: $white;
+
+			&:after {
+				background-color: $blue;
+				border-color: darken($blue, 10%);
+			}
+		}
+	}
+
+	.btn {
+		color: $white;
+	}
+
+	.btn-blue,
+	.btn-black,
+	.btn-yellow,
+	.btn-orange,
+	.btn-red {
+		color: $white;
+	}
+
+	// Education archives listing
+	.education-listing {
+		.education-content-wrapper {
+			background: $white;
+			> a {
+				color: $black;
+			}
+
+			&:after {
+				border-color: $white transparent transparent transparent;
+			}
+		}
+	}
+
+	aside.education-listing-content {
+		background: $white;
+
+		.education-listing-aside-info {
+			.short-desc {
+				&:after {
+					background: $dark-gray;
+				}
+			}
+		}
+
+		.sp-term-section {
+			background: $light-gray;
+			color: $black;
+
+			.sp-term {
+				color: $white;
+				background: $dark-gray;
+			}
+		}
+	}
+
+	.education-module {
+		&.module-question {
+			textarea {
+				background: transparent;
+			}
+		}
+	}
+
+	#education-lightbox-popup {
+		.education-lightbox-content {
+			background: $white;
+		}
+	}
+}

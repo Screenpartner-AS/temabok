@@ -1,0 +1,1 @@
+function updateViewportDimensions(){var e=window,t=document,i=t.documentElement,n=t.getElementsByTagName("body")[0],d,o;return{width:e.innerWidth||i.clientWidth||n.clientWidth,height:e.innerHeight||i.clientHeight||n.clientHeight}}var viewport=updateViewportDimensions();jQuery(document).ready(function(e){});

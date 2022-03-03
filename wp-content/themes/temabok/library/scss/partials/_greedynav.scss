@@ -1,0 +1,153 @@
+/*********************
+GREEDYNAV
+*********************/
+
+nav.greedy {
+	width: 100%;
+	height: 67px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+	button {
+	  transition: all .4s ease-out;
+	  outline: 0;
+	  border: 0;
+	  font-size: 1.4rem;
+	  background: $white;
+		width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 14px;
+		border-radius: 50%;
+		box-shadow: 0 0 0 1px $light-gray;
+		-webkit-appearance: none;
+
+		&.hidden {
+			display: none;
+			transition: none;
+		  width: 0;
+		  padding: 0;
+		  overflow: hidden;
+		}
+
+		&:hover,
+		&:focus {
+			background: $light-gray;
+		}
+	}
+
+	ul {
+		&.nav {
+			display: flex;
+		  justify-content: flex-end;
+		  flex: 1;
+		  overflow: hidden;
+
+			li {
+				flex: none;
+
+				&.flag {
+					display: inline-block!important;
+					margin: 0 10px 0;
+					display: flex!important;
+					align-items: center;
+
+					a,
+					span {
+						line-height: 0;
+						margin-top: 0px;
+						padding: 0;
+					}
+
+					img {
+						padding: 0;
+				    width: 25px;
+				    height: 25px;
+				    border-radius: 50%;
+					}
+
+					span > img {
+						filter: grayscale(1);
+					}
+				}
+			}
+		}
+
+		&.hidden-links {
+			position: absolute;
+		  background: $dark-gray;
+		  right: 0;
+		  top: 100%;
+			margin: 0;
+			border-radius: 0;
+			padding: $double-padding;
+			min-width: 180px;
+			box-shadow: 0 0 15px 0 rgba($black, .2);
+
+			li {
+				display: block;
+
+				a {
+					color: $white;
+					display: inline-block;
+					padding: 7px 0;
+					text-decoration: none;
+
+					&:hover,
+					&:focus {
+						text-decoration: underline;
+					}
+				}
+
+				&:first-of-type {
+					a {
+						padding-top: 0;
+					}
+				}
+
+				&.btn-cart {
+					margin: $base-padding 0 3px;
+				}
+
+				&.inactive {
+					display: none!important;
+				}
+
+				&.register-link {
+					margin-top: 4px;
+					margin-bottom: 4px;
+
+					a {
+						margin-top: 0;
+					}
+				}
+
+				&.flag {
+					display: inline-block!important;
+					margin: 0 15px 0 0;
+
+					img {
+						padding: 0;
+				    width: 25px;
+				    height: 25px;
+				    border-radius: 50%;
+					}
+
+					span > img {
+						filter: grayscale(1);
+					}
+				}
+			}
+
+			&.hidden {
+				display: none;
+
+				li {
+					padding: 1rem;
+				}
+			}
+		}
+	}
+}

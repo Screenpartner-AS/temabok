@@ -1,0 +1,37 @@
+/******************************************************************
+
+Stylesheet: WP Admin Bar
+
+We're using a fixed header in this theme, so we're including some
+styles to fix broken positions when logged in and admin bar is
+displaying.
+
+******************************************************************/
+
+// MOBILE WP ADMIN BAR
+.admin-bar {
+  .header {
+    top: 46px;
+  }
+
+  .okayNav__nav--invisible {
+    top: 113px;
+  }
+
+  .education-sidebar {
+    top: calc(97px + 46px);
+  }
+}
+
+// DESKTOP WP ADMIN BAR
+@media (min-width: 783px) {
+  .admin-bar {
+    .header {
+      top: 32px;
+    }
+
+    .education-sidebar {
+      top: calc(97px + 32px);
+    }
+  }
+}

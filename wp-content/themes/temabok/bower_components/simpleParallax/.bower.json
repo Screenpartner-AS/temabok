@@ -1,0 +1,14 @@
+{
+  "name": "simpleParallax",
+  "homepage": "https://github.com/geosenna/simpleParallax",
+  "version": "5.2.0",
+  "_release": "5.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "5.2.0",
+    "commit": "317e4622e4c52bdf26d07260c3fe3814722aeb9a"
+  },
+  "_source": "https://github.com/geosenna/simpleParallax.git",
+  "_target": "^5.2.0",
+  "_originalSource": "simpleParallax"
+}

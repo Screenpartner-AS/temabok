@@ -1,0 +1,44 @@
+{
+    "key": "group_60d9ed10e07df",
+    "title": "GREP Interdisciplinary Subjects Info",
+    "fields": [
+        {
+            "key": "field_60d9ed2826aba",
+            "label": "GREP Code",
+            "name": "txtGrepInterdisciplinaryCode",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "student_disciplin"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1624894778
+}

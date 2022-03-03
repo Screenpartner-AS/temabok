@@ -1,0 +1,102 @@
+/******************************************************************
+
+Stylesheet: ANIMATIONS
+
+******************************************************************/
+
+$kb_duration: 15s;
+$kb_delay: .5s;
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 84%;
+  }
+  100% {
+    transform: scale(1.25) translateY(15px);
+    transform-origin: bottom;
+  }
+}
+
+@keyframes sp-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+@keyframes sp-pulse {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes sp-pulse-big {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.25);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes sp-fade-in {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes sp-fade-out {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+}
+
+.loading-block {
+  display: block;
+  background: $gray;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  animation: sp-rotateplane 1.2s infinite ease-in-out;
+}

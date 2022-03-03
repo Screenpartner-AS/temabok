@@ -1,0 +1,46 @@
+body.woocommerce,
+body.woocommerce-page {
+	#content {
+		background: $white;
+	}
+
+	.entry-content {
+		font-size: $base-size;
+	}
+}
+
+// General Elements
+span.onsale {
+	display: none;
+	padding: 8px $half-padding 8px;
+	line-height: 1.2em;
+	font-size: 11px;
+	text-transform: uppercase;
+	left: $half-padding!important;
+	top: $half-padding!important;
+	bottom: auto!important;
+	right: auto!important;
+	border-radius: 25px;
+	margin: 0!important;
+	min-width: 1px;
+	min-height: 1px;
+	max-width: calc(100% - 20px);
+	box-shadow: 0 0 7px 0 rgba($black, .3);
+	background: $white;
+	color: $text-color;
+}
+
+// INFO, ERROR, MESSAGE
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+	padding: 1em 2em 1em 3.5em;
+}
+
+.woocommerce-password-strength {
+	font-size: $small-size;
+	margin-top: $base-padding;
+	line-height: 1.5em;
+	padding: $base-padding;
+	border-radius: 3px;
+}

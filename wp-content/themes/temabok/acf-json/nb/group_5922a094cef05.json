@@ -1,0 +1,2440 @@
+{
+    "key": "group_5922a094cef05",
+    "title": "Builder",
+    "fields": [
+        {
+            "key": "field_5922a09c22ccd",
+            "label": "Builder",
+            "name": "builder",
+            "type": "flexible_content",
+            "instructions": "Build your page with predefined modules. Drag and drop to rearrange.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "599191d53eb21": {
+                    "key": "599191d53eb21",
+                    "name": "article_categories_section",
+                    "label": "Article Categories Section",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_599192033eb22",
+                            "label": "Article Categories",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "This module will display a list of available article categories.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_599192363eb23",
+                            "label": "Article Categories Section Title",
+                            "name": "article_categories_section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Read from category",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5922a0a40bf6c": {
+                    "key": "5922a0a40bf6c",
+                    "name": "banner",
+                    "label": "Banner",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5922a0d922cce",
+                            "label": "Choose Banner",
+                            "name": "choose_banner",
+                            "type": "post_object",
+                            "instructions": "Choose which banner to use in this module.\r\n\r\nIf you want to edit this banner or create a new one, choose \"Banners\" in the main menu to the left.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "banners"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_594b872021fd3",
+                            "label": "Display Conditions",
+                            "name": "display_conditions",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "is_logged_in": "Display banner if user is logged in",
+                                "is_logged_out": "Display banner if user is not logged in",
+                                "always_display": "Always display banner"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e3d4cb7734d5": {
+                    "key": "layout_5e3d4cb7734d5",
+                    "name": "box_grid",
+                    "label": "Box Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e3d4d56734db",
+                            "label": "Section Title",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e3d4cc0734d6",
+                            "label": "Boxes",
+                            "name": "boxes",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Legg til boks",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e3d4d71734dc",
+                                    "label": "Content",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_5e3d4ce6734d7",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5e3d4d1c734d9",
+                                    "label": "Button Title",
+                                    "name": "button_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5e3d4d01734d8",
+                                    "label": "Content",
+                                    "name": "content",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 1
+                                },
+                                {
+                                    "key": "field_5e3d4d44734da",
+                                    "label": "Button URL",
+                                    "name": "button_url",
+                                    "type": "url",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5e3d4d90734dd",
+                                    "label": "Settings",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_5e3d4d98734de",
+                                    "label": "Number Box",
+                                    "name": "number_box",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "Kryss av for å nummerere boksen",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5e3d4df7734df",
+                                    "label": "Box Background Color",
+                                    "name": "box_background_color",
+                                    "type": "color_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "enable_opacity": false,
+                                    "return_format": "string"
+                                },
+                                {
+                                    "key": "field_5e3d4e1f734e0",
+                                    "label": "Box Text Color",
+                                    "name": "box_text_color",
+                                    "type": "color_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "enable_opacity": false,
+                                    "return_format": "string"
+                                },
+                                {
+                                    "key": "field_5e3d5f62459ae",
+                                    "label": "Accent Background Color",
+                                    "name": "accent_background_color",
+                                    "type": "color_picker",
+                                    "instructions": "Velg bakgrunnsfargen til nummerering og knapp",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "#0a003d",
+                                    "enable_opacity": false,
+                                    "return_format": "string"
+                                },
+                                {
+                                    "key": "field_5e3d5f93459af",
+                                    "label": "Accent Text Color",
+                                    "name": "accent_text_color",
+                                    "type": "color_picker",
+                                    "instructions": "Velg tekstfargen til nummerering og knapp",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "#FFFFFF",
+                                    "enable_opacity": false,
+                                    "return_format": "string"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c5ae43a83281": {
+                    "key": "layout_5c5ae43a83281",
+                    "name": "category_cloud",
+                    "label": "Category Cloud",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c5ae44583282",
+                            "label": "Beskrivelse",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Seksjon for sidens kategorier.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ed794eef7e18": {
+                    "key": "layout_5ed794eef7e18",
+                    "name": "education_articles",
+                    "label": "Education Articles",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ed794eef7e19",
+                            "label": "Additional Articles (sorted by date)",
+                            "name": "how_many_articles_to_display",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 2,
+                            "placeholder": 2,
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": 1
+                        },
+                        {
+                            "key": "field_5ed794eef7e1a",
+                            "label": "Skip articles",
+                            "name": "skip_articles",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": 4,
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
+                        },
+                        {
+                            "key": "field_5ed794eef7e1b",
+                            "label": "Inverted Colors?",
+                            "name": "inverted_colors",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Check this if these articles should display with inverted colors",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5ed794eef7e1c",
+                            "label": "Choose Articles Grid",
+                            "name": "choose_articles_grid",
+                            "type": "select",
+                            "instructions": "Choose the grid that the news articles will display at larger screen sizes.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "onethreethree": "1, 3, 3",
+                                "onetwothree": "1, 2, 3",
+                                "onetwotwo": "1, 2, 2",
+                                "onethreetwo": "1, 3, 2",
+                                "onefourtwo": "1, 4, 2",
+                                "one_twosmallonelarge": "1, 3, 3 (2 small, 1 large)",
+                                "one_onesmallonelarge": "1, 2, 2 (1 small, 1 large)"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5ed794eef7e1d",
+                            "label": "Featured Article",
+                            "name": "featured_article",
+                            "type": "post_object",
+                            "instructions": "Choose which article that will be displayed as the main article in this section.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "education"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_5ed794eef7e1e",
+                            "label": "Only display articles from this subject",
+                            "name": "articles_from_subject",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "student_subject",
+                            "field_type": "select",
+                            "allow_null": 1,
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "id",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_5ed794eef7e1f",
+                            "label": "Sort articles by",
+                            "name": "sort_articles_by",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "date": "Recently published",
+                                "name": "Name (Alphabetically)",
+                                "rand": "Random"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5ed794eef7e20",
+                            "label": "Choose specific articles",
+                            "name": "choose_specific_articles",
+                            "type": "post_object",
+                            "instructions": "Choose specific articles to be displayed. This field overrides these fields:  \"additional articles\", \"Only display articles from this category\", \"Sort articles by\" and \"skip articles\".",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "education"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 1,
+                            "multiple": 1,
+                            "return_format": "object",
+                            "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ed8b330b17d8": {
+                    "key": "layout_5ed8b330b17d8",
+                    "name": "education_filters",
+                    "label": "Education Filters",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ed8b330b17d9",
+                            "label": "Education Filters",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "This module will display a list of available education categories as well as a search input.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5ed8b7ffe7a6f",
+                            "label": "Display Search",
+                            "name": "display_search",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Check this to let users search for articles",
+                            "default_value": 1,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5ed8b330b17da",
+                            "label": "Education Filters Section Title",
+                            "name": "education_filters_section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Søk etter skoleartikler",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5f8ec57b5a024": {
+                    "key": "layout_5f8ec57b5a024",
+                    "name": "education_query",
+                    "label": "Education Query",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f8ec5bf5a025",
+                            "label": "Number of posts",
+                            "name": "number_of_posts",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 8,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 1,
+                            "max": 50,
+                            "step": 1,
+                            "translations": "copy_once"
+                        },
+                        {
+                            "key": "field_5f8ecf465e282",
+                            "label": "Section Title",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Finn skoleartikler",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "translations": "translate"
+                        },
+                        {
+                            "key": "field_5f8ec6215a026",
+                            "label": "Order by",
+                            "name": "order_by",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "date": "Date",
+                                "menu_order": "Admin order",
+                                "title": "Title"
+                            },
+                            "default_value": "date",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "translations": "copy_once",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5f8eca35f990f",
+                            "label": "Bottom Button",
+                            "name": "bottom_button",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "load-more": "Load more",
+                                "view-all": "View all"
+                            },
+                            "allow_null": 0,
+                            "default_value": "view-all",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "translations": "copy_once"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c5af0c3f4fe0": {
+                    "key": "layout_5c5af0c3f4fe0",
+                    "name": "featured_news_article",
+                    "label": "Featured News Article",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c5af0d8f4fe1",
+                            "label": "Featured Article",
+                            "name": "featured_article",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "599ea9277c656": {
+                    "key": "599ea9277c656",
+                    "name": "email_collection_module",
+                    "label": "Form Section",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_599ea99b7c658",
+                            "label": "Which List would you like to collect emails to?",
+                            "name": "email_list",
+                            "type": "forms",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "allow_null": 0,
+                            "multiple": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5f05b3833b72a": {
+                    "key": "layout_5f05b3833b72a",
+                    "name": "grid",
+                    "label": "Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f05b4773b730",
+                            "label": "Grid Column",
+                            "name": "grid_column",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Legg til kolonne",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f05b4983b731",
+                                    "label": "Content",
+                                    "name": "content",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "translations": "translate"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5f05b38d3b72b",
+                            "label": "Grid Settings",
+                            "name": "grid_settings",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f05b3c43b72c",
+                                    "label": "Mobile",
+                                    "name": "mobile",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "25",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "m-all": "Full Width",
+                                        "m-1of2": "1 \/ 2"
+                                    },
+                                    "default_value": false,
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "translations": "copy_once",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5f05b4013b72d",
+                                    "label": "Mobile Large",
+                                    "name": "mobile_large",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "25",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "mt-all": "Full Width",
+                                        "mt-1of2": "1 \/ 2"
+                                    },
+                                    "default_value": false,
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "translations": "copy_once",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5f05b41a3b72e",
+                                    "label": "Tablet",
+                                    "name": "tablet",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "25",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "t-all": "Full Width",
+                                        "t-1of2": "1 \/ 2",
+                                        "t-1of3": "1 \/ 3",
+                                        "t-1of4": "1 \/ 4"
+                                    },
+                                    "default_value": false,
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "translations": "copy_once",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5f05b4343b72f",
+                                    "label": "Desktop",
+                                    "name": "desktop",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "25",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "d-all": "Full Width",
+                                        "d-1of2": "1 \/ 2",
+                                        "d-1of3": "1 \/ 3",
+                                        "d-1of4": "1 \/ 4"
+                                    },
+                                    "default_value": false,
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "translations": "copy_once",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e3c26a925eb0": {
+                    "key": "layout_5e3c26a925eb0",
+                    "name": "image",
+                    "label": "Image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e3c26b725eb1",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "large",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5e3c26ca25eb2",
+                            "label": "Image effect",
+                            "name": "image_effect",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "None",
+                                "parallax": "Parallax"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5e3c26f625eb3",
+                            "label": "Image size",
+                            "name": "image_size",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "normal": "Normal",
+                                "wide": "Wide",
+                                "full": "Full"
+                            },
+                            "default_value": "full",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5922db3e91496": {
+                    "key": "5922db3e91496",
+                    "name": "image_content_section",
+                    "label": "Image Content Section",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5922db7391499",
+                            "label": "Button Text",
+                            "name": "image_content_button_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5922dba79149a",
+                            "label": "Button URL",
+                            "name": "image_content_button_url",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5922db6191498",
+                            "label": "Text Content",
+                            "name": "image_content_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "66",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5922db5091497",
+                            "label": "Background Image",
+                            "name": "image_content_background_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5922dbcd9149b",
+                            "label": "Title",
+                            "name": "image_content_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5a324b23dd47f": {
+                    "key": "5a324b23dd47f",
+                    "name": "list_of_publications",
+                    "label": "List of Publications",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a324c29dd481",
+                            "label": "Choose Publications",
+                            "name": "choose_publications",
+                            "type": "post_object",
+                            "instructions": "Here we list digital publications\/bokasins to users. Keep in mind that anyone will be able to view these, even if the user is not logged in or registered as a member.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "publication"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 1,
+                            "multiple": 1,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_5a33c33c2d87c",
+                            "label": "Publications Description",
+                            "name": "publications_description",
+                            "type": "wysiwyg",
+                            "instructions": "Add a WYSIWYG description before listing the publications.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c77bd96bde96": {
+                    "key": "layout_5c77bd96bde96",
+                    "name": "log_in_form",
+                    "label": "Log in form",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c77bdddbde98",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c77be3e66f7f",
+                            "label": "Sub title",
+                            "name": "sub_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c77bda6bde97",
+                            "label": "Log in form",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "This module displays a log in form when user is <strong>not<\/strong> logged in.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "59354fbb03630": {
+                    "key": "59354fbb03630",
+                    "name": "logo_section",
+                    "label": "Logo Section",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5992e66fe68b5",
+                            "label": "Logos",
+                            "name": "logos",
+                            "type": "repeater",
+                            "instructions": "This module will add a section with logos from the most prominent bokasins. Choose Logo Images and link them to the correct article category.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add logo",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5992e69de68b6",
+                                    "label": "Logo Image",
+                                    "name": "logo_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_5992e6afe68b7",
+                                    "label": "Logo Article Category",
+                                    "name": "logo_article_category",
+                                    "type": "taxonomy",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "taxonomy": "bokasin_category",
+                                    "field_type": "select",
+                                    "allow_null": 0,
+                                    "add_term": 0,
+                                    "save_terms": 0,
+                                    "load_terms": 0,
+                                    "return_format": "object",
+                                    "multiple": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_59354fc303631",
+                            "label": "Logo Section Title",
+                            "name": "logo_section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Read magazines from",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5922bcfcb54cc": {
+                    "key": "5922bcfcb54cc",
+                    "name": "news_articles",
+                    "label": "News Articles",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5922bd2eb54cd",
+                            "label": "Additional Articles (sorted by date)",
+                            "name": "how_many_articles_to_display",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 2,
+                            "placeholder": 2,
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": 1
+                        },
+                        {
+                            "key": "field_59318c86c480c",
+                            "label": "Skip articles",
+                            "name": "skip_articles",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": 4,
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
+                        },
+                        {
+                            "key": "field_5993047349050",
+                            "label": "Inverted Colors?",
+                            "name": "inverted_colors",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Check this if these articles should display with inverted colors",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5993067fe1f93",
+                            "label": "Choose Articles Grid",
+                            "name": "choose_articles_grid",
+                            "type": "select",
+                            "instructions": "Choose the grid that the news articles will display at larger screen sizes.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "onethreethree": "1, 3, 3",
+                                "onetwothree": "1, 2, 3",
+                                "onetwotwo": "1, 2, 2",
+                                "onethreetwo": "1, 3, 2",
+                                "onefourtwo": "1, 4, 2",
+                                "one_twosmallonelarge": "1, 3, 3 (2 small, 1 large)",
+                                "one_onesmallonelarge": "1, 2, 2 (1 small, 1 large)"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_593151945aaca",
+                            "label": "Featured Article",
+                            "name": "featured_article",
+                            "type": "post_object",
+                            "instructions": "Choose which article that will be displayed as the main article in this section.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_59b26b1957743",
+                            "label": "Only display articles from this category",
+                            "name": "articles_from_category",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "category",
+                            "field_type": "select",
+                            "allow_null": 1,
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "id",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_59b26a8357742",
+                            "label": "Sort articles by",
+                            "name": "sort_articles_by",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "date": "Recently published",
+                                "name": "Name (Alphabetically)",
+                                "rand": "Random"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_59b147c7a201d",
+                            "label": "Choose specific articles",
+                            "name": "choose_specific_articles",
+                            "type": "post_object",
+                            "instructions": "Choose specific articles to be displayed. This field overrides these fields:  \"additional articles\", \"Only display articles from this category\", \"Sort articles by\" and \"skip articles\".",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 1,
+                            "multiple": 1,
+                            "return_format": "object",
+                            "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ced1757d8edc": {
+                    "key": "layout_5ced1757d8edc",
+                    "name": "news_articles_and_archive",
+                    "label": "News Articles and Archive",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ced1757d8ee4",
+                            "label": "Choose articles",
+                            "name": "choose_articles",
+                            "type": "post_object",
+                            "instructions": "Choose specific articles to be displayed.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 1,
+                            "multiple": 1,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_5ced226dfec84",
+                            "label": "Choose articles grid",
+                            "name": "choose_articles_grid",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "onethreethree": "1, 3, 3",
+                                "onetwothree": "1, 2, 3",
+                                "onetwotwo": "1, 2, 2",
+                                "onethreetwo": "1, 3, 2",
+                                "onefourtwo": "1, 4, 2",
+                                "one_twosmallonelarge": "1, 3, 3 (2 small, 1 large)",
+                                "one_onesmallonelarge": "1, 2, 2 (1 small, 1 large)"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5ced1854d8ee5",
+                            "label": "Number of articles",
+                            "name": "number_of_articles",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 8,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
+                        },
+                        {
+                            "key": "field_5ced316656620",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Give this section a title",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "59942b52c23ed": {
+                    "key": "59942b52c23ed",
+                    "name": "news_article_slider",
+                    "label": "News Article Slider",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_59942b62c23ee",
+                            "label": "Section Title",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Read the latest from Top Gear",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59942b91c23ef",
+                            "label": "Number of articles",
+                            "name": "number_of_articles",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": 8,
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
+                        },
+                        {
+                            "key": "field_59942bc8c23f0",
+                            "label": "Article Category",
+                            "name": "article_category",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "category",
+                            "field_type": "select",
+                            "allow_null": 0,
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "multiple": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e3d6b6ca9e39": {
+                    "key": "layout_5e3d6b6ca9e39",
+                    "name": "offer",
+                    "label": "Offer",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e3d6c2ba9e40",
+                            "label": "Offer Box Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5e3d6c3aa9e41",
+                            "label": "Box Title",
+                            "name": "box_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e3d6c6da9e42",
+                            "label": "Offers",
+                            "name": "offers",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Legg til tilbudslinje",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e3d6c83a9e43",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5e3d6c94a9e44",
+                                    "label": "Original Price",
+                                    "name": "original_price",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5e3d6ca7a9e45",
+                                    "label": "Sale Price",
+                                    "name": "sale_price",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5e3d6cb6a9e46",
+                            "label": "Extra Information",
+                            "name": "extra_information",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5e3d6d73fd399",
+                            "label": "Button Title",
+                            "name": "button_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e3d6d81fd39a",
+                            "label": "Button URL",
+                            "name": "button_url",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5e3d6b81a9e3b",
+                            "label": "Offer Box Settings",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5e3d6b90a9e3c",
+                            "label": "Box Background Color",
+                            "name": "box_background_color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#FFC400",
+                            "enable_opacity": false,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_5e3d6ba7a9e3d",
+                            "label": "Box Text Color",
+                            "name": "box_text_color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#0A003D",
+                            "enable_opacity": false,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_5e3d6be0a9e3e",
+                            "label": "Accent Background Color",
+                            "name": "accent_background_color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#0A003D",
+                            "enable_opacity": false,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_5e3d6bf5a9e3f",
+                            "label": "Accent Text Color",
+                            "name": "accent_text_color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#FFFFFF",
+                            "enable_opacity": false,
+                            "return_format": "string"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c77efa48b2e1": {
+                    "key": "layout_5c77efa48b2e1",
+                    "name": "personalized_news_article_slider",
+                    "label": "Personalized News Article Slider",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c77efa48b2e3",
+                            "label": "Number of articles",
+                            "name": "number_of_articles",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": 8,
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
+                        },
+                        {
+                            "key": "field_5c77efa48b2e4",
+                            "label": "Personalize content",
+                            "name": "personalize_content",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "favorites": "Brukers favoritter",
+                                "user_reads": "Brukers påbegynte artikler",
+                                "related_reads": "Relaterte artikler basert på leserhistorikk"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5c77f2b00bf5d",
+                            "label": "Article Category",
+                            "name": "article_category",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "category",
+                            "field_type": "select",
+                            "allow_null": 1,
+                            "add_term": 0,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "id",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_5c77efa48b2e2",
+                            "label": "Section Title",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Read the latest from Top Gear",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5996bdc07c7d0": {
+                    "key": "5996bdc07c7d0",
+                    "name": "registration_form",
+                    "label": "Registration Form",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5996bdc87c7d1",
+                            "label": "Registration Form",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "This module displays a registration form.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "59300731a1695": {
+                    "key": "59300731a1695",
+                    "name": "regular_content",
+                    "label": "Regular Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59300739a1696",
+                            "label": "Regular Content",
+                            "name": "regular_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_599adc7608eea",
+                            "label": "Section Background Color (Dark Theme)",
+                            "name": "regular_content_bg_color",
+                            "type": "color_picker",
+                            "instructions": "Choose the section background color",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "enable_opacity": false,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_5e3d764e4c5a4",
+                            "label": "Section Background Color (Light Theme)",
+                            "name": "regular_content_bg_color_light",
+                            "type": "color_picker",
+                            "instructions": "Choose the section background color",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "enable_opacity": false,
+                            "return_format": "string"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5922b674a5ced": {
+                    "key": "5922b674a5ced",
+                    "name": "selling_points",
+                    "label": "Selling Points",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5922b6a9a5cee",
+                            "label": "Selling Point",
+                            "name": "selling_point",
+                            "type": "repeater",
+                            "instructions": "Add selling points. Icons and text.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_5922b6f6a5cf0",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add Selling Point",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5922b6f6a5cf0",
+                                    "label": "Selling Point Title",
+                                    "name": "selling_point_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5922b6cba5cef",
+                                    "label": "Selling Point icon",
+                                    "name": "selling_point_icon",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_5e3c1ece5c8c5",
+                                    "label": "Selling Point Text (Optional)",
+                                    "name": "selling_point_text",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 4,
+                                    "new_lines": "wpautop"
+                                },
+                                {
+                                    "key": "field_5e3c1f015c8c6",
+                                    "label": "Selling Point Icon Size",
+                                    "name": "selling_point_icon_size",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "small": "Small",
+                                        "medium": "Medium",
+                                        "large": "Large"
+                                    },
+                                    "default_value": "small",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c61498d9df98": {
+                    "key": "layout_5c61498d9df98",
+                    "name": "recent_releases",
+                    "label": "Recent Releases",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c62ca2c66ab8",
+                            "label": "Number of publications",
+                            "name": "number_of_publications",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 8,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
+                        },
+                        {
+                            "key": "field_5c62ca5966ab9",
+                            "label": "Publication Category",
+                            "name": "publication_category",
+                            "type": "taxonomy",
+                            "instructions": "Choose 1 or several categories to pick from.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "publication_category",
+                            "field_type": "multi_select",
+                            "allow_null": 1,
+                            "add_term": 0,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "id",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_5c614ed4c4449",
+                            "label": "Section Title",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Our latest releases – available on bokasin.no",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Module",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-builder.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-home.php"
+            }
+        ],
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-single-post-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1646053717,
+    "wpml_field_group_language": "nb"
+}

@@ -1,0 +1,153 @@
+/*********************
+OKAYNAV
+*********************/
+/*
+ * We are hiding the invisible nav outside the screen
+ * so we need to avoid the horizontal scroll
+ */
+body.okayNav-loaded {overflow-x: hidden}
+
+.okayNav {
+	// Hide the links by default to avoid FOUC
+	visibility: hidden;
+	user-select: none;
+	display: flex;
+	flex-direction: row;
+
+	&.loaded {
+		visibility: visible;
+		user-select: auto;
+	}
+
+	ul {
+		/* We want two navigations - one hidden and one visible */
+		float: left;
+	}
+
+	li {
+		&.current-menu-item {
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	a {
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.okayNav__nav--visible {
+	// overflow: hidden;
+	white-space: nowrap;
+
+  &:empty {
+    & ~ .okayNav__menu-toggle {top: 0}
+  }
+}
+
+/* Link styling for the off-screen part of the nav */
+.okayNav__nav--invisible {
+	position: fixed;
+	top: 67px;
+	background: $white;
+	padding: $half-padding $base-padding;
+	border-radius: 0 0 0 4px;
+	margin: 0;
+	box-shadow: 0 2px 3px 0px rgba($black, 0.2);
+
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+
+	.register-link {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.btn-cart {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	a {
+		display: inline-block;
+		padding: 15px;
+		color: $black;
+		text-align: center;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $black;
+			text-decoration: underline;
+		}
+	}
+
+	&.nav-left {
+		left: 0;
+		transform: translateX(-100%);
+	}
+
+	&.nav-right {
+		right: 0;
+		transform: translateX(100%);
+	}
+
+	&.transition-enabled {
+		transition: transform 400ms cubic-bezier(.55,0,.1,1);
+	}
+
+	&.nav-open {
+		transform: translateX(0);
+	}
+}
+
+/* Kebab icon */
+.okayNav__menu-toggle {
+	position: relative;
+	z-index: 1;
+	top: 24px;
+	float: left;
+	width: 40px;
+	height: 20px;
+	cursor: pointer;
+	transition: transform 400ms cubic-bezier(.55,0,.1,1);
+
+	&.okay-invisible {
+		position: absolute;
+		user-select: none;
+		pointer-events: none;
+		opacity: 0;
+	}
+
+	span {
+		background: $black;
+		position: absolute;
+		right: 0;
+		left: 0;
+		display: block;
+		width: 4px;
+		height: 4px;
+		margin: auto;
+		pointer-events: none;
+		border-radius: 50%;
+
+		&:nth-child(1) {
+			top: 0;
+		}
+
+		&:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+		&:nth-child(3) {
+			bottom: 0;
+		}
+	}
+
+	&.icon--active { /* Kebab icon when off-screen nav is open */
+		transform: rotate(90deg);
+	}
+}
