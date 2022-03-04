@@ -1160,7 +1160,7 @@ RESET PASSWORD
 
 function sp_lost_password_redirect() {
 	// Check if have submitted
-	$confirm = (isset($_GET['action']) && $_GET['action'] == resetpass);
+	$confirm = (isset($_GET['action']) && $_GET['action'] == 'resetpass');
 
 	if ($confirm) {
 		wp_redirect(home_url());

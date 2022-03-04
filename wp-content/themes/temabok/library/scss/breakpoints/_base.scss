@@ -17,6 +17,7 @@ body {
 	background-color: #E9ECEF;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
 
 	&.error404 {
 		#post-not-found {

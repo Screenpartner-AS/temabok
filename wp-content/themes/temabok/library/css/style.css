@@ -1530,7 +1530,8 @@ body {
   color: #000;
   background-color: #E9ECEF;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; }
   body.error404 #post-not-found {
     text-align: center;
     margin: 20px auto; }
