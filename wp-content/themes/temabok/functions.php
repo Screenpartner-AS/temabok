@@ -190,4 +190,227 @@ function bones_comments( $comment, $args, $depth ) {
 <?php
 } // don't remove this bracket!
 /* **************************************************** */
+
+//
+//send order-txt to warehouse sftp after add new order in woocommerce
+//
+add_action( 'woocommerce_new_order', 'new_order_bokasin', 1, 1 );
+
+function new_order_bokasin( $order_id ) {
+	if ( ! $order_id ) return;
+
+	// Get ssh info from site settings
+	$warehouse_ssh_server = get_field('warehouse_ssh_server', 'option');
+	$warehouse_ssh_user = get_field('warehouse_ssh_user', 'option');
+	$warehouse_ssh_password = get_field('warehouse_ssh_password', 'option');
+
+	// Getting an instance of WC_Order object
+	$order = wc_get_order( $order_id );
+
+	// Create custom order file
+	// Open/Create file
+	$upload_dir = get_template_directory();
+	$orderFile = fopen($upload_dir . '/order_data.txt', "w") or die("Unable to open file!");
+
+	// Header fields
+	// Get order data
+	$data = $order->get_data();
+
+	// get total weight
+	$order_items  = $order->get_items();
+	$total_qty    = 0;
+	$total_weight = 0;
+	foreach ( $order_items as $item_id => $product_item ) {
+		$product         =  $product_item->get_product();
+		$product_weight  = $product->get_weight();
+		$quantity        = $product_item->get_quantity();
+		$total_qty      += $quantity;
+		$total_weight   += floatval( $product_weight * $quantity );
+	}
+
+	// Add values to header variables
+	$FN1_RecType_FN1_OrderNo = 'FN1'.$data['id'];
+	$FN1_DelCustNo = $data['customer_id'];
+	$FN1_DelName = $data['shipping']['first_name'] . ' ' . $data['shipping']['last_name'];
+	$FN1_DelAdd1 = $data['shipping']['address_1'];
+	$FN1_DelAdd2 = $data['shipping']['address_2'];
+	$FN1_DelZipCode = $data['shipping']['postcode'];
+	$FN1_DelPostalOffice = $data['shipping']['city'];
+	$FN1_DelCountryCode = $data['shipping']['state'];
+	$FN1_DelCountry = $data['shipping']['country'];
+	$FN1_DelExtRef = $data['customer_id'];
+	$FN1_DelCustEmail = $data['billing']['email'];
+	$FN1_DelCustMobil = $data['billing']['phone'];
+	$FN1_TotalWeight = '';
+	$FN1_ShopID = '8999907';
+	$FN1_DeliveryMode = $order_data_a; //find shipping method
+	$FN1_ClubID = 'NORA';
+	$FN1_CustType = "0";
+	$blank = "\n"; //new string
+
+	// Header fields and custom spaces
+	$orderHeaderLine =
+		$FN1_RecType_FN1_OrderNo.str_repeat(' ', 23 - mb_strlen($FN1_RecType_FN1_OrderNo)).
+		$FN1_DelCustNo.str_repeat(' ', 20 - mb_strlen($FN1_DelCustNo)).
+		$FN1_DelName.str_repeat(' ', 50 - mb_strlen($FN1_DelName)).
+		$FN1_DelAdd1.str_repeat(' ', 50 - mb_strlen($FN1_DelAdd1)).
+		$FN1_DelAdd2.str_repeat(' ', 50 - mb_strlen($FN1_DelAdd2)).
+		$FN1_DelZipCode.str_repeat(' ', 10 - mb_strlen($FN1_DelZipCode)).
+		$FN1_DelPostalOffice.str_repeat(' ', 50 - mb_strlen($FN1_DelPostalOffice)).
+		$FN1_DelCountry.
+		$FN1_DelCountryCode.str_repeat(' ', 25 - mb_strlen($FN1_DelCountryCode)).
+		$FN1_DelExtRef.str_repeat(' ', 50 - mb_strlen($FN1_DelExtRef)).
+		$FN1_DelCustEmail.str_repeat(' ', 100 - mb_strlen($FN1_DelCustEmail)).
+		$FN1_DelCustMobil.str_repeat(' ', 12 - mb_strlen($FN1_DelCustMobil)).
+		$FN1_TotalWeight.str_repeat(' ', 12 - mb_strlen($FN1_TotalWeight)).
+		$FN1_ShopID.str_repeat(' ', 20 - mb_strlen($FN1_ShopID)).
+		str_repeat(' ', 48). //FN1_PickupPoint 48 chars
+		$FN1_DeliveryMode.str_repeat(' ', 12 - mb_strlen($FN1_DeliveryMode)).
+		$FN1_ClubID.str_repeat(' ', 10 - mb_strlen($FN1_ClubID)).
+		$FN1_CustType.str_repeat(' ', 1 - mb_strlen($FN1_ClubID)).
+		$blank
+	;
+
+	// Write headers to file
+	fwrite($orderFile, $orderHeaderLine);
+
+	// Add product item lines
+	foreach ($order_items as $order_item) {
+
+		// add values to line variables
+		$FN2_OrderNo = 'FN2'.$data['id'];
+		$FN2_ArticleNo = $order_item['item_product_id'];
+		$FN2_ItemNumber = $order_item['item_sku'];
+		$FN2_ItemName = $order_item['item_name'];
+		$FN2_DelNumber = $order_item['item_quantity'];
+		$FN2_LineNumber = ''; //$order_item['item_id'];
+		$FN2_PickableItem = '1'; //find
+		$FN2_ItemOwner = '93278';
+		$FN2_Price = ''; //$order_item['item_price'];
+		$FN2_LineRef = ''; //$order_item['item_product_id'];
+		$isbn = get_field( 'isbn', $FN2_ArticleNo );
+
+		// Write lines to file with custom spaces
+		fwrite($orderFile,  $FN2_OrderNo.str_repeat(' ', 23 - mb_strlen($FN2_OrderNo)));
+		fwrite($orderFile,  $FN2_ArticleNo.str_repeat(' ', 8 - mb_strlen($FN2_ArticleNo)));
+		fwrite($orderFile,  $isbn.str_repeat(' ', 21 - mb_strlen($isbn)));
+		fwrite($orderFile,  $FN2_ItemName.str_repeat(' ', 80 - mb_strlen($FN2_ItemName)));
+		fwrite($orderFile,  $FN2_DelNumber.str_repeat(' ', 9 - mb_strlen($FN2_DelNumber)));
+		fwrite($orderFile,  $FN2_LineNumber.str_repeat(' ', 3 - mb_strlen($FN2_LineNumber)));
+		fwrite($orderFile,  $FN2_PickableItem.str_repeat(' ', 1 - mb_strlen($FN2_PickableItem)));
+		fwrite($orderFile,  $FN2_ItemOwner.str_repeat(' ', 6 - mb_strlen($FN2_ItemOwner)));
+		fwrite($orderFile,  $FN2_Price.str_repeat(' ', 8 - mb_strlen($FN2_Price)));
+		fwrite($orderFile,  $FN2_LineRef.str_repeat(' ', 8 - mb_strlen($FN2_LineRef)));
+		//fwrite($orderFile,  'isbn:'.$isbn);
+
+		fwrite($orderFile,  $blank);
+	}
+
+	// Close file
+	fclose($orderFile);
+
+	//Upload custom order file on remote sftp
+	include($upload_dir . '/phpseclib/Net/SFTP.php');
+	include($upload_dir . '/phpseclib/Crypt/RC4.php');
+	include($upload_dir . '/phpseclib/Crypt/Rijndael.php');
+	include($upload_dir . '/phpseclib/Crypt/Twofish.php');
+	include($upload_dir . '/phpseclib/Crypt/Blowfish.php');
+	include($upload_dir . '/phpseclib/Crypt/TripleDES.php');
+	include($upload_dir . '/phpseclib/Crypt/Random.php');
+	include($upload_dir . '/phpseclib/Crypt/Hash.php');
+	include($upload_dir . '/phpseclib/Math/BigInteger.php');
+
+	foreach ($order->get_items() as $order_item){
+		$item = wc_get_product($order_item->get_product_id());
+		if (!$item->is_virtual()) {
+
+			$ssh = new Net_SFTP($warehouse_ssh_server);
+			if (!$ssh->login($warehouse_ssh_user, $warehouse_ssh_password)) {
+					exit('Login Failed');
+			}
+
+			$dateStamp = date('Y.m.d');
+			$fileISO = $upload_dir . '/order_data.txt';
+			$file = mb_convert_encoding($fileISO, "UTF-8");
+
+			$ssh->put('/Inn/Ordre/'.'N8999907.Orage.'.$dateStamp.'.'.'FN2'.$data['id'].'.txt', $file, NET_SFTP_LOCAL_FILE);
+
+		}
+	}
+
+}
+
+//
+// schedule event to update csv from warehouse to proper format
+//
+if ( ! wp_next_scheduled( 'createCSVfromLastFile_hook' ) ) {
+	wp_schedule_event( strtotime('12:11:00'), 'hourly', 'createCSVfromLastFile_hook' );
+}
+
+add_action( 'createCSVfromLastFile_hook', 'createCSVfromLastFile' );
+function createCSVfromLastFile() {
+
+	// Get ssh info from site settings
+	$warehouse_ssh_server = get_field('warehouse_ssh_server', 'option');
+	$warehouse_ssh_user = get_field('warehouse_ssh_user', 'option');
+	$warehouse_ssh_password = get_field('warehouse_ssh_password', 'option');
+	$temabok_ssh_server = get_field('temabok_ssh_server', 'option');
+	$temabok_ssh_user = get_field('temabok_ssh_user', 'option');
+	$temabok_ssh_password = get_field('temabok_ssh_password', 'option');
+
+	//add phpseclib lib
+	$upload_dir = get_template_directory();
+
+	include($upload_dir . '/phpseclib/Net/SFTP.php');
+	include($upload_dir . '/phpseclib/Crypt/RC4.php');
+	include($upload_dir . '/phpseclib/Crypt/Rijndael.php');
+	include($upload_dir . '/phpseclib/Crypt/Twofish.php');
+	include($upload_dir . '/phpseclib/Crypt/Blowfish.php');
+	include($upload_dir . '/phpseclib/Crypt/TripleDES.php');
+	include($upload_dir . '/phpseclib/Crypt/Random.php');
+	include($upload_dir . '/phpseclib/Crypt/Hash.php');
+	include($upload_dir . '/phpseclib/Math/BigInteger.php');
+
+
+	//connect to sftp
+	$ssh = new Net_SFTP($warehouse_ssh_server);
+	if (!$ssh->login($warehouse_ssh_user, $warehouse_ssh_password)) {
+		exit('Login Failed');
+	}
+
+	//get last file filename
+	$files = $ssh->rawlist('/Ut/Lager/');
+
+	// filter out folders
+	$files_only_callback = function($a) { return ($a["type"] == NET_SFTP_TYPE_REGULAR); };
+	$files = array_filter($files, $files_only_callback);
+
+	// sort by timestamp
+	usort($files, function($a, $b) { return $b["mtime"] - $a["mtime"]; });
+
+	// pick the latest file
+	$latest = $files[0]["filename"];
+
+	//copy csv to readable name format
+	$fileCsvIn = $ssh->get('/Ut/Lager/'. $latest );
+
+	//add csv headers
+	$headersCsv = '"shop_id";"sku";"isbn";"weight";"title";"";"date";"";"description";"currency";"price";"stock"';
+
+	//concatinate csv and headers
+	$fileISO = $headersCsv . PHP_EOL . $fileCsvIn;
+
+	$fileCsv = utf8_encode($fileISO);
+
+	//connect to bokasin sftp
+	$ssh_bokasin = new Net_SFTP($temabok_ssh_server);
+	if (!$ssh_bokasin->login($temabok_ssh_user, $temabok_ssh_password)) {
+		exit('Login Failed');
+	}
+
+	//upload readable file
+	$ssh_bokasin->put('/home/bokasin/public_html/wp-content/lager/Orage_Nettbutikk_Lager_Headers.csv', $fileCsv);
+}
+
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
