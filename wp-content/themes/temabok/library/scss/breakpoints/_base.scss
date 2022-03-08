@@ -3876,7 +3876,8 @@ ARCHIVE STYLES
 .page-title {
 	margin-bottom: $double-padding;
 
-	&.archive-title {
+	&.archive-title,
+	&.woocommerce-products-header__title {
 		text-align: center;
 	}
 }

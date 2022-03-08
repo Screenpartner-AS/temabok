@@ -71,41 +71,8 @@ jQuery(function ($) {
 			});
 		},
 
-		getCostByTax: function (addonCostRaw, addonCost) {
-			var cost;
-
-			if (
-				woocommerce_addons_params.price_include_tax &&
-				woocommerce_addons_params.display_include_tax
-			) {
-				cost = addonCostRaw;
-			} else if (
-				woocommerce_addons_params.price_include_tax &&
-				!woocommerce_addons_params.display_include_tax
-			) {
-				cost = addonCost;
-			} else if (
-				!woocommerce_addons_params.price_include_tax &&
-				woocommerce_addons_params.display_include_tax
-			) {
-				cost = addonCost;
-			} else if (
-				!woocommerce_addons_params.price_include_tax &&
-				!woocommerce_addons_params.display_include_tax
-			) {
-				cost = addonCostRaw;
-			} else {
-				cost = addonCost;
-			}
-
-			return cost;
-		},
-
 		init: function (cart) {
 			var cartFormForValidity = document.querySelector('form.cart');
-			var showIncompleteSubTotal =
-			document.querySelector('[data-show-incomplete-sub-total]')
-				.dataset.showIncompleteSubTotal === '1';
 			var show_subtotal_panel = false;
 			var $cart = cart,
 				$variation_input = $cart.hasClass('variations_form')
@@ -159,6 +126,7 @@ jQuery(function ($) {
 
 							$(this)
 								.next('.wc-pao-addon-chars-remaining')
+								.addClass('visible')
 								.find('span')
 								.text(remaining);
 						}
@@ -230,7 +198,9 @@ jQuery(function ($) {
 						(addons = []);
 
 					// The product_id will be 0, empty or undefined if an invalid set of variations has been chosen.
-					var parsedProductId = parseInt( product_id );
+					var parsedProductId        = parseInt( product_id ),
+					    showIncompleteSubTotal = $totals.data( 'show-incomplete-sub-total' ) === 1;
+
 					show_subtotal_panel = !! (formValid && parsedProductId) || showIncompleteSubTotal;
 
 					// Compatibility with Smart Coupons self declared gift amount purchase.
@@ -681,11 +651,7 @@ jQuery(function ($) {
 							if (addons.length) {
 								$.each(addons, function (i, addon) {
 									if ('quantity_based' === addon.price_type) {
-										var cost =
-											wcPaoInitAddonTotals.getCostByTax(
-												addon.cost_raw,
-												addon.cost
-											);
+										const cost = addon.cost;
 										var formattedValue =
 											0 === cost
 												? '-'
@@ -708,18 +674,15 @@ jQuery(function ($) {
 									}
 								});
 								$.each(addons, function (i, addon) {
+									let cost;
 									if ('quantity_based' !== addon.price_type) {
 										if (
 											'percentage_based' !==
 											addon.price_type
 										) {
-											var cost =
-												wcPaoInitAddonTotals.getCostByTax(
-													addon.cost_raw,
-													addon.cost
-												);
+											cost = addon.cost;
 										} else {
-											var cost = addon.cost_raw;
+											cost = addon.cost_raw;
 										}
 
 										var formattedValue =

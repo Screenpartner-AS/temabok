@@ -613,7 +613,7 @@ WPML HEADER LANGUAGE SWITCHER
 function bokasin_wpml_language_switcher() {
 	$login_bar = '';
 
-	$languages = icl_get_languages('skip_missing=0&orderby=code');
+	$languages = icl_get_languages('skip_missing=0&orderby=menu_order');
 	if (!empty($languages)) {
 		foreach ($languages as $l) {
 			$login_bar .= '<li class="menu-item flag">';

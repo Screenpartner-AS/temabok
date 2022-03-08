@@ -1,5 +1,13 @@
 *** Product Addons Changelog ***
 
+2022-02-16 - version 4.7.0
+* Fix - Hook to toggle the price from add-ons name does not work.
+* Fix - Incorrect add-on price according to the location-based tax.
+* Fix - Remove duplicate entries from the exclude list in composer.json.
+* Fix - Text character limit doesn't show until you start typing in field.
+* Fix - The HTML structure for checkboxes and radio buttons is improved.
+* Fix - Updated script that reads 'show-incomplete-sub-total' data. Fixes conflict with Composite Products extension.
+
 2022-02-08 - version 4.6.0
 * Fix - Add option to show incomplete subtotal.
 * Fix - Fix CI build errors.

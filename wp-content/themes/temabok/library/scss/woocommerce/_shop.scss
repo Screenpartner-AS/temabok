@@ -22,7 +22,6 @@
 
 	ul.products {
 		li.product {
-			margin: 0 0 $double-padding;
 
 			h3,
 			.woocommerce-loop-product__title {
@@ -62,7 +61,6 @@
 				&.btn-green,
 				&.btn-disabled {
 					display: inline-block;
-					min-width: 170px;
 					font-size: 1.2rem;
 					margin-top: $half-padding;
 					padding: 10px 15px 9px;
@@ -297,7 +295,6 @@
 			.quantity {
 				display: none;
 				order: 2;
-				// margin: 0 0 0 $base-padding!important;
 				margin: 0!important;
 			}
 		}

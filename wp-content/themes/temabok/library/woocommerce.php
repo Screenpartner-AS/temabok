@@ -526,65 +526,42 @@ function add_product_to_cart() {
 	}
 }
 
+/*********************************
+APPENDING READ ISSUE ONLINE BUTTON
+TO SINGLE PRODUCTS
+*********************************/
+add_action('woocommerce_single_product_summary', 'sp_read_online_button', 25);
+function sp_read_online_button() {
+  global $post;
+  $online_pub = get_field('link_with_online_publication', $post->ID);
+  $release_date = get_field('online_publication_release_date', $post->ID);
+  $icon = get_template_directory_uri() . '/library/images/eye.svg';
+  $btn = '';
+  $register_link = get_site_url() . __('/register', 'screenpartner');
 
-/************************************
-REMOVE ADDONS IF PRODUCT IS NOT
-BOKASIN SUBSCRIPTION
-************************************/
-// add_action( 'woocommerce_before_checkout_form', 'sp_remove_checkout_add_ons_when_not_subscription' );
-// function sp_remove_checkout_add_ons_when_not_subscription() {
-// 	if ( function_exists( 'wc_checkout_add_ons' ) ) {
-//     $product_id = 9021;
-//
-// 		// check each cart item for our product id
-// 		foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-// 			$product = $cart_item['data'];
-//
-//       if ( $product->get_id() == $product_id ) {
-//         return;
-//       }
-// 		}
-//
-//     // get the add-ons current position so we know where to remove them from
-//     $position = get_option( 'wc_checkout_add_ons_position' );
-//     remove_action( $position, array( wc_checkout_add_ons()->get_frontend_instance(), 'render_add_ons' ), 20 );
-// 	}
-// }
+  // Only display if these conditions are met:
+  // user is logged in
+  // publication exists
+  $publication_link = get_permalink($online_pub->ID);
 
-/***************************************
-ADD LINK TO STORE BELOW CUSTOMER DETAILS
-IN REGISTRATION CHECKOUT
-***************************************/
-// add_action( 'woocommerce_checkout_after_customer_details', 'sp_check_the_store_message', 100 );
-// function sp_check_the_store_message() {
-//   if (is_page(9012)) {
-//     $shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) );
-//
-//     echo '<p class="check-out-store">';
-//     printf( __('Wondering which products to choose? Check out the %s to decide!', 'screenpartner'), '<a target="_blank" href="' . $shop_page_url . '">' . __('store', 'screenpartner') . '</a>');
-//     echo '<br>' . __('Ex: "Mineworld nr 2 – 2017, Dinosaurenes rekordbok, Historiens største eventyr".', 'screenpartner');
-//     echo '</p>';
-//   }
-// }
+  if ($online_pub) {
+    if (is_user_logged_in()) {
+      $btn = '<a class="btn-green read-online" href="' . $publication_link . '" title="Read online">' . __('Read Online', 'screenpartner') . '</a>';
+    } else {
+      $btn = '<a class="btn-green read-online" href="' . $register_link . '" title="Read online">' . __('Join to save', 'screenpartner') . '</a>';
+    }
+  }
 
-// add_action('woocommerce_single_product_summary', 'sp_buy_member_price_button', 38);
-// function sp_buy_member_price_button() {
-//   global $product;
-//   $icon = get_template_directory_uri() . '/library/images/credit-card.svg';
-//   $btn = '';
-//   $register_link = get_site_url() . __('/register', 'screenpartner');
-//   $purchasable = $product->is_purchasable();
-//
-//   // Only display if these conditions are met:
-//   // user is logged in
-//   if (!is_user_logged_in() && $purchasable) {
-//     $btn = '<a class="btn-green read-online" href="' . $register_link . '" title="Read online">' . __('Join to save', 'screenpartner') . '</a>';
-//   } else {
-//     $btn = '';
-//   }
-//
-//   echo $btn;
-// }
+  if ($release_date && (!$online_pub)) {
+    $dateformatstring = "M";
+    $unixtimestamp = strtotime($release_date);
+    $month = date_i18n($dateformatstring, $unixtimestamp);
+
+    $btn = '<button disabled class="btn-green btn-disabled">' . sprintf( __('Read online in %s', 'screenpartner'), $month) . '</button>';
+  }
+
+  echo $btn;
+}
 
 /************************************
 BUY RELATED BOKASIN FUNCTION
