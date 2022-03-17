@@ -470,6 +470,17 @@ NAVIGATION STYLES
 			&.mini_cart_button {
 				display: block;
 				margin: $double-padding 0;
+
+				&.inactive {
+					height: 0;
+					margin: 0;
+				}
+			}
+
+			&.register-link {
+				> a {
+					margin: $base-padding 0;
+				}
 			}
 
 			&.flag {
