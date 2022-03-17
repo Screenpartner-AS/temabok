@@ -4893,6 +4893,10 @@ QUIZ
 		.select2-results__option {
 			color: $black;
 		}
+
+		.select2-results__option--highlighted {
+			color: $white;
+		}
 	}
 }
 
