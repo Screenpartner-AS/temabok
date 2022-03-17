@@ -1806,7 +1806,47 @@ NAVIGATION STYLES
   z-index: 999;
   transition: all .315s ease-in-out; }
   .mobile-nav .nav li {
-    margin: 5px 0; }
+    margin: 5px 0;
+    /* &.night-toggle-menu-item {
+				a.switch-theme {
+					&.loading {
+						span {
+							animation: rotating 2s linear infinite;
+						}
+					}
+
+					span {
+						display: block;
+						width: 25px;
+						height: 25px;
+						border-radius: 50%;
+						background-color: lighten($dark-gray, 10%);
+						background-size: 84%;
+						background-position: center;
+						background-repeat: no-repeat;
+						@include transition(all .315s ease-in-out);
+
+						.lightenup &,
+						.header-lightenup & {
+							background-color: $gray;
+							background-image: url('../images/nattmodus.svg');
+
+							&:hover {
+								background-color: darken($light-gray, 10%);
+							}
+						}
+
+						.darkendown &,
+						.header-darkendown & {
+							background-image: url('../images/nattmodus.svg');
+
+							&:hover {
+								background-color: lighten($dark-gray, 20%);
+							}
+						}
+					}
+				}
+			} */ }
     .mobile-nav .nav li a {
       display: block;
       text-decoration: none;
@@ -1819,28 +1859,26 @@ NAVIGATION STYLES
         display: none; }
     .mobile-nav .nav li.faq-menu-item {
       display: none; }
-    .mobile-nav .nav li.night-toggle-menu-item a.switch-theme.loading span {
-      -webkit-animation: rotating 2s linear infinite;
-              animation: rotating 2s linear infinite; }
-    .mobile-nav .nav li.night-toggle-menu-item a.switch-theme span {
+    .mobile-nav .nav li.mini_cart_button {
       display: block;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      background-color: #333333;
-      background-size: 84%;
-      background-position: center;
-      background-repeat: no-repeat;
-      transition: all 0.315s ease-in-out; }
-      .lightenup .mobile-nav .nav li.night-toggle-menu-item a.switch-theme span, .header-lightenup .mobile-nav .nav li.night-toggle-menu-item a.switch-theme span {
-        background-color: #c0c3ca;
-        background-image: url("../images/nattmodus.svg"); }
-        .lightenup .mobile-nav .nav li.night-toggle-menu-item a.switch-theme span:hover, .header-lightenup .mobile-nav .nav li.night-toggle-menu-item a.switch-theme span:hover {
-          background-color: #cbd3da; }
-      .darkendown .mobile-nav .nav li.night-toggle-menu-item a.switch-theme span, .header-darkendown .mobile-nav .nav li.night-toggle-menu-item a.switch-theme span {
-        background-image: url("../images/nattmodus.svg"); }
-        .darkendown .mobile-nav .nav li.night-toggle-menu-item a.switch-theme span:hover, .header-darkendown .mobile-nav .nav li.night-toggle-menu-item a.switch-theme span:hover {
-          background-color: #4c4c4c; }
+      margin: 20px 0; }
+    .mobile-nav .nav li.flag {
+      display: inline-block;
+      margin-right: 10px; }
+      .mobile-nav .nav li.flag > span img {
+        -webkit-filter: grayscale(1);
+                filter: grayscale(1); }
+      .mobile-nav .nav li.flag > span,
+      .mobile-nav .nav li.flag > a {
+        display: block; }
+        .mobile-nav .nav li.flag > span img,
+        .mobile-nav .nav li.flag > a img {
+          width: 100%;
+          max-width: 32px;
+          height: auto;
+          border-radius: 50%; }
+      .mobile-nav .nav li.flag > a:hover img {
+        box-shadow: 0 0 0 2px #c0c3ca; }
   .mobile-nav.active {
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -4694,10 +4732,10 @@ img.attachment-sp-thumb-large {
       background: #0c0c0c; }
   .delelenker .simplefavorite-button {
     margin: 20px 0 0;
-    color: #000; }
+    color: #000 !important; }
     .delelenker .simplefavorite-button i:before {
       color: rgba(0, 0, 0, 0.7); }
-    .delelenker .simplefavorite-button.active i:before {
+    .delelenker .simplefavorite-button.active i:before, .delelenker .simplefavorite-button:hover i:before {
       color: #E2007C; }
 
 .single-post .banner {
