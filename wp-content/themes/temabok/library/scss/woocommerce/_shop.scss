@@ -20,6 +20,14 @@
 		margin-bottom: $base-padding;
 	}
 
+	.sp-product-container {
+		@media (min-width: 1030px) {
+			display: grid;
+			grid-template-columns: 300px 1fr;
+			grid-gap: $triple-padding;
+		}
+	}
+
 	ul.products {
 		li.product {
 

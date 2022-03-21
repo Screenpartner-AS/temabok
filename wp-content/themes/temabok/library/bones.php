@@ -1220,52 +1220,29 @@ function sp_auto_redirect_external_after_logout() {
 }
 add_action('wp_logout', 'sp_auto_redirect_external_after_logout');
 
-// Only display Norwegian publications in frontend
-//add_filter('pre_get_posts', 'sp_only_display_norwegian_publications');
-function sp_only_display_norwegian_publications($query) {
-	// Don't do this in admin
-	if (is_admin()) {
-		return $query;
-	}
+// Button shortcode
+// Customize to client
+function sp_filterbox($atts) {
+	extract(shortcode_atts(array(
+		'title' => 'Title',
+		'facet_slug' => '',
+	) , $atts));
 
-	if ($query->is_post_type_archive('publication') && $query->is_main_query()) {
-		$query->set('tax_query', array(
-			'relation' => 'OR',
-			array(
-				'taxonomy' => 'publication_language',
-				'field' => 'slug',
-				'terms' => array(
-					'norsk'
-				) ,
-				'operator' => 'IN'
-			)
-		));
-	}
+	ob_start();
+	?>
+	<div class="sp-filterbox">
+		<header class="sp-filterbox-header">
+			<p><?php echo $title; ?></p>
+			<img src="<?php echo get_template_directory_uri(); ?>/library/images/chevron-down.svg" alt="Arrow down" class="sp-toggle-box">
+		</header>
 
-	return $query;
+		<div class="sp-filterbox-content">
+			<?php echo do_shortcode('[facetwp facet="' . $facet_slug . '"]'); ?>
+		</div>
+	</div>
+
+	<?php
+	return ob_get_clean();
 }
-
-add_filter('wp_insert_attachment_data', 'check_manager_status', 10, 2);
-add_post_type_support('education', 'excerpt');
-
-function check_manager_status($data, $postarr) {
-	if ((strpos($_SERVER['HTTP_HOST'], 'skolerom.no') == false) || strpos($_SERVER['HTTP_HOST'], 'ms2.computools.org') == false) {
-		return $data;
-	}
-
-	$ch = curl_init(get_site_url() . ':84/api/resource/status');
-	curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-	$response = curl_exec($ch);
-
-	$result = json_decode($response);
-	if ($result->success == "success") {
-		return $data;
-	}
-	else {
-		return null;
-	}
-}
+add_shortcode('filterbox', 'sp_filterbox');
 ?>

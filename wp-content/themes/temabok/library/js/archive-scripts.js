@@ -30,4 +30,14 @@ jQuery(document).ready(function($) {
     e.preventDefault();
   });
 
+	/*
+	 * Toggle Filter Display
+	 */
+	$('.sp-filterbox-header').on('click', function(e) {
+		e.preventDefault();
+		var box_content = $(this).next('.sp-filterbox-content');
+		$(this).toggleClass('closed');
+		box_content.slideToggle('fast');
+	});
+
 }); /* end of as page load scripts */
