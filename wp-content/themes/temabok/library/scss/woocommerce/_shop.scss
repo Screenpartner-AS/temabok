@@ -30,6 +30,8 @@
 
 	ul.products {
 		li.product {
+			margin: 0;
+			width: 100%;
 
 			h3,
 			.woocommerce-loop-product__title {
@@ -37,47 +39,47 @@
 				padding: $half-padding 0 $small-padding;
 			}
 
-			a,
-			button {
+			a.woocommerce-loop-product__link {
+				@media (min-width: 768px) {
+					display: grid;
+					grid-gap: 32px;
+					grid-template-columns: 150px auto;
+					align-items: center;
+				}
+
 				.wc-thumb-wrap {
 					position: relative;
 					padding-bottom: 125%;
+
+					img {
+						margin: 0;
+						box-shadow: 0 1px 4px rgba($black, 0);
+						position: absolute;
+					  top: 50%;
+					  left: 50%;
+						width: 100%;
+						transform: translate(-50%, -50%);
+						height: auto;
+						object-fit: contain;
+						object-position: center;
+						border-radius: 0 4px 4px 0;
+						@include transition(all .214s ease-in-out);
+					}
 				}
 
-				img {
-					margin: 0;
-					box-shadow: 0 1px 4px rgba($black, 0);
-					position: absolute;
-				  top: auto;
-					bottom: 0;
-				  left: 0;
-				  max-width: 100%;
-				  max-height: 100%;
-				  width: auto;
-				  height: auto;
-				  min-width: 1px;
-				  min-height: 1px;
-					border-radius: 0 4px 4px 0;
-					@include transition(all .214s ease-in-out);
-				}
-
-				&.btn-green {
+				span.btn-green {
 					margin-right: $small-padding;
 				}
 
-				&.btn-orange,
-				&.btn-green,
-				&.btn-disabled {
+				span.btn-orange,
+				span.btn-green,
+				span.btn-disabled {
 					display: inline-block;
 					font-size: 1.2rem;
 					margin-top: $half-padding;
 					padding: 10px 15px 9px;
 					text-align: center;
 				}
-
-				/* &.buy-product-link {
-					display: none;
-				} */
 
 				&:hover,
 				&:focus {

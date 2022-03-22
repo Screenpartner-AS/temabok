@@ -2397,7 +2397,8 @@ GENERAL STYLES
 	}
 }
 
-.archive-header {
+.archive-header,
+.article-categories-section {
 	.facetwp-type-checkboxes,
 	.facetwp-type-radio,
 	.category-buttons {
@@ -3175,8 +3176,7 @@ ARCHIVE STYLES
 .page-title {
 	margin-bottom: $double-padding;
 
-	&.archive-title,
-	&.woocommerce-products-header__title {
+	&.archive-title {
 		text-align: center;
 	}
 }

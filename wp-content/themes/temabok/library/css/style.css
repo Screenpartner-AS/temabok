@@ -3311,7 +3311,10 @@ GENERAL STYLES
 
 .archive-header .facetwp-type-checkboxes,
 .archive-header .facetwp-type-radio,
-.archive-header .category-buttons {
+.archive-header .category-buttons,
+.article-categories-section .facetwp-type-checkboxes,
+.article-categories-section .facetwp-type-radio,
+.article-categories-section .category-buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -3321,11 +3324,17 @@ GENERAL STYLES
   margin-right: auto; }
   .archive-header .facetwp-type-checkboxes.facetwp-facet,
   .archive-header .facetwp-type-radio.facetwp-facet,
-  .archive-header .category-buttons.facetwp-facet {
+  .archive-header .category-buttons.facetwp-facet,
+  .article-categories-section .facetwp-type-checkboxes.facetwp-facet,
+  .article-categories-section .facetwp-type-radio.facetwp-facet,
+  .article-categories-section .category-buttons.facetwp-facet {
     margin-bottom: 20px; }
   .archive-header .facetwp-type-checkboxes .flickity-viewport,
   .archive-header .facetwp-type-radio .flickity-viewport,
-  .archive-header .category-buttons .flickity-viewport {
+  .archive-header .category-buttons .flickity-viewport,
+  .article-categories-section .facetwp-type-checkboxes .flickity-viewport,
+  .article-categories-section .facetwp-type-radio .flickity-viewport,
+  .article-categories-section .category-buttons .flickity-viewport {
     width: 100%; }
   .archive-header .facetwp-type-checkboxes .facetwp-checkbox,
   .archive-header .facetwp-type-checkboxes .facetwp-radio,
@@ -3335,7 +3344,16 @@ GENERAL STYLES
   .archive-header .facetwp-type-radio .cat,
   .archive-header .category-buttons .facetwp-checkbox,
   .archive-header .category-buttons .facetwp-radio,
-  .archive-header .category-buttons .cat {
+  .archive-header .category-buttons .cat,
+  .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox,
+  .article-categories-section .facetwp-type-checkboxes .facetwp-radio,
+  .article-categories-section .facetwp-type-checkboxes .cat,
+  .article-categories-section .facetwp-type-radio .facetwp-checkbox,
+  .article-categories-section .facetwp-type-radio .facetwp-radio,
+  .article-categories-section .facetwp-type-radio .cat,
+  .article-categories-section .category-buttons .facetwp-checkbox,
+  .article-categories-section .category-buttons .facetwp-radio,
+  .article-categories-section .category-buttons .cat {
     position: relative;
     text-transform: uppercase;
     background: none;
@@ -3358,7 +3376,16 @@ GENERAL STYLES
     .archive-header .facetwp-type-radio .cat .facetwp-counter,
     .archive-header .category-buttons .facetwp-checkbox .facetwp-counter,
     .archive-header .category-buttons .facetwp-radio .facetwp-counter,
-    .archive-header .category-buttons .cat .facetwp-counter {
+    .archive-header .category-buttons .cat .facetwp-counter,
+    .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox .facetwp-counter,
+    .article-categories-section .facetwp-type-checkboxes .facetwp-radio .facetwp-counter,
+    .article-categories-section .facetwp-type-checkboxes .cat .facetwp-counter,
+    .article-categories-section .facetwp-type-radio .facetwp-checkbox .facetwp-counter,
+    .article-categories-section .facetwp-type-radio .facetwp-radio .facetwp-counter,
+    .article-categories-section .facetwp-type-radio .cat .facetwp-counter,
+    .article-categories-section .category-buttons .facetwp-checkbox .facetwp-counter,
+    .article-categories-section .category-buttons .facetwp-radio .facetwp-counter,
+    .article-categories-section .category-buttons .cat .facetwp-counter {
       display: none; }
     .archive-header .facetwp-type-checkboxes .facetwp-checkbox:hover, .archive-header .facetwp-type-checkboxes .facetwp-checkbox:focus,
     .archive-header .facetwp-type-checkboxes .facetwp-radio:hover,
@@ -3376,7 +3403,25 @@ GENERAL STYLES
     .archive-header .category-buttons .facetwp-radio:hover,
     .archive-header .category-buttons .facetwp-radio:focus,
     .archive-header .category-buttons .cat:hover,
-    .archive-header .category-buttons .cat:focus {
+    .archive-header .category-buttons .cat:focus,
+    .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox:hover,
+    .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox:focus,
+    .article-categories-section .facetwp-type-checkboxes .facetwp-radio:hover,
+    .article-categories-section .facetwp-type-checkboxes .facetwp-radio:focus,
+    .article-categories-section .facetwp-type-checkboxes .cat:hover,
+    .article-categories-section .facetwp-type-checkboxes .cat:focus,
+    .article-categories-section .facetwp-type-radio .facetwp-checkbox:hover,
+    .article-categories-section .facetwp-type-radio .facetwp-checkbox:focus,
+    .article-categories-section .facetwp-type-radio .facetwp-radio:hover,
+    .article-categories-section .facetwp-type-radio .facetwp-radio:focus,
+    .article-categories-section .facetwp-type-radio .cat:hover,
+    .article-categories-section .facetwp-type-radio .cat:focus,
+    .article-categories-section .category-buttons .facetwp-checkbox:hover,
+    .article-categories-section .category-buttons .facetwp-checkbox:focus,
+    .article-categories-section .category-buttons .facetwp-radio:hover,
+    .article-categories-section .category-buttons .facetwp-radio:focus,
+    .article-categories-section .category-buttons .cat:hover,
+    .article-categories-section .category-buttons .cat:focus {
       background: #E2007C;
       color: #fff;
       box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
@@ -3388,7 +3433,16 @@ GENERAL STYLES
     .archive-header .facetwp-type-radio .cat.checked,
     .archive-header .category-buttons .facetwp-checkbox.checked,
     .archive-header .category-buttons .facetwp-radio.checked,
-    .archive-header .category-buttons .cat.checked {
+    .archive-header .category-buttons .cat.checked,
+    .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox.checked,
+    .article-categories-section .facetwp-type-checkboxes .facetwp-radio.checked,
+    .article-categories-section .facetwp-type-checkboxes .cat.checked,
+    .article-categories-section .facetwp-type-radio .facetwp-checkbox.checked,
+    .article-categories-section .facetwp-type-radio .facetwp-radio.checked,
+    .article-categories-section .facetwp-type-radio .cat.checked,
+    .article-categories-section .category-buttons .facetwp-checkbox.checked,
+    .article-categories-section .category-buttons .facetwp-radio.checked,
+    .article-categories-section .category-buttons .cat.checked {
       background: #E2007C;
       color: #fff;
       box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
@@ -3400,18 +3454,27 @@ GENERAL STYLES
       .archive-header .facetwp-type-radio .cat.checked:before,
       .archive-header .category-buttons .facetwp-checkbox.checked:before,
       .archive-header .category-buttons .facetwp-radio.checked:before,
-      .archive-header .category-buttons .cat.checked:before {
+      .archive-header .category-buttons .cat.checked:before,
+      .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox.checked:before,
+      .article-categories-section .facetwp-type-checkboxes .facetwp-radio.checked:before,
+      .article-categories-section .facetwp-type-checkboxes .cat.checked:before,
+      .article-categories-section .facetwp-type-radio .facetwp-checkbox.checked:before,
+      .article-categories-section .facetwp-type-radio .facetwp-radio.checked:before,
+      .article-categories-section .facetwp-type-radio .cat.checked:before,
+      .article-categories-section .category-buttons .facetwp-checkbox.checked:before,
+      .article-categories-section .category-buttons .facetwp-radio.checked:before,
+      .article-categories-section .category-buttons .cat.checked:before {
         content: '\f00d';
         display: inline-block;
         font-family: "FontAwesome";
         color: #fff;
         margin-right: 5px; }
-    .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-checkbox, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-checkbox, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-checkbox, .blog .archive-header .facetwp-type-checkboxes .facetwp-checkbox, .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-radio, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-radio, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-radio, .blog .archive-header .facetwp-type-checkboxes .facetwp-radio, .post-type-archive-product .archive-header .facetwp-type-checkboxes .cat, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .cat, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .cat, .blog .archive-header .facetwp-type-checkboxes .cat, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-checkbox, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-checkbox, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-checkbox, .blog .archive-header .facetwp-type-radio .facetwp-checkbox, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-radio, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-radio, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-radio, .blog .archive-header .facetwp-type-radio .facetwp-radio, .post-type-archive-product .archive-header .facetwp-type-radio .cat, .post-type-archive-publication .archive-header .facetwp-type-radio .cat, .post-type-archive-spoken .archive-header .facetwp-type-radio .cat, .blog .archive-header .facetwp-type-radio .cat, .post-type-archive-product .archive-header .category-buttons .facetwp-checkbox, .post-type-archive-publication .archive-header .category-buttons .facetwp-checkbox, .post-type-archive-spoken .archive-header .category-buttons .facetwp-checkbox, .blog .archive-header .category-buttons .facetwp-checkbox, .post-type-archive-product .archive-header .category-buttons .facetwp-radio, .post-type-archive-publication .archive-header .category-buttons .facetwp-radio, .post-type-archive-spoken .archive-header .category-buttons .facetwp-radio, .blog .archive-header .category-buttons .facetwp-radio, .post-type-archive-product .archive-header .category-buttons .cat, .post-type-archive-publication .archive-header .category-buttons .cat, .post-type-archive-spoken .archive-header .category-buttons .cat, .blog .archive-header .category-buttons .cat {
+    .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-checkbox, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-checkbox, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-checkbox, .blog .archive-header .facetwp-type-checkboxes .facetwp-checkbox, .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-radio, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-radio, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-radio, .blog .archive-header .facetwp-type-checkboxes .facetwp-radio, .post-type-archive-product .archive-header .facetwp-type-checkboxes .cat, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .cat, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .cat, .blog .archive-header .facetwp-type-checkboxes .cat, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-checkbox, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-checkbox, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-checkbox, .blog .archive-header .facetwp-type-radio .facetwp-checkbox, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-radio, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-radio, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-radio, .blog .archive-header .facetwp-type-radio .facetwp-radio, .post-type-archive-product .archive-header .facetwp-type-radio .cat, .post-type-archive-publication .archive-header .facetwp-type-radio .cat, .post-type-archive-spoken .archive-header .facetwp-type-radio .cat, .blog .archive-header .facetwp-type-radio .cat, .post-type-archive-product .archive-header .category-buttons .facetwp-checkbox, .post-type-archive-publication .archive-header .category-buttons .facetwp-checkbox, .post-type-archive-spoken .archive-header .category-buttons .facetwp-checkbox, .blog .archive-header .category-buttons .facetwp-checkbox, .post-type-archive-product .archive-header .category-buttons .facetwp-radio, .post-type-archive-publication .archive-header .category-buttons .facetwp-radio, .post-type-archive-spoken .archive-header .category-buttons .facetwp-radio, .blog .archive-header .category-buttons .facetwp-radio, .post-type-archive-product .archive-header .category-buttons .cat, .post-type-archive-publication .archive-header .category-buttons .cat, .post-type-archive-spoken .archive-header .category-buttons .cat, .blog .archive-header .category-buttons .cat, .post-type-archive-product .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox, .post-type-archive-publication .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox, .post-type-archive-spoken .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox, .blog .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox, .post-type-archive-product .article-categories-section .facetwp-type-checkboxes .facetwp-radio, .post-type-archive-publication .article-categories-section .facetwp-type-checkboxes .facetwp-radio, .post-type-archive-spoken .article-categories-section .facetwp-type-checkboxes .facetwp-radio, .blog .article-categories-section .facetwp-type-checkboxes .facetwp-radio, .post-type-archive-product .article-categories-section .facetwp-type-checkboxes .cat, .post-type-archive-publication .article-categories-section .facetwp-type-checkboxes .cat, .post-type-archive-spoken .article-categories-section .facetwp-type-checkboxes .cat, .blog .article-categories-section .facetwp-type-checkboxes .cat, .post-type-archive-product .article-categories-section .facetwp-type-radio .facetwp-checkbox, .post-type-archive-publication .article-categories-section .facetwp-type-radio .facetwp-checkbox, .post-type-archive-spoken .article-categories-section .facetwp-type-radio .facetwp-checkbox, .blog .article-categories-section .facetwp-type-radio .facetwp-checkbox, .post-type-archive-product .article-categories-section .facetwp-type-radio .facetwp-radio, .post-type-archive-publication .article-categories-section .facetwp-type-radio .facetwp-radio, .post-type-archive-spoken .article-categories-section .facetwp-type-radio .facetwp-radio, .blog .article-categories-section .facetwp-type-radio .facetwp-radio, .post-type-archive-product .article-categories-section .facetwp-type-radio .cat, .post-type-archive-publication .article-categories-section .facetwp-type-radio .cat, .post-type-archive-spoken .article-categories-section .facetwp-type-radio .cat, .blog .article-categories-section .facetwp-type-radio .cat, .post-type-archive-product .article-categories-section .category-buttons .facetwp-checkbox, .post-type-archive-publication .article-categories-section .category-buttons .facetwp-checkbox, .post-type-archive-spoken .article-categories-section .category-buttons .facetwp-checkbox, .blog .article-categories-section .category-buttons .facetwp-checkbox, .post-type-archive-product .article-categories-section .category-buttons .facetwp-radio, .post-type-archive-publication .article-categories-section .category-buttons .facetwp-radio, .post-type-archive-spoken .article-categories-section .category-buttons .facetwp-radio, .blog .article-categories-section .category-buttons .facetwp-radio, .post-type-archive-product .article-categories-section .category-buttons .cat, .post-type-archive-publication .article-categories-section .category-buttons .cat, .post-type-archive-spoken .article-categories-section .category-buttons .cat, .blog .article-categories-section .category-buttons .cat {
       background: #E9ECEF; }
-      .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-checkbox:hover, .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-checkbox:focus, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-checkbox:hover, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-checkbox:focus, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-checkbox:hover, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-checkbox:focus, .blog .archive-header .facetwp-type-checkboxes .facetwp-checkbox:hover, .blog .archive-header .facetwp-type-checkboxes .facetwp-checkbox:focus, .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-radio:hover, .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-radio:focus, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-radio:hover, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-radio:focus, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-radio:hover, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-radio:focus, .blog .archive-header .facetwp-type-checkboxes .facetwp-radio:hover, .blog .archive-header .facetwp-type-checkboxes .facetwp-radio:focus, .post-type-archive-product .archive-header .facetwp-type-checkboxes .cat:hover, .post-type-archive-product .archive-header .facetwp-type-checkboxes .cat:focus, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .cat:hover, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .cat:focus, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .cat:hover, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .cat:focus, .blog .archive-header .facetwp-type-checkboxes .cat:hover, .blog .archive-header .facetwp-type-checkboxes .cat:focus, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-checkbox:hover, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-checkbox:focus, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-checkbox:hover, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-checkbox:focus, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-checkbox:hover, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-checkbox:focus, .blog .archive-header .facetwp-type-radio .facetwp-checkbox:hover, .blog .archive-header .facetwp-type-radio .facetwp-checkbox:focus, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-radio:hover, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-radio:focus, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-radio:hover, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-radio:focus, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-radio:hover, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-radio:focus, .blog .archive-header .facetwp-type-radio .facetwp-radio:hover, .blog .archive-header .facetwp-type-radio .facetwp-radio:focus, .post-type-archive-product .archive-header .facetwp-type-radio .cat:hover, .post-type-archive-product .archive-header .facetwp-type-radio .cat:focus, .post-type-archive-publication .archive-header .facetwp-type-radio .cat:hover, .post-type-archive-publication .archive-header .facetwp-type-radio .cat:focus, .post-type-archive-spoken .archive-header .facetwp-type-radio .cat:hover, .post-type-archive-spoken .archive-header .facetwp-type-radio .cat:focus, .blog .archive-header .facetwp-type-radio .cat:hover, .blog .archive-header .facetwp-type-radio .cat:focus, .post-type-archive-product .archive-header .category-buttons .facetwp-checkbox:hover, .post-type-archive-product .archive-header .category-buttons .facetwp-checkbox:focus, .post-type-archive-publication .archive-header .category-buttons .facetwp-checkbox:hover, .post-type-archive-publication .archive-header .category-buttons .facetwp-checkbox:focus, .post-type-archive-spoken .archive-header .category-buttons .facetwp-checkbox:hover, .post-type-archive-spoken .archive-header .category-buttons .facetwp-checkbox:focus, .blog .archive-header .category-buttons .facetwp-checkbox:hover, .blog .archive-header .category-buttons .facetwp-checkbox:focus, .post-type-archive-product .archive-header .category-buttons .facetwp-radio:hover, .post-type-archive-product .archive-header .category-buttons .facetwp-radio:focus, .post-type-archive-publication .archive-header .category-buttons .facetwp-radio:hover, .post-type-archive-publication .archive-header .category-buttons .facetwp-radio:focus, .post-type-archive-spoken .archive-header .category-buttons .facetwp-radio:hover, .post-type-archive-spoken .archive-header .category-buttons .facetwp-radio:focus, .blog .archive-header .category-buttons .facetwp-radio:hover, .blog .archive-header .category-buttons .facetwp-radio:focus, .post-type-archive-product .archive-header .category-buttons .cat:hover, .post-type-archive-product .archive-header .category-buttons .cat:focus, .post-type-archive-publication .archive-header .category-buttons .cat:hover, .post-type-archive-publication .archive-header .category-buttons .cat:focus, .post-type-archive-spoken .archive-header .category-buttons .cat:hover, .post-type-archive-spoken .archive-header .category-buttons .cat:focus, .blog .archive-header .category-buttons .cat:hover, .blog .archive-header .category-buttons .cat:focus {
+      .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-checkbox:hover, .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-checkbox:focus, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-checkbox:hover, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-checkbox:focus, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-checkbox:hover, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-checkbox:focus, .blog .archive-header .facetwp-type-checkboxes .facetwp-checkbox:hover, .blog .archive-header .facetwp-type-checkboxes .facetwp-checkbox:focus, .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-radio:hover, .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-radio:focus, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-radio:hover, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-radio:focus, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-radio:hover, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-radio:focus, .blog .archive-header .facetwp-type-checkboxes .facetwp-radio:hover, .blog .archive-header .facetwp-type-checkboxes .facetwp-radio:focus, .post-type-archive-product .archive-header .facetwp-type-checkboxes .cat:hover, .post-type-archive-product .archive-header .facetwp-type-checkboxes .cat:focus, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .cat:hover, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .cat:focus, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .cat:hover, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .cat:focus, .blog .archive-header .facetwp-type-checkboxes .cat:hover, .blog .archive-header .facetwp-type-checkboxes .cat:focus, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-checkbox:hover, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-checkbox:focus, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-checkbox:hover, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-checkbox:focus, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-checkbox:hover, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-checkbox:focus, .blog .archive-header .facetwp-type-radio .facetwp-checkbox:hover, .blog .archive-header .facetwp-type-radio .facetwp-checkbox:focus, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-radio:hover, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-radio:focus, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-radio:hover, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-radio:focus, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-radio:hover, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-radio:focus, .blog .archive-header .facetwp-type-radio .facetwp-radio:hover, .blog .archive-header .facetwp-type-radio .facetwp-radio:focus, .post-type-archive-product .archive-header .facetwp-type-radio .cat:hover, .post-type-archive-product .archive-header .facetwp-type-radio .cat:focus, .post-type-archive-publication .archive-header .facetwp-type-radio .cat:hover, .post-type-archive-publication .archive-header .facetwp-type-radio .cat:focus, .post-type-archive-spoken .archive-header .facetwp-type-radio .cat:hover, .post-type-archive-spoken .archive-header .facetwp-type-radio .cat:focus, .blog .archive-header .facetwp-type-radio .cat:hover, .blog .archive-header .facetwp-type-radio .cat:focus, .post-type-archive-product .archive-header .category-buttons .facetwp-checkbox:hover, .post-type-archive-product .archive-header .category-buttons .facetwp-checkbox:focus, .post-type-archive-publication .archive-header .category-buttons .facetwp-checkbox:hover, .post-type-archive-publication .archive-header .category-buttons .facetwp-checkbox:focus, .post-type-archive-spoken .archive-header .category-buttons .facetwp-checkbox:hover, .post-type-archive-spoken .archive-header .category-buttons .facetwp-checkbox:focus, .blog .archive-header .category-buttons .facetwp-checkbox:hover, .blog .archive-header .category-buttons .facetwp-checkbox:focus, .post-type-archive-product .archive-header .category-buttons .facetwp-radio:hover, .post-type-archive-product .archive-header .category-buttons .facetwp-radio:focus, .post-type-archive-publication .archive-header .category-buttons .facetwp-radio:hover, .post-type-archive-publication .archive-header .category-buttons .facetwp-radio:focus, .post-type-archive-spoken .archive-header .category-buttons .facetwp-radio:hover, .post-type-archive-spoken .archive-header .category-buttons .facetwp-radio:focus, .blog .archive-header .category-buttons .facetwp-radio:hover, .blog .archive-header .category-buttons .facetwp-radio:focus, .post-type-archive-product .archive-header .category-buttons .cat:hover, .post-type-archive-product .archive-header .category-buttons .cat:focus, .post-type-archive-publication .archive-header .category-buttons .cat:hover, .post-type-archive-publication .archive-header .category-buttons .cat:focus, .post-type-archive-spoken .archive-header .category-buttons .cat:hover, .post-type-archive-spoken .archive-header .category-buttons .cat:focus, .blog .archive-header .category-buttons .cat:hover, .blog .archive-header .category-buttons .cat:focus, .post-type-archive-product .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox:hover, .post-type-archive-product .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox:focus, .post-type-archive-publication .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox:hover, .post-type-archive-publication .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox:focus, .post-type-archive-spoken .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox:hover, .post-type-archive-spoken .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox:focus, .blog .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox:hover, .blog .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox:focus, .post-type-archive-product .article-categories-section .facetwp-type-checkboxes .facetwp-radio:hover, .post-type-archive-product .article-categories-section .facetwp-type-checkboxes .facetwp-radio:focus, .post-type-archive-publication .article-categories-section .facetwp-type-checkboxes .facetwp-radio:hover, .post-type-archive-publication .article-categories-section .facetwp-type-checkboxes .facetwp-radio:focus, .post-type-archive-spoken .article-categories-section .facetwp-type-checkboxes .facetwp-radio:hover, .post-type-archive-spoken .article-categories-section .facetwp-type-checkboxes .facetwp-radio:focus, .blog .article-categories-section .facetwp-type-checkboxes .facetwp-radio:hover, .blog .article-categories-section .facetwp-type-checkboxes .facetwp-radio:focus, .post-type-archive-product .article-categories-section .facetwp-type-checkboxes .cat:hover, .post-type-archive-product .article-categories-section .facetwp-type-checkboxes .cat:focus, .post-type-archive-publication .article-categories-section .facetwp-type-checkboxes .cat:hover, .post-type-archive-publication .article-categories-section .facetwp-type-checkboxes .cat:focus, .post-type-archive-spoken .article-categories-section .facetwp-type-checkboxes .cat:hover, .post-type-archive-spoken .article-categories-section .facetwp-type-checkboxes .cat:focus, .blog .article-categories-section .facetwp-type-checkboxes .cat:hover, .blog .article-categories-section .facetwp-type-checkboxes .cat:focus, .post-type-archive-product .article-categories-section .facetwp-type-radio .facetwp-checkbox:hover, .post-type-archive-product .article-categories-section .facetwp-type-radio .facetwp-checkbox:focus, .post-type-archive-publication .article-categories-section .facetwp-type-radio .facetwp-checkbox:hover, .post-type-archive-publication .article-categories-section .facetwp-type-radio .facetwp-checkbox:focus, .post-type-archive-spoken .article-categories-section .facetwp-type-radio .facetwp-checkbox:hover, .post-type-archive-spoken .article-categories-section .facetwp-type-radio .facetwp-checkbox:focus, .blog .article-categories-section .facetwp-type-radio .facetwp-checkbox:hover, .blog .article-categories-section .facetwp-type-radio .facetwp-checkbox:focus, .post-type-archive-product .article-categories-section .facetwp-type-radio .facetwp-radio:hover, .post-type-archive-product .article-categories-section .facetwp-type-radio .facetwp-radio:focus, .post-type-archive-publication .article-categories-section .facetwp-type-radio .facetwp-radio:hover, .post-type-archive-publication .article-categories-section .facetwp-type-radio .facetwp-radio:focus, .post-type-archive-spoken .article-categories-section .facetwp-type-radio .facetwp-radio:hover, .post-type-archive-spoken .article-categories-section .facetwp-type-radio .facetwp-radio:focus, .blog .article-categories-section .facetwp-type-radio .facetwp-radio:hover, .blog .article-categories-section .facetwp-type-radio .facetwp-radio:focus, .post-type-archive-product .article-categories-section .facetwp-type-radio .cat:hover, .post-type-archive-product .article-categories-section .facetwp-type-radio .cat:focus, .post-type-archive-publication .article-categories-section .facetwp-type-radio .cat:hover, .post-type-archive-publication .article-categories-section .facetwp-type-radio .cat:focus, .post-type-archive-spoken .article-categories-section .facetwp-type-radio .cat:hover, .post-type-archive-spoken .article-categories-section .facetwp-type-radio .cat:focus, .blog .article-categories-section .facetwp-type-radio .cat:hover, .blog .article-categories-section .facetwp-type-radio .cat:focus, .post-type-archive-product .article-categories-section .category-buttons .facetwp-checkbox:hover, .post-type-archive-product .article-categories-section .category-buttons .facetwp-checkbox:focus, .post-type-archive-publication .article-categories-section .category-buttons .facetwp-checkbox:hover, .post-type-archive-publication .article-categories-section .category-buttons .facetwp-checkbox:focus, .post-type-archive-spoken .article-categories-section .category-buttons .facetwp-checkbox:hover, .post-type-archive-spoken .article-categories-section .category-buttons .facetwp-checkbox:focus, .blog .article-categories-section .category-buttons .facetwp-checkbox:hover, .blog .article-categories-section .category-buttons .facetwp-checkbox:focus, .post-type-archive-product .article-categories-section .category-buttons .facetwp-radio:hover, .post-type-archive-product .article-categories-section .category-buttons .facetwp-radio:focus, .post-type-archive-publication .article-categories-section .category-buttons .facetwp-radio:hover, .post-type-archive-publication .article-categories-section .category-buttons .facetwp-radio:focus, .post-type-archive-spoken .article-categories-section .category-buttons .facetwp-radio:hover, .post-type-archive-spoken .article-categories-section .category-buttons .facetwp-radio:focus, .blog .article-categories-section .category-buttons .facetwp-radio:hover, .blog .article-categories-section .category-buttons .facetwp-radio:focus, .post-type-archive-product .article-categories-section .category-buttons .cat:hover, .post-type-archive-product .article-categories-section .category-buttons .cat:focus, .post-type-archive-publication .article-categories-section .category-buttons .cat:hover, .post-type-archive-publication .article-categories-section .category-buttons .cat:focus, .post-type-archive-spoken .article-categories-section .category-buttons .cat:hover, .post-type-archive-spoken .article-categories-section .category-buttons .cat:focus, .blog .article-categories-section .category-buttons .cat:hover, .blog .article-categories-section .category-buttons .cat:focus {
         background: #E2007C;
         color: #fff; }
-      .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-checkbox.checked, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-checkbox.checked, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-checkbox.checked, .blog .archive-header .facetwp-type-checkboxes .facetwp-checkbox.checked, .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-radio.checked, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-radio.checked, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-radio.checked, .blog .archive-header .facetwp-type-checkboxes .facetwp-radio.checked, .post-type-archive-product .archive-header .facetwp-type-checkboxes .cat.checked, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .cat.checked, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .cat.checked, .blog .archive-header .facetwp-type-checkboxes .cat.checked, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-checkbox.checked, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-checkbox.checked, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-checkbox.checked, .blog .archive-header .facetwp-type-radio .facetwp-checkbox.checked, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-radio.checked, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-radio.checked, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-radio.checked, .blog .archive-header .facetwp-type-radio .facetwp-radio.checked, .post-type-archive-product .archive-header .facetwp-type-radio .cat.checked, .post-type-archive-publication .archive-header .facetwp-type-radio .cat.checked, .post-type-archive-spoken .archive-header .facetwp-type-radio .cat.checked, .blog .archive-header .facetwp-type-radio .cat.checked, .post-type-archive-product .archive-header .category-buttons .facetwp-checkbox.checked, .post-type-archive-publication .archive-header .category-buttons .facetwp-checkbox.checked, .post-type-archive-spoken .archive-header .category-buttons .facetwp-checkbox.checked, .blog .archive-header .category-buttons .facetwp-checkbox.checked, .post-type-archive-product .archive-header .category-buttons .facetwp-radio.checked, .post-type-archive-publication .archive-header .category-buttons .facetwp-radio.checked, .post-type-archive-spoken .archive-header .category-buttons .facetwp-radio.checked, .blog .archive-header .category-buttons .facetwp-radio.checked, .post-type-archive-product .archive-header .category-buttons .cat.checked, .post-type-archive-publication .archive-header .category-buttons .cat.checked, .post-type-archive-spoken .archive-header .category-buttons .cat.checked, .blog .archive-header .category-buttons .cat.checked {
+      .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-checkbox.checked, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-checkbox.checked, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-checkbox.checked, .blog .archive-header .facetwp-type-checkboxes .facetwp-checkbox.checked, .post-type-archive-product .archive-header .facetwp-type-checkboxes .facetwp-radio.checked, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .facetwp-radio.checked, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .facetwp-radio.checked, .blog .archive-header .facetwp-type-checkboxes .facetwp-radio.checked, .post-type-archive-product .archive-header .facetwp-type-checkboxes .cat.checked, .post-type-archive-publication .archive-header .facetwp-type-checkboxes .cat.checked, .post-type-archive-spoken .archive-header .facetwp-type-checkboxes .cat.checked, .blog .archive-header .facetwp-type-checkboxes .cat.checked, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-checkbox.checked, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-checkbox.checked, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-checkbox.checked, .blog .archive-header .facetwp-type-radio .facetwp-checkbox.checked, .post-type-archive-product .archive-header .facetwp-type-radio .facetwp-radio.checked, .post-type-archive-publication .archive-header .facetwp-type-radio .facetwp-radio.checked, .post-type-archive-spoken .archive-header .facetwp-type-radio .facetwp-radio.checked, .blog .archive-header .facetwp-type-radio .facetwp-radio.checked, .post-type-archive-product .archive-header .facetwp-type-radio .cat.checked, .post-type-archive-publication .archive-header .facetwp-type-radio .cat.checked, .post-type-archive-spoken .archive-header .facetwp-type-radio .cat.checked, .blog .archive-header .facetwp-type-radio .cat.checked, .post-type-archive-product .archive-header .category-buttons .facetwp-checkbox.checked, .post-type-archive-publication .archive-header .category-buttons .facetwp-checkbox.checked, .post-type-archive-spoken .archive-header .category-buttons .facetwp-checkbox.checked, .blog .archive-header .category-buttons .facetwp-checkbox.checked, .post-type-archive-product .archive-header .category-buttons .facetwp-radio.checked, .post-type-archive-publication .archive-header .category-buttons .facetwp-radio.checked, .post-type-archive-spoken .archive-header .category-buttons .facetwp-radio.checked, .blog .archive-header .category-buttons .facetwp-radio.checked, .post-type-archive-product .archive-header .category-buttons .cat.checked, .post-type-archive-publication .archive-header .category-buttons .cat.checked, .post-type-archive-spoken .archive-header .category-buttons .cat.checked, .blog .archive-header .category-buttons .cat.checked, .post-type-archive-product .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox.checked, .post-type-archive-publication .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox.checked, .post-type-archive-spoken .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox.checked, .blog .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox.checked, .post-type-archive-product .article-categories-section .facetwp-type-checkboxes .facetwp-radio.checked, .post-type-archive-publication .article-categories-section .facetwp-type-checkboxes .facetwp-radio.checked, .post-type-archive-spoken .article-categories-section .facetwp-type-checkboxes .facetwp-radio.checked, .blog .article-categories-section .facetwp-type-checkboxes .facetwp-radio.checked, .post-type-archive-product .article-categories-section .facetwp-type-checkboxes .cat.checked, .post-type-archive-publication .article-categories-section .facetwp-type-checkboxes .cat.checked, .post-type-archive-spoken .article-categories-section .facetwp-type-checkboxes .cat.checked, .blog .article-categories-section .facetwp-type-checkboxes .cat.checked, .post-type-archive-product .article-categories-section .facetwp-type-radio .facetwp-checkbox.checked, .post-type-archive-publication .article-categories-section .facetwp-type-radio .facetwp-checkbox.checked, .post-type-archive-spoken .article-categories-section .facetwp-type-radio .facetwp-checkbox.checked, .blog .article-categories-section .facetwp-type-radio .facetwp-checkbox.checked, .post-type-archive-product .article-categories-section .facetwp-type-radio .facetwp-radio.checked, .post-type-archive-publication .article-categories-section .facetwp-type-radio .facetwp-radio.checked, .post-type-archive-spoken .article-categories-section .facetwp-type-radio .facetwp-radio.checked, .blog .article-categories-section .facetwp-type-radio .facetwp-radio.checked, .post-type-archive-product .article-categories-section .facetwp-type-radio .cat.checked, .post-type-archive-publication .article-categories-section .facetwp-type-radio .cat.checked, .post-type-archive-spoken .article-categories-section .facetwp-type-radio .cat.checked, .blog .article-categories-section .facetwp-type-radio .cat.checked, .post-type-archive-product .article-categories-section .category-buttons .facetwp-checkbox.checked, .post-type-archive-publication .article-categories-section .category-buttons .facetwp-checkbox.checked, .post-type-archive-spoken .article-categories-section .category-buttons .facetwp-checkbox.checked, .blog .article-categories-section .category-buttons .facetwp-checkbox.checked, .post-type-archive-product .article-categories-section .category-buttons .facetwp-radio.checked, .post-type-archive-publication .article-categories-section .category-buttons .facetwp-radio.checked, .post-type-archive-spoken .article-categories-section .category-buttons .facetwp-radio.checked, .blog .article-categories-section .category-buttons .facetwp-radio.checked, .post-type-archive-product .article-categories-section .category-buttons .cat.checked, .post-type-archive-publication .article-categories-section .category-buttons .cat.checked, .post-type-archive-spoken .article-categories-section .category-buttons .cat.checked, .blog .article-categories-section .category-buttons .cat.checked {
         background: #E2007C; }
     .archive-header .facetwp-type-checkboxes .facetwp-checkbox[data-value="ukategorisert"],
     .archive-header .facetwp-type-checkboxes .facetwp-radio[data-value="ukategorisert"],
@@ -3421,37 +3484,56 @@ GENERAL STYLES
     .archive-header .facetwp-type-radio .cat[data-value="ukategorisert"],
     .archive-header .category-buttons .facetwp-checkbox[data-value="ukategorisert"],
     .archive-header .category-buttons .facetwp-radio[data-value="ukategorisert"],
-    .archive-header .category-buttons .cat[data-value="ukategorisert"] {
+    .archive-header .category-buttons .cat[data-value="ukategorisert"],
+    .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox[data-value="ukategorisert"],
+    .article-categories-section .facetwp-type-checkboxes .facetwp-radio[data-value="ukategorisert"],
+    .article-categories-section .facetwp-type-checkboxes .cat[data-value="ukategorisert"],
+    .article-categories-section .facetwp-type-radio .facetwp-checkbox[data-value="ukategorisert"],
+    .article-categories-section .facetwp-type-radio .facetwp-radio[data-value="ukategorisert"],
+    .article-categories-section .facetwp-type-radio .cat[data-value="ukategorisert"],
+    .article-categories-section .category-buttons .facetwp-checkbox[data-value="ukategorisert"],
+    .article-categories-section .category-buttons .facetwp-radio[data-value="ukategorisert"],
+    .article-categories-section .category-buttons .cat[data-value="ukategorisert"] {
       display: none; }
 
-.archive-header .facetwp-facet.facetwp-type-search, .archive-header .facetwp-facet.facetwp-type-dropdown {
+.archive-header .facetwp-facet.facetwp-type-search, .archive-header .facetwp-facet.facetwp-type-dropdown,
+.article-categories-section .facetwp-facet.facetwp-type-search,
+.article-categories-section .facetwp-facet.facetwp-type-dropdown {
   margin-bottom: 20px; }
 
-.archive-header .facetwp-type-search {
+.archive-header .facetwp-type-search,
+.article-categories-section .facetwp-type-search {
   max-width: 360px;
   margin: 0 auto; }
-  .archive-header .facetwp-type-search .facetwp-input-wrap {
+  .archive-header .facetwp-type-search .facetwp-input-wrap,
+  .article-categories-section .facetwp-type-search .facetwp-input-wrap {
     width: 100%; }
 
-.archive-header .facet-reset {
+.archive-header .facet-reset,
+.article-categories-section .facet-reset {
   display: block;
   margin: 0 auto 20px;
   padding: 9px 15px; }
 
-.archive-header .facetwp-facet-bokasinkategorier {
+.archive-header .facetwp-facet-bokasinkategorier,
+.article-categories-section .facetwp-facet-bokasinkategorier {
   align-items: center; }
-  .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio {
+  .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio,
+  .article-categories-section .facetwp-facet-bokasinkategorier .facetwp-radio {
     width: 34%;
     background: transparent !important;
     border-radius: 0 !important;
     box-shadow: none !important; }
-    .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio img {
+    .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio img,
+    .article-categories-section .facetwp-facet-bokasinkategorier .facetwp-radio img {
       max-width: 100%;
       height: auto; }
-    .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio.checked img {
+    .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio.checked img,
+    .article-categories-section .facetwp-facet-bokasinkategorier .facetwp-radio.checked img {
       -webkit-filter: brightness(0.5);
               filter: brightness(0.5); }
-    .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio.checked:before {
+    .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio.checked:before,
+    .article-categories-section .facetwp-facet-bokasinkategorier .facetwp-radio.checked:before {
       visibility: visible;
       color: #fff;
       position: absolute;
@@ -3468,7 +3550,9 @@ GENERAL STYLES
       text-align: center;
       border-radius: 50%;
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); }
-    .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio:hover, .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio:focus {
+    .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio:hover, .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio:focus,
+    .article-categories-section .facetwp-facet-bokasinkategorier .facetwp-radio:hover,
+    .article-categories-section .facetwp-facet-bokasinkategorier .facetwp-radio:focus {
       -webkit-transform: scale3d(1.1, 1.1, 1.1);
               transform: scale3d(1.1, 1.1, 1.1); }
 
@@ -3913,7 +3997,7 @@ ARCHIVE STYLES
 
 .page-title {
   margin-bottom: 20px; }
-  .page-title.archive-title, .page-title.woocommerce-products-header__title {
+  .page-title.archive-title {
     text-align: center; }
 
 .articles-wrapper {
@@ -5582,17 +5666,28 @@ GENERAL STYLES
   .archive-header .facetwp-type-radio .cat,
   .archive-header .category-buttons .facetwp-checkbox,
   .archive-header .category-buttons .facetwp-radio,
-  .archive-header .category-buttons .cat {
+  .archive-header .category-buttons .cat,
+  .article-categories-section .facetwp-type-checkboxes .facetwp-checkbox,
+  .article-categories-section .facetwp-type-checkboxes .facetwp-radio,
+  .article-categories-section .facetwp-type-checkboxes .cat,
+  .article-categories-section .facetwp-type-radio .facetwp-checkbox,
+  .article-categories-section .facetwp-type-radio .facetwp-radio,
+  .article-categories-section .facetwp-type-radio .cat,
+  .article-categories-section .category-buttons .facetwp-checkbox,
+  .article-categories-section .category-buttons .facetwp-radio,
+  .article-categories-section .category-buttons .cat {
     margin-right: 5px;
     margin-left: 5px;
     margin-bottom: 10px;
     padding: 3px 13px 2px;
     font-size: 1.5rem; }
-  .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio {
+  .archive-header .facetwp-facet-bokasinkategorier .facetwp-radio,
+  .article-categories-section .facetwp-facet-bokasinkategorier .facetwp-radio {
     width: 130px;
     margin-left: 0;
     margin-right: 0; }
-  .archive-header .brand-logos .brand-logo {
+  .archive-header .brand-logos .brand-logo,
+  .article-categories-section .brand-logos .brand-logo {
     width: 15%;
     padding: 0 20px; }
   /*********************
@@ -6211,103 +6306,91 @@ Stylesheet: Woocommerce Stylesheet
     grid-template-columns: 300px 1fr;
     grid-gap: 60px; } }
 
-.woocommerce ul.products li.product h3,
-.woocommerce ul.products li.product .woocommerce-loop-product__title,
-.woocommerce-page ul.products li.product h3,
-.woocommerce-page ul.products li.product .woocommerce-loop-product__title {
-  font-size: 1.8rem;
-  padding: 5px 0 5px; }
-
-.woocommerce ul.products li.product a,
-.woocommerce ul.products li.product button,
-.woocommerce-page ul.products li.product a,
-.woocommerce-page ul.products li.product button {
-  /* &.buy-product-link {
-					display: none;
-				} */ }
-  .woocommerce ul.products li.product a .wc-thumb-wrap,
-  .woocommerce ul.products li.product button .wc-thumb-wrap,
-  .woocommerce-page ul.products li.product a .wc-thumb-wrap,
-  .woocommerce-page ul.products li.product button .wc-thumb-wrap {
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  margin: 0;
+  width: 100%; }
+  .woocommerce ul.products li.product h3,
+  .woocommerce ul.products li.product .woocommerce-loop-product__title,
+  .woocommerce-page ul.products li.product h3,
+  .woocommerce-page ul.products li.product .woocommerce-loop-product__title {
+    font-size: 1.8rem;
+    padding: 5px 0 5px; }
+  @media (min-width: 768px) {
+    .woocommerce ul.products li.product a.woocommerce-loop-product__link,
+    .woocommerce-page ul.products li.product a.woocommerce-loop-product__link {
+      display: grid;
+      grid-gap: 32px;
+      grid-template-columns: 150px auto;
+      align-items: center; } }
+  .woocommerce ul.products li.product a.woocommerce-loop-product__link .wc-thumb-wrap,
+  .woocommerce-page ul.products li.product a.woocommerce-loop-product__link .wc-thumb-wrap {
     position: relative;
     padding-bottom: 125%; }
-  .woocommerce ul.products li.product a img,
-  .woocommerce ul.products li.product button img,
-  .woocommerce-page ul.products li.product a img,
-  .woocommerce-page ul.products li.product button img {
-    margin: 0;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    min-width: 1px;
-    min-height: 1px;
-    border-radius: 0 4px 4px 0;
-    transition: all 0.214s ease-in-out; }
-  .woocommerce ul.products li.product a.btn-green,
-  .woocommerce ul.products li.product button.btn-green,
-  .woocommerce-page ul.products li.product a.btn-green,
-  .woocommerce-page ul.products li.product button.btn-green {
+    .woocommerce ul.products li.product a.woocommerce-loop-product__link .wc-thumb-wrap img,
+    .woocommerce-page ul.products li.product a.woocommerce-loop-product__link .wc-thumb-wrap img {
+      margin: 0;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      height: auto;
+      -o-object-fit: contain;
+         object-fit: contain;
+      -o-object-position: center;
+         object-position: center;
+      border-radius: 0 4px 4px 0;
+      transition: all 0.214s ease-in-out; }
+  .woocommerce ul.products li.product a.woocommerce-loop-product__link span.btn-green,
+  .woocommerce-page ul.products li.product a.woocommerce-loop-product__link span.btn-green {
     margin-right: 5px; }
-  .woocommerce ul.products li.product a.btn-orange, .woocommerce ul.products li.product a.btn-green, .woocommerce ul.products li.product a.btn-disabled,
-  .woocommerce ul.products li.product button.btn-orange,
-  .woocommerce ul.products li.product button.btn-green,
-  .woocommerce ul.products li.product button.btn-disabled,
-  .woocommerce-page ul.products li.product a.btn-orange,
-  .woocommerce-page ul.products li.product a.btn-green,
-  .woocommerce-page ul.products li.product a.btn-disabled,
-  .woocommerce-page ul.products li.product button.btn-orange,
-  .woocommerce-page ul.products li.product button.btn-green,
-  .woocommerce-page ul.products li.product button.btn-disabled {
+  .woocommerce ul.products li.product a.woocommerce-loop-product__link span.btn-orange,
+  .woocommerce ul.products li.product a.woocommerce-loop-product__link span.btn-green,
+  .woocommerce ul.products li.product a.woocommerce-loop-product__link span.btn-disabled,
+  .woocommerce-page ul.products li.product a.woocommerce-loop-product__link span.btn-orange,
+  .woocommerce-page ul.products li.product a.woocommerce-loop-product__link span.btn-green,
+  .woocommerce-page ul.products li.product a.woocommerce-loop-product__link span.btn-disabled {
     display: inline-block;
     font-size: 1.2rem;
     margin-top: 5px;
     padding: 10px 15px 9px;
     text-align: center; }
-  .woocommerce ul.products li.product a:hover img, .woocommerce ul.products li.product a:focus img,
-  .woocommerce ul.products li.product button:hover img,
-  .woocommerce ul.products li.product button:focus img,
-  .woocommerce-page ul.products li.product a:hover img,
-  .woocommerce-page ul.products li.product a:focus img,
-  .woocommerce-page ul.products li.product button:hover img,
-  .woocommerce-page ul.products li.product button:focus img {
+  .woocommerce ul.products li.product a.woocommerce-loop-product__link:hover img, .woocommerce ul.products li.product a.woocommerce-loop-product__link:focus img,
+  .woocommerce-page ul.products li.product a.woocommerce-loop-product__link:hover img,
+  .woocommerce-page ul.products li.product a.woocommerce-loop-product__link:focus img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); }
-
-.woocommerce ul.products li.product .price,
-.woocommerce-page ul.products li.product .price {
-  margin-bottom: 0;
-  font-size: 1.5rem;
-  line-height: 1.5em;
-  margin-bottom: 5px; }
-  .woocommerce ul.products li.product .price .woocommerce-Price-amount,
-  .woocommerce-page ul.products li.product .price .woocommerce-Price-amount {
-    display: block; }
-    .woocommerce ul.products li.product .price .woocommerce-Price-amount.regular-price,
-    .woocommerce-page ul.products li.product .price .woocommerce-Price-amount.regular-price {
-      color: #000; }
-  .woocommerce ul.products li.product .price .the-price,
-  .woocommerce-page ul.products li.product .price .the-price {
-    font-weight: 700; }
-  .woocommerce ul.products li.product .price .woocommerce-Price-currencySymbol,
-  .woocommerce-page ul.products li.product .price .woocommerce-Price-currencySymbol {
-    /* margin-left: $base-padding; */ }
-  .woocommerce ul.products li.product .price del,
-  .woocommerce-page ul.products li.product .price del {
-    display: inline-block; }
-  .woocommerce ul.products li.product .price ins,
-  .woocommerce-page ul.products li.product .price ins {
-    text-decoration: none; }
-
-.woocommerce ul.products li.product .member-price,
-.woocommerce-page ul.products li.product .member-price {
-  display: block;
-  color: #c0c3ca;
-  font-size: 1.5rem; }
+  .woocommerce ul.products li.product .price,
+  .woocommerce-page ul.products li.product .price {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    margin-bottom: 5px; }
+    .woocommerce ul.products li.product .price .woocommerce-Price-amount,
+    .woocommerce-page ul.products li.product .price .woocommerce-Price-amount {
+      display: block; }
+      .woocommerce ul.products li.product .price .woocommerce-Price-amount.regular-price,
+      .woocommerce-page ul.products li.product .price .woocommerce-Price-amount.regular-price {
+        color: #000; }
+    .woocommerce ul.products li.product .price .the-price,
+    .woocommerce-page ul.products li.product .price .the-price {
+      font-weight: 700; }
+    .woocommerce ul.products li.product .price .woocommerce-Price-currencySymbol,
+    .woocommerce-page ul.products li.product .price .woocommerce-Price-currencySymbol {
+      /* margin-left: $base-padding; */ }
+    .woocommerce ul.products li.product .price del,
+    .woocommerce-page ul.products li.product .price del {
+      display: inline-block; }
+    .woocommerce ul.products li.product .price ins,
+    .woocommerce-page ul.products li.product .price ins {
+      text-decoration: none; }
+  .woocommerce ul.products li.product .member-price,
+  .woocommerce-page ul.products li.product .member-price {
+    display: block;
+    color: #c0c3ca;
+    font-size: 1.5rem; }
 
 .woocommerce div.product,
 .woocommerce-page div.product {

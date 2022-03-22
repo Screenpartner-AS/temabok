@@ -8200,6 +8200,14 @@
       "oAP" : "\/woocommerce\/archive-product.php",
       "oF" : 0
     },
+    "\/woocommerce\/content-product.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/woocommerce\/content-product.php",
+      "oF" : 0
+    },
     "\/woocommerce\/emails\/email-styles.php" : {
       "cB" : 0,
       "ft" : 8192,

@@ -53,9 +53,6 @@ get_header( 'shop' ); ?>
 
     </header>
 
-		<?php echo facetwp_display( 'facet', 'products_search' ); ?>
-		<?php echo facetwp_display( 'facet', 'product_categories_archive' ); ?>
-
 			<?php if ( have_posts() ) : ?>
 
 				<?php

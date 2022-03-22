@@ -89,6 +89,22 @@ function image_wrapper_end() {
 	echo '</div>';
 }
 
+/************************
+WOOCOMMERCE Conten Wrapper
+************************/
+add_action( 'woocommerce_shop_loop_item_title', 'single_product_content_wrapper_start', 5);
+add_action( 'woocommerce_after_shop_loop_item_title', 'single_product_content_wrapper_end', 20);
+
+function single_product_content_wrapper_start() {
+	echo '<div class="wc-content-wrap">';
+}
+
+function single_product_content_wrapper_end() {
+	echo '</div>';
+}
+
+
+
 /**********************************
 WOOCOMMERCE ARCHIVE FILTERS WRAPPER
 **********************************/
@@ -220,6 +236,7 @@ function sp_wrap_in_archive_header_end() {
 /*********************************************
 MOVE SIDEBAR
 *********************************************/
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
 add_action( 'woocommerce_before_shop_loop', 'woocommerce_get_sidebar', 70 );
 
 /*********************************************
@@ -695,14 +712,11 @@ function replace_add_to_cart() {
 		return;
 	}
 
-	$product_url = $product->get_permalink();
-	$product_title = $product->get_title();
-
-	echo '<a class="btn-orange buy-product-link" href="' . $product_url . '" title="' . $product_title . '">' . __('Buy Paper Edition', 'screenpartner') . '</a>';
+	echo '<span class="btn-orange buy-product-link">' . __('Buy Paper Edition', 'screenpartner') . '</span>';
 }
 
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
-add_action('woocommerce_after_shop_loop_item','replace_add_to_cart');
+add_action('woocommerce_after_shop_loop_item_title', 'replace_add_to_cart', 15);
 
 
 /************************************
