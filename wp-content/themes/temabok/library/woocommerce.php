@@ -108,7 +108,7 @@ function single_product_content_wrapper_end() {
 /**********************************
 WOOCOMMERCE ARCHIVE FILTERS WRAPPER
 **********************************/
-add_action( 'woocommerce_before_shop_loop', 'archive_filters_start', 15);
+/* add_action( 'woocommerce_before_shop_loop', 'archive_filters_start', 15);
 add_action( 'woocommerce_before_shop_loop', 'archive_filters_end', 35);
 
 function archive_filters_start() {
@@ -117,7 +117,7 @@ function archive_filters_start() {
 
 function archive_filters_end() {
 	echo '</div>';
-}
+} */
 
 
 /**********************************
@@ -218,12 +218,40 @@ REMOVE DEFAULT WOOCOMMERCE COUNTER,
 ADD CUSTOM WPFACET PRODUCT LOOP COUNTER
 **************************************/
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+
+add_action( 'woocommerce_before_shop_loop', 'sp_archive_top_bar_start', 54);
+add_action( 'woocommerce_before_shop_loop', 'sp_archive_top_bar_end', 60);
+add_action( 'woocommerce_before_shop_loop', 'sp_archive_filter_toggle', 56);
+add_action( 'woocommerce_before_shop_loop', 'sp_archive_selections', 56);
+add_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 57);
+add_action( 'woocommerce_after_shop_loop', 'sp_pager', 16);
+
+function sp_archive_selections() {
+	echo facetwp_display( 'selections' );
+}
+
+function sp_archive_filter_toggle() {
+	echo '<button class="sp-toggle-mobile-filters"><img src="' . get_template_directory_uri() . '/library/images/filter-toggle.svg" alt="' . __('Filter Icon', 'screenpartner') . '" /><span>' . __('Toggle filters', 'screenpartner') . '</span></button>';
+}
+
+function sp_archive_top_bar_start() {
+	echo '<div class="sp-archive-top-bar">';
+}
+
+function sp_archive_top_bar_end() {
+	echo '</div><!-- end .sp-archive-top-bar -->';
+}
+
+function sp_pager() {
+	echo do_shortcode('[facetwp facet="archive_pager"]');
+}
 
 
 /*********************************************
 WRAP ARCHIVE HEADER IN DIV
 *********************************************/
-add_action('woocommerce_before_main_content', 'sp_wrap_in_archive_header_start', 40);
+/* add_action('woocommerce_before_main_content', 'sp_wrap_in_archive_header_start', 40);
 function sp_wrap_in_archive_header_start() {
 	echo '<div class="archive-header">';
 }
@@ -231,7 +259,7 @@ function sp_wrap_in_archive_header_start() {
 add_action('woocommerce_before_shop_loop', 'sp_wrap_in_archive_header_end', 45);
 function sp_wrap_in_archive_header_end() {
 	echo '</div>';
-}
+} */
 
 /*********************************************
 MOVE SIDEBAR
@@ -258,10 +286,10 @@ REMOVING WOOCOMMERCE PAGINATION
 ************************************/
 remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination', 10);
 
-function sp_show_more_button() {
+/* function sp_show_more_button() {
 	echo '<button class="btn-orange fwp-load-more">' . __("Show more", "screenpartner") . '</button>';
 }
-add_action('woocommerce_after_shop_loop', 'sp_show_more_button', 25);
+add_action('woocommerce_after_shop_loop', 'sp_show_more_button', 25); */
 
 
 /*************************************
@@ -967,3 +995,11 @@ function sp_add_product_to_cart_on_product_id_load() {
 		}
 	}
 }
+
+
+// Custom Actions
+add_action('sp_loop_thumbnail', 'woocommerce_template_loop_product_thumbnail', 10);
+add_action('sp_loop_content', 'woocommerce_template_loop_product_title', 10);
+add_action('sp_loop_content', 'woocommerce_template_single_excerpt', 15);
+add_action('sp_loop_price', 'woocommerce_template_loop_price', 10);
+add_action('sp_loop_price', 'woocommerce_template_single_rating', 15);

@@ -2,6 +2,8 @@
 
 					<?php if ( is_active_sidebar( 'sidebar_main' ) ) : ?>
 
+						<button class="close-sidebar"><?php echo __('Close filters', 'screenpartner'); ?></button>
+
 						<?php dynamic_sidebar( 'sidebar_main' ); ?>
 
 					<?php else : ?>

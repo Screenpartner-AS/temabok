@@ -40,4 +40,17 @@ jQuery(document).ready(function($) {
 		box_content.slideToggle('fast');
 	});
 
+	// Filters toggle
+	$('.sp-toggle-mobile-filters').on('click', function() {
+		$(this).toggleClass('active');
+		$('.sidebar').toggleClass('active');
+		$('.sp-overlay').toggleClass('active');
+	});
+
+	// Filters toggle
+	$('.close-sidebar, .sp-overlay').on('click', function() {
+		$('.sidebar').toggleClass('active');
+		$('.sp-overlay').toggleClass('active');
+	});
+
 }); /* end of as page load scripts */
