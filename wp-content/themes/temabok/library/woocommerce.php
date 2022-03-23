@@ -998,8 +998,34 @@ function sp_add_product_to_cart_on_product_id_load() {
 
 
 // Custom Actions
+// Custom excerpt that strips all content but text.
+// Customizable word length, ending phrase and "read more" link.
+function sp_custom_excerpt( $num_words = 45, $ending = '...', $post_id = null ) {
+	global $post;
+
+	// Truncate post content
+	$current_post = $post_id ? get_post( $post_id ) : $post;
+	$excerpt = $current_post->post_excerpt;
+
+	if ($excerpt == '') {
+		// If excerpt is empty use content,
+		$excerpt = strip_shortcodes( $current_post->post_content );
+	} else {
+		// If excerpt has content use excerpt
+		$excerpt = strip_shortcodes( $excerpt );
+	}
+	$excerpt = wp_trim_words( $excerpt, $num_words, $ending );
+	$excerpt = trim($excerpt);
+
+	return $excerpt;
+}
+
+function sp_limited_short_description() {
+	echo sp_custom_excerpt(45, '...');
+}
+
 add_action('sp_loop_thumbnail', 'woocommerce_template_loop_product_thumbnail', 10);
 add_action('sp_loop_content', 'woocommerce_template_loop_product_title', 10);
-add_action('sp_loop_content', 'woocommerce_template_single_excerpt', 15);
+add_action('sp_loop_content', 'sp_limited_short_description', 15);
 add_action('sp_loop_price', 'woocommerce_template_loop_price', 10);
 add_action('sp_loop_price', 'woocommerce_template_single_rating', 15);
