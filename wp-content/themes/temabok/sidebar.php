@@ -1,6 +1,8 @@
-				<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 cf" role="complementary">
+				<div id="sidebar" class="sidebar cf" role="complementary">
 
 					<?php if ( is_active_sidebar( 'sidebar_main' ) ) : ?>
+
+						<button class="close-sidebar"><?php echo __('Close filters', 'screenpartner'); ?></button>
 
 						<?php dynamic_sidebar( 'sidebar_main' ); ?>
 

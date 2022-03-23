@@ -30,4 +30,27 @@ jQuery(document).ready(function($) {
     e.preventDefault();
   });
 
+	/*
+	 * Toggle Filter Display
+	 */
+	$('.sp-filterbox-header').on('click', function(e) {
+		e.preventDefault();
+		var box_content = $(this).next('.sp-filterbox-content');
+		$(this).toggleClass('closed');
+		box_content.slideToggle('fast');
+	});
+
+	// Filters toggle
+	$('.sp-toggle-mobile-filters').on('click', function() {
+		$(this).toggleClass('active');
+		$('.sidebar').toggleClass('active');
+		$('.sp-overlay').toggleClass('active');
+	});
+
+	// Filters toggle
+	$('.close-sidebar, .sp-overlay').on('click', function() {
+		$('.sidebar').toggleClass('active');
+		$('.sp-overlay').toggleClass('active');
+	});
+
 }); /* end of as page load scripts */

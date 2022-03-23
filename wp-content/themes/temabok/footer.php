@@ -37,6 +37,7 @@
 			</div>
 		</footer>
 		<?php load_template(TEMPLATEPATH . '/library/modules/elements/nav-mobile.php'); ?>
+		<div class="sp-overlay"></div>
 	</div>
 	<?php // all js scripts are loaded in library/bones.php ?>
 	<?php wp_footer(); ?>
