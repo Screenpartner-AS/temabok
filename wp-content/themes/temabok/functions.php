@@ -194,8 +194,7 @@ function bones_comments( $comment, $args, $depth ) {
 //
 //send order-txt to warehouse sftp after add new order in woocommerce
 //
-add_action( 'woocommerce_new_order', 'new_order_bokasin', 1, 1 );
-
+add_action( 'woocommerce_checkout_update_order_meta', 'new_order_bokasin', 1, 1 );
 function new_order_bokasin( $order_id ) {
 	if ( ! $order_id ) return;
 
@@ -203,6 +202,11 @@ function new_order_bokasin( $order_id ) {
 	$warehouse_ssh_server = get_field('warehouse_ssh_server', 'option');
 	$warehouse_ssh_user = get_field('warehouse_ssh_user', 'option');
 	$warehouse_ssh_password = get_field('warehouse_ssh_password', 'option');
+
+	// Don't run function if these are not specified
+	if (!$warehouse_ssh_server || !$warehouse_ssh_user || !$warehouse_ssh_password) {
+		return;
+	}
 
 	// Getting an instance of WC_Order object
 	$order = wc_get_order( $order_id );
@@ -411,6 +415,48 @@ function createCSVfromLastFile() {
 	//upload readable file
 	$ssh_bokasin->put('/home/bokasin/public_html/wp-content/lager/Orage_Nettbutikk_Lager_Headers.csv', $fileCsv);
 }
+
+/**
+ * Add a custom action to order actions select box on edit order page
+ * Only added for paid orders that haven't fired this action yet
+ *
+ * @param array $actions order actions array to display
+ * @return array - updated actions
+ */
+function sp_wc_add_order_meta_box_action( $actions ) {
+	global $theorder;
+
+	// bail if the order has been paid for or this action has been run
+	if ( get_post_meta( $theorder->id, '_wc_order_sent_to_central', true ) ) {
+		return $actions;
+	}
+
+	// add "send order" custom action
+	$actions['wc_send_to_central_order_action'] = __( 'Send Order to Central', 'screenpartner' );
+	return $actions;
+}
+add_action( 'woocommerce_order_actions', 'sp_wc_add_order_meta_box_action' );
+
+
+/**
+ * Add an order note when custom action is clicked
+ * Add a flag on the order to show it's been run
+ *
+ * @param \WC_Order $order
+ */
+function sp_wc_process_order_meta_box_action( $order ) {
+
+	// add the order note
+	$message = sprintf( __( 'Order sent to central by %s.', 'screenpartner' ), wp_get_current_user()->display_name );
+	$order->add_order_note( $message );
+
+	new_order_bokasin( $order->id );
+
+	// add the flag so this action won't be shown again
+	update_post_meta( $order->id, '_wc_order_sent_to_central', 'yes' );
+}
+add_action( 'woocommerce_order_action_wc_send_to_central_order_action', 'sp_wc_process_order_meta_box_action' );
+
 
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
