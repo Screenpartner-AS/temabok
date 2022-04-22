@@ -3232,6 +3232,9 @@ table.sp-offers {
   margin: 0 -10px; }
   .recent-releases-grid .recent-release {
     padding: 0 10px; }
+    .recent-releases-grid .recent-release img {
+      width: 100%;
+      height: auto; }
 
 .category-cloud {
   background-image: linear-gradient(to top, black 0%, transparent 35%, transparent 100%), url(../images/logg-inn-bakgrunn@2x.jpg);
